@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometría XR: Sólidos Platónicos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="fas fa-cube"></i> Sólidos Platónicos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link Actived" href="#geometria">Geometría</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Arte.html">Arte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Los5solidos.html">Los 5 Sólidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Extensiones.html">Extensiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Aplicaciones.html">Aplicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="RecursosXR.html">Recursos XR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navContenido" class="navVisible">
+        <ul class="ul_Secciones">
+            <li class="SeccionActiva"><a href="#Definicion">Definición</a><span class="marcador"></span></li>
+            <li><a href="#Schlafli">Notación de Schläfli</a></li>
+            <li>
+                <a href="#Porque5">¿Por qué solo 5?</a>
+                <ul class="ul_Subsecciones">
+                    <li><a href="#Condiciones">Condiciones de convexidad y regularidad</a></li>
+                    <li><a href="#Demostracion">Demostración visual</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#Relaciones">Relaciones geometricas</a>
+                <ul class="ul_Subsecciones">
+                    <li ><a href="#TeoremaEuler">Teorema de Euler</a> </li>
+                    <li><a href="#Angulos">Ángulos</a></li>
+                    <li><a href="#Dualidad">Dualidad</a></li>
+                    <li><a href="#Simetria">Grupos de simetría</a></li>
+                </ul>
+            </li>
+            <li><a href="#Referencias">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container py-5">
+        <h2 class="section-title">CARACTERIZACIÓN GEOMÉTRICA</h2>
+        <p class="section-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat saepe nam doloremque aut cumque nulla dignissimos, nobis esse magnam placeat, hic harum fugit quaerat earum quidem in maiores reiciendis. Quisquam.</p>
+
+        <!-- Definición Matemática -->
+        <section class="mb-5" id="Definicion">
+            <h3 class="mb-4">Definición Matemática</h3>
+            <div class="row mb-3">
+                <div class="col-md-7 col-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                </div>
+                <div class="col-md-5 col-12 container_img">
+                    <!--Imagen-->
+                    <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Notación de Schlafli -->
+        <section class="mb-5" id="Schlafli">
+            <h3 class="mb-4">Notación de Schläfli</h3>
+            <div class="row mb-3">
+                <div class="col-md-7 col-12">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                </div>
+                <div class="col-md-5 col-12 container_img">
+                    <!--Imagen-->
+                    <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima exercitationem nobis possimus rerum ad qui error vel nihil eos necessitatibus officia eum non, vero maiores ea id itaque et odit?</p>
+            
+            <div class="containerTable">
+                <table class="table">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col">Sólido platónico</th>
+                            <th scope="col">Notación de Schläfli</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tetraedro</td>
+                            <td>{3,3}</td>
+                        </tr>
+                        <tr>
+                            <td>Hexaedro (cubo)</td>
+                            <td>{4,3}</td>
+                        </tr>
+                        <tr>
+                            <td>Octaedro</td>
+                            <td>{3,4}</td>
+                        </tr>
+                        <tr>
+                            <td>Dodecaedro</td>
+                            <td>{5,3}</td>
+                        </tr>
+                        <tr>
+                            <td>Icosaedro</td>
+                            <td>{3,5}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="etiqueta_table">Notación de Schläfli para cada sólido platónico.</p>
+            </div>
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore modi saepe, recusandae fugiat eaque, veritatis aut, voluptatem veniam ducimus quidem nobis molestias quibusdam deleniti numquam tenetur illum doloribus. Blanditiis, porro?</p>
+        </section>
+
+        <!-- Demostración visual -->
+        <section class="mb-5" id="Porque5">
+                <h3 class="mb-4">¿Por qué solo son 5 sólidos platónicos?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae, tempore ratione quidem fugit et saepe dolorum inventore odit sit temporibus adipisci dolor sunt nam tempora architecto expedita aspernatur quaerat.</p>
+
+                <!-- Condiciones -->
+                <section class="mb-4" id="Condiciones">
+                    <h5 class="mb-2">Condiciones de convexidad y regularidad</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates similique blanditiis numquam, ipsum provident obcaecati eius. Vitae labore eos odio culpa quam, dignissimos odit velit sint commodi veritatis possimus cumque.</p>
+                    <ul>
+                        <li>[Condición 1: Mínimo 3 caras por vértice]</li>
+                        <li>[Condición 2: Suma de ángulos < 360°]</li>
+                        <li>[Soluciones: {3,3}, {4,3}, {3,4}, {5,3}, {3,5}]</li>
+                    </ul>
+                </section>
+
+                <!-- Demostración -->
+                <section class="mb-4" id="Demostracion">
+                    <h5 class="mb-2">Demostración visual</h5>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-7 col-12">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                        </div>
+                        <div class="col-md-5 col-12 container_img">
+                            <!--Imagen-->
+                            <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                        </div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam mollitia dolorem, a veniam officia maiores! Reprehenderit delectus ex ab officiis iste ullam veniam molestias. Quo perspiciatis quaerat unde eligendi reiciendis.</p>
+                    
+                    <div class="text-center my-3">
+                        <div class="property-box d-inline-block my-3">
+                            <p class="property-label">Desigualdad fundamental</p>
+                            <p class="property-value">(p-2)(q-2) < 4</p>
+                        </div>
+                    </div>
+
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam impedit harum debitis sint consequuntur at quia, nam itaque sapiente dignissimos fugiat quibusdam eveniet laudantium tempora amet aliquid magnam eaque alias.</p>
+                    
+                    <div class="interactive-model">
+                        <i class="fas fa-shapes fa-3x mb-3" style="opacity: 0.3;"></i>
+                        <p>[VISUALIZACIÓN INTERACTIVA]</p>
+                        <p style="font-size: 0.9rem;">(Configuraciones de polígonos en vértices)</p>
+                    </div>
+                </section>
+        </section>
+
+        <!-- Relaciones Geométricas -->
+        <section id="Relaciones">
+            <h3 class="mb-4">Relaciones geométricas importantes</h3>
+
+            <!-- Teorema de Euler -->
+            <section class="mb-4" id="TeoremaEuler">
+                <h4 class="mb-2">Teorema de Euler para poliedros</h4>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                
+                <div class="text-center my-3">
+                    <div class="property-box d-inline-block">
+                        <p class="property-label">Formula de Euler</p>
+                        <p class="property-value">V - A + C = 2</p>
+                        <p class="property-label">V: Vértices, A: Aristas, C: Caras</p>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis laudantium obcaecati ipsa! Quia doloribus hic delectus atque, blanditiis placeat dolorum maiores, magnam exercitationem ipsa soluta. Ab aut reprehenderit repellendus.</p>
+
+                <div class="containerTable">
+                    <table class="table">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Sólido platónico</th>
+                                <th scope="col">Vértices (V)</th>
+                                <th scope="col">Aristas (A)</th>
+                                <th scope="col">Caras (C)</th>
+                                <th scope="col">V-A+C</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tetraedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Hexaedro (cubo)</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Octaedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Dodecaedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Icosaedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="etiqueta_table">Verificación de la fórmula de Euler en los 5 sólidos platónicos.</p>
+                </div>
+            </section>
+            
+            <!-- Ángulos -->
+            <section class="mb-4" id="Angulos">
+                <h4 class="mb-2">Ángulos poliédricos, diédros y centrales</h4>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                <div class="container_img mb-3">
+                    <!--Imagen-->
+                    <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo diedro de un dodecaedro" height="100%">
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                <div class="container_img mb-3">
+                    <!--Imagen-->
+                    <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo central de un dodecaedro" height="100%">
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim temporibus sunt adipisci quo voluptas ducimus eveniet laudantium, expedita animi laboriosam cupiditate illo magnam excepturi eos ipsum vitae nobis voluptatibus numquam.</p>
+
+                <div class="containerTable">
+                    <table class="table">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Sólido platónico</th>
+                                <th scope="col">Ángulo diédro</th>
+                                <th scope="col">Ángulo central</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tetraedro</td>
+                                <td>70.53°</td>
+                                <td>109.47°</td>
+                            </tr>
+                            <tr>
+                                <td>Hexaedro (cubo)</td>
+                                <td>90°</td>
+                                <td>70.53°</td>
+                            </tr>
+                            <tr>
+                                <td>Octaedro</td>
+                                <td>109.47°</td>
+                                <td>90°</td>
+                            </tr>
+                            <tr>
+                                <td>Dodecaedro</td>
+                                <td>116.57°</td>
+                                <td>41.81°</td>
+                            </tr>
+                            <tr>
+                                <td>Icosaedro</td>
+                                <td>138.19°</td>
+                                <td>63.44°</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="etiqueta_table">Ángulos característicos de los sólidos platónicos.</p>
+                </div>
+            </section>
+
+            <!-- Dualidad -->
+            <section class="mb-4" id="Dualidad">
+                <h4 class="mb-2">Dualidad</h4>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                
+                <div class="containerTable">
+                    <table class="table">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Tetraedro</th>
+                                <th scope="col">Hexaedro (cubo)</th>
+                                <th scope="col">Octaedro</th>
+                                <th scope="col">Dodecaedro</th>
+                                <th scope="col">Icosaedro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Aristas</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Caras</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Vértices</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Lados por cara</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Caras por vértice</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Símbolo de Schläfli</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="etiqueta_table">Dualidad de los Sólidos platónicos.</p>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                <div class="container_img mb-3">
+                    <!--Imagen-->
+                    <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo diedro de un dodecaedro" height="100%">
+                </div>
+
+            </section>
+
+            <!-- Simetría -->
+            <section id="Simetria">
+                <h4 class="mb-2">Simetría</h4>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti cum corporis voluptatum, debitis quasi ad repellat distinctio sint saepe eligendi quisquam fuga odit fugit error aut? Pariatur praesentium vitae eligendi!</p>
+            
+                <div class="containerTable">
+                    <table class="table">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Sólido platónico</th>
+                                <th scope="col">Tipo de simetría rotacional</th>
+                                <th scope="col">Número de rotaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tetraedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Hexaedro (cubo)</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Octaedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Dodecaedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                            <tr>
+                                <td>Icosaedro</td>
+                                <td>---</td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="etiqueta_table">Grupos de simetría de los 5 sólidos platónicos.</p>
+                </div>
+            </section>
+        </section>
+
+        <hr>
+
+        <section id="Referencias">
+            <h3 class="mb-4">Referencias</h3>
+            <ul>
+                <li>Referencia</li>
+                <li>Referencia</li>
+                <li>Referencia</li>
+                <li>Referencia</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="m-0">
+        <div class="container">
+            <div class="footer-content">
+                <h4>[Geometría XR: Sólidos Platónicos]</h4>
+                <p>[Proyecto de Tesis - Licenciatura en Enseñanza de la Matemática]</p>
+                <p>[Tecnológico de Costa Rica]</p>
+                <p class="mt-3">[Autores: Kevin Naranjo Mendoza & Youser Nuñez Alvarado]</p>
+                <p>[Tutor: Ph.D. Jorge Monge Fallas]</p>
+                <p>[II Semestre 2025]</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="JScript.js"></script>
+</body>
+</html>
