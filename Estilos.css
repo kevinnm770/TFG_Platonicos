@@ -573,7 +573,7 @@ img{
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    /* IMPORTANTE: NO usar display: flex aquí */
+    /* IMPORTANTE: No usar display: flex aquí */
 }
 
 /* CRÍTICO: Dar dimensiones explícitas al model-viewer */
