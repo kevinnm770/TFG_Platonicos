@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometría XR: Sólidos Platónicos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="fas fa-cube"></i> Sólidos Platónicos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Geometría.html">Geometría</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Arte.html">Arte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Los5solidos.html">Los 5 Sólidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Extensiones.html">Extensiones</a></li>
+                    <li class="nav-item"><a class="nav-link Actived" href="#aplicaciones">Aplicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="RecursosXR.html">Recursos XR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navContenido" class="navVisible">
+        <ul class="ul_Secciones">
+            <li class="SeccionActiva"><a href="">Biomoleculas</a><span class="marcador"></span></li>
+            <li><a href="">Cristalografía</a></li>
+            <li><a href="">Materiales</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección: Aplicaciones -->
+    <section id="aplicaciones" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">[APLICACIONES CONTEMPORÁNEAS]</h2>
+            <p class="section-subtitle">[Los sólidos platónicos en ciencia y tecnología]</p>
+
+            <div class="row">
+                <!-- Biomoléculas -->
+                <div class="col-md-6 mb-4">
+                    <div class="solid-card">
+                        <div class="card-model-container">
+                            <i class="fas fa-virus fa-3x mb-3" style="opacity: 0.3; color: var(--accent-color);"></i>
+                            <p>[IMAGEN: Cápside viral icosaédrica]</p>
+                        </div>
+                        <div class="card-content">
+                            <h4>[Biomoléculas]</h4>
+                            <p>[Texto sobre virus y estructuras icosaédricas]</p>
+                            <ul>
+                                <li>[Adenovirus]</li>
+                                <li>[Pentones dodecaédricos]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cristalografía -->
+                <div class="col-md-6 mb-4">
+                    <div class="solid-card">
+                        <div class="card-model-container">
+                            <i class="fas fa-gem fa-3x mb-3" style="opacity: 0.3; color: var(--secondary-color);"></i>
+                            <p>[IMAGEN: Cristales naturales]</p>
+                        </div>
+                        <div class="card-content">
+                            <h4>[Cristalografía]</h4>
+                            <p>[Texto sobre minerales y cristales]</p>
+                            <ul>
+                                <li>[Granates]</li>
+                                <li>[Diamantes]</li>
+                                <li>[Pirita]</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Materiales -->
+                <div class="col-md-12 mb-4">
+                    <div class="solid-card">
+                        <div class="card-content">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <h4>[Creación de Materiales]</h4>
+                                    <p>[Texto sobre interconexión topológica]</p>
+                                    <p>[Aplicaciones en diseño estructural]</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="interactive-model">
+                                        <i class="fas fa-layer-group fa-3x mb-3" style="opacity: 0.3;"></i>
+                                        <p>[VISUALIZACIÓN: Estructuras entrelazadas]</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h4>[Geometría XR: Sólidos Platónicos]</h4>
+                <p>[Proyecto de Tesis - Licenciatura en Enseñanza de la Matemática]</p>
+                <p>[Tecnológico de Costa Rica]</p>
+                <p class="mt-3">[Autores: Kevin Naranjo Mendoza & Youser Nuñez Alvarado]</p>
+                <p>[Tutor: Ph.D. Jorge Monge Fallas]</p>
+                <p>[II Semestre 2025]</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="JScript.js"></script>
+</body>
+</html>

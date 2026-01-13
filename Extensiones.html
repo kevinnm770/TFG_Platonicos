@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometría XR: Sólidos Platónicos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="fas fa-cube"></i> Sólidos Platónicos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Geometría.html">Geometría</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Arte.html">Arte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Los5solidos.html">Los 5 Sólidos</a></li>
+                    <li class="nav-item"><a class="nav-link Actived" href="#">Extensiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Aplicaciones.html">Aplicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="RecursosXR.html">Recursos XR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navContenido" class="navVisible">
+        <ul class="ul_Secciones">
+            <li>
+                <a href="">Sólidos Arquimedeanos</a>
+                <ul class="ul_Subsecciones">
+                    <li class="SeccionActiva"><a href="#Historia_Arquimedeanos">Historia</a><span class="marcador"></span></li>
+                    <li><a href="#Construccion_Arquimedeanos">Construicción geométrica</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Sólidos de Kepler-Poinsot</a>
+                <ul class="ul_Subsecciones">
+                    <li><a href="#Historia_KeplerPoinsot">Historia</a></li>
+                    <li><a href="#Construccion_KeplerPoinsot">Construicción geométrica</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container py-5">
+        <h2 class="section-title">Poliedros derivados de los platónicos</h2>
+        <p class="section-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat saepe nam doloremque aut cumque nulla dignissimos, nobis esse magnam placeat, hic harum fugit quaerat earum quidem in maiores reiciendis. Quisquam.</p>
+
+        <!-- Sólidos Arquimedeanos -->
+        <section id="Arquimedeanos">
+            <h3>Sólidos Arquimedeanos</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum commodi, pariatur illum fugit molestiae eligendi veritatis placeat mollitia consectetur. Deserunt asperiores mollitia aut rem maiores consectetur commodi ipsam velit.</p>
+
+            <div class="container_img mb-3">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo central de un dodecaedro" height="100%">
+            </div>
+
+            <h5 id="Historia_Arquimedeanos">Historia</h5>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui doloribus id repudiandae nulla corrupti illo modi, error alias voluptatum quos accusamus fugit odit nesciunt natus enim omnis quia harum excepturi.</p>
+
+            <div class="container_img mb-3">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo central de un dodecaedro" height="100%">
+            </div>
+
+            <h5 id="Construccion_Arquimedeanos">Construcción geométrica</h5>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut ad, sint dolorem doloribus, cupiditate exercitationem architecto, corporis perspiciatis a aut molestiae debitis nihil sit consequatur aperiam minus culpa omnis quis.</p>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <h5>[Por Truncamiento]</h5>
+                    <p>[Texto sobre proceso de truncamiento]</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>[Por Expansión]</h5>
+                    <p>[Texto sobre expansión]</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>[Por Rotación]</h5>
+                    <p>[Texto sobre esnubificación]</p>
+                </div>
+            </div>
+            <div class="art-gallery mt-4">
+                <div class="art-item">
+                    <div class="art-image-container">
+                        <i class="fas fa-shapes fa-2x" style="opacity: 0.3;"></i>
+                        <p>[Cuboctaedro]</p>
+                    </div>
+                </div>
+                <div class="art-item">
+                    <div class="art-image-container">
+                        <i class="fas fa-shapes fa-2x" style="opacity: 0.3;"></i>
+                        <p>[Icosidodecaedro]</p>
+                    </div>
+                </div>
+                <div class="art-item">
+                    <div class="art-image-container">
+                        <i class="fas fa-shapes fa-2x" style="opacity: 0.3;"></i>
+                        <p>[Tetraedro truncado]</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sólidos de Kepler-Poinsot -->
+        <section class="my-5" id="KeplerPoinsot">
+            <h3>Sólidos de Kepler-Poinsot</h3>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro similique dicta neque totam eum aliquam sed delectus molestias, esse nisi. Laborum iste ab nobis in consectetur aperiam similique, repudiandae ut?</p>
+            
+            <div class="container_img mb-3">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo central de un dodecaedro" height="100%">
+            </div>
+
+            <h5 id="Historia_KeplerPoinsot">Historia</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam veritatis doloremque iusto ad officia maxime nostrum ab vel facere praesentium, itaque dignissimos vitae perferendis, facilis sint quam asperiores. Eum, sunt.</p>
+
+            <div class="container_img mb-3">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo central de un dodecaedro" height="100%">
+            </div>
+
+            <h5 id="Construccion_KeplerPoinsot">Construcción geométrica</h5>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero, magni nesciunt impedit dolorum doloribus esse at. Ut quasi dicta minus reiciendis similique consequatur debitis odio nesciunt doloremque nostrum. Magni.</p>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p>[Texto: Concepto de estelación]</p>
+                    <ul>
+                        <li>[Pequeño dodecaedro estrellado]</li>
+                        <li>[Gran dodecaedro estrellado]</li>
+                        <li>[Gran icosaedro]</li>
+                        <li>[Gran dodecaedro]</li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="interactive-model">
+                        <i class="fas fa-star fa-3x mb-3" style="opacity: 0.3;"></i>
+                        <p>[MODELOS 3D: Sólidos estrellados]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="Referencias">
+            <h3 class="mb-4">Referencias</h3>
+            <ul>
+                <li>Referencia</li>
+                <li>Referencia</li>
+                <li>Referencia</li>
+                <li>Referencia</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h4>[Geometría XR: Sólidos Platónicos]</h4>
+                <p>[Proyecto de Tesis - Licenciatura en Enseñanza de la Matemática]</p>
+                <p>[Tecnológico de Costa Rica]</p>
+                <p class="mt-3">[Autores: Kevin Naranjo Mendoza & Youser Nuñez Alvarado]</p>
+                <p>[Tutor: Ph.D. Jorge Monge Fallas]</p>
+                <p>[II Semestre 2025]</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="JScript.js"></script>
+</body>
+</html>
