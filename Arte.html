@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometría XR: Sólidos Platónicos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+
+    <!-- Navegación Principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="fas fa-cube"></i> Sólidos Platónicos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Historia.html">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Geometría.html">Geometría</a></li>
+                    <li class="nav-item"><a class="nav-link Actived" href="#arte">Arte</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Los5solidos.html">Los 5 Sólidos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Extensiones.html">Extensiones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Aplicaciones.html">Aplicaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="RecursosXR.html">Recursos XR</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="navContenido" class="navVisible">
+        <ul class="ul_Secciones">
+            <li>
+                <a href="#Renacimiento_arte">Renacimiento</a>
+                <ul class="ul_Subsecciones">
+                    <li class="SeccionActiva"><a href="#DaVinci">Leonardo Da Vinci</a><span class="marcador"></span></li>
+                    <li><a href="#Jamnitzer">Wenzel Jamnitzer</a></li>
+                    <li><a href="#Stoer">Lorenz Stöer</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#EpocaCientifica_arte">Epoca científica</a>
+                <ul class="ul_Subsecciones">
+                    <li><a href="#Kepler">Johannes Kepler</a></li>
+                </ul>
+            </li>
+            <li><a href="#ArteModerno">Arte moderno</a>
+                <ul class="ul_Subsecciones">
+                    <li><a href="#Escher">M.C. Escher</a></li>
+                    <li><a href="#Dali">Salvador Dalí</a></li>
+                </ul>
+            </li>
+            <li><a href="#Referencias">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección: Arte y Manifestaciones Visuales -->
+    <section id="arte" class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">MANIFESTACIONES ARTÍSTICAS</h2>
+            <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptatum enim eum vel consectetur accusantium, dolores explicabo quod facere, exercitationem eius! Rem obcaecati reprehenderit assumenda ipsa eos eligendi consectetur vel?</p>
+
+            <!-- Galería de Arte -->
+
+            <!-- Da Vinci -->
+            <section class="mb-5" id="DaVinci">
+                <h3 class="mb-4">Leonardo da Vinci</h3>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    </div>
+                    <div class="col-md-5 col-12 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    </div>
+
+                    <div class="art-gallery">
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>[Leonardo da Vinci]</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>[Leonardo da Vinci]</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>[Leonardo da Vinci]</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>[Leonardo da Vinci]</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Jamnitzer -->
+            <section class="mb-5" id="Jamnitzer">
+                <h3 class="mb-4">Wenzel Jamnitzer</h3>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    </div>
+                    <div class="col-md-5 col-12 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    </div>
+
+                    <div class="art-gallery">
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Wenzel Jamnitzer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Wenzel Jamnitzer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Wenzel Jamnitzer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Wenzel Jamnitzer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Stoer-->
+            <section class="mb-5" id="Stoer">
+                <h3 class="mb-4">Lorenz Stöer</h3>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    </div>
+                    <div class="col-md-5 col-12 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    </div>
+
+                    <div class="art-gallery">
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Lorenz Stöer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Lorenz Stöer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Lorenz Stöer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Lorenz Stöer</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Kepler-->
+            <section class="mb-5" id="Kepler">
+                <h3 class="mb-4">Johannes Kepler</h3>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    </div>
+                    <div class="col-md-5 col-12 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    </div>
+
+                    <div class="art-gallery">
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Johannes Kepler</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Johannes Kepler</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Johannes Kepler</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Johannes Kepler</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Escher-->
+            <section class="mb-5" id="Escher">
+                <h3 class="mb-4">M.C. Escher</h3>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    </div>
+                    <div class="col-md-5 col-12 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    </div>
+
+                    <div class="art-gallery">
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>M.C. Escher</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>M.C. Escher</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>M.C. Escher</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>M.C. Escher</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Dali-->
+            <section class="mb-5" id="Dali">
+                <h3 class="mb-4">Salvador Dalí</h3>
+                <div class="row mb-3">
+                    <div class="col-md-7 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    </div>
+                    <div class="col-md-5 col-12 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    </div>
+
+                    <div class="art-gallery">
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Salvador Dalí</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Salvador Dalí</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Salvador Dalí</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="art-image-container">
+                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
+                                <p class="mt-2">OBRA</p>
+                                <p style="font-size: 0.8rem;">----</p>
+                            </div>
+                            <div class="art-description">
+                                <h5>Salvador Dalí</h5>
+                                <span class="badge-custom">xxxx</span>
+                                <p>[Descripción de la obra y contexto]</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="Referencias">
+                <h3 class="mb-4">Referencias</h3>
+                <ul>
+                    <li>Referencia</li>
+                    <li>Referencia</li>
+                    <li>Referencia</li>
+                    <li>Referencia</li>
+                </ul>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="m-0">
+        <div class="container">
+            <div class="footer-content">
+                <h4>[Geometría XR: Sólidos Platónicos]</h4>
+                <p>[Proyecto de Tesis - Licenciatura en Enseñanza de la Matemática]</p>
+                <p>[Tecnológico de Costa Rica]</p>
+                <p class="mt-3">[Autores: Kevin Naranjo Mendoza & Youser Nuñez Alvarado]</p>
+                <p>[Tutor: Ph.D. Jorge Monge Fallas]</p>
+                <p>[II Semestre 2025]</p>
+                <div class="mt-4">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fas fa-envelope fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="JScript.js"></script>
+</body>
+</html>

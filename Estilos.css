@@ -1,0 +1,724 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #1e52a0;
+    --sombra: #1e52a069;
+    --accent-color: #e74c3c;
+    --light-bg: #ecf0f1;
+    --dark-text: #2c3e50;
+    --fondo_inicio1: #695858;
+    --fondo_inicio2: #a3332bcb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    margin: 0 0.5rem;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.Actived{
+    text-decoration: underline;
+}
+
+/* Nav Contenido */
+#navContenido{
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    z-index: 1000;
+    padding: 15px;
+    padding-right: 50px;
+    padding-top: 50px;
+    width: 300px;
+    transition: all 0.5s ease;
+}
+
+.navVisible{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--light-bg);
+}
+
+.navOculto{
+    background-color: transparent;
+    box-shadow: none;
+    transform: translateX(-290px);
+}
+
+.ul_Secciones{
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.ul_Secciones > li, .ul_Subsecciones > li{
+    position: relative;
+}
+
+.ul_Secciones li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.ul_Subsecciones{
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+.ul_Subsecciones li a{
+    cursor: pointer;
+    color: var(--dark-text);
+}
+
+.marcador {
+    position: absolute;
+    right: -70px;
+    top: 5%;
+    height: 30px;
+    width: 50px;
+    background-color: var(--secondary-color);
+    box-shadow: 5px 15px 5px rgba(0, 0, 0, 0.5);
+    transition: top 0.3s ease;
+    clip-path: polygon(0 0, 75% 0, 100% 50%, 75% 100%, 0 100%);
+}
+
+/* Mejorar la sección activa */
+.SeccionActiva {
+    padding: 5px;
+    padding-left: 0;
+    font-size: 15pt;
+    font-weight: bold; /* Opcional: hacer más visible */
+    transition: all 0.3s ease;
+}
+
+.SeccionActiva > a {
+    color: var(--secondary-color) !important; /* Resaltar el link activo */
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(135deg, var(--fondo_inicio2) 0%, var(--fondo_inicio1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-model-container {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.model-placeholder {
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+    padding: 3rem;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(255,255,255,0.3);
+}
+
+/* Secciones de contenido */
+.content-section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: left;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.container_img{
+    text-align: center;
+}
+img{
+    border: solid 1px gray;
+    border-radius: 10px;
+    box-shadow: 7px -5px 10px var(--sombra);
+}
+
+/* Container para cada sólido */
+
+.Solido_container{
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.301);
+}
+
+.Solido_container > div > div > .properties-grid > .property-box{
+    background: none;
+    color: var(--primary-color);
+    width: max-content;
+    height: min-content;
+    box-shadow: 1px 1px 10px var(--sombra);
+}
+
+.Solido_container > div > div > .row > .properties-grid > .property-box > .property-value{
+    font-size: 1.1rem;
+}
+
+#Tetraedro h3{
+    background: linear-gradient(
+        -30deg,
+        black,
+        #d94a4a,
+        #e87050,
+        #f39c5a,
+        #d94a4a,
+        #e87050,
+        #f39c5a
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+    font-weight: bold;
+}
+
+#Tetraedro > div > div > .properties-grid > .property-box{
+    border: solid 5px #e87050;
+}
+
+#Tetraedro > div > div > .row > .properties-grid > .property-box{
+    background: linear-gradient(
+        45deg,
+        #d94a4a,
+        #e87050,
+        #f39c5a
+    );
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+}
+
+#Hexaedro h3{
+    background: linear-gradient(
+        -30deg,
+        black,
+        #46302c,
+        #856445,
+        #a3694e,
+        #46302c,
+        #856445,
+        #a3694e
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+    font-weight: bold;
+}
+
+#Hexaedro > div > div > .properties-grid > .property-box{
+    border: solid 5px #a3694e;
+}
+
+#Hexaedro > div > div > .row > .properties-grid > .property-box{
+    background: linear-gradient(
+        45deg,
+        #46302c,
+        #856445,
+        #a3694e
+    );
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+}
+
+#Octaedro h3{
+    background: linear-gradient(
+        -30deg,
+        rgb(253, 253, 253),
+        #8cd8eb,
+        #83fff5,
+        #c6fffc,
+        #8cd8eb,
+        #83f1ff,
+        #c6fffc
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+    font-weight: bold;
+}
+
+#Octaedro > div > div > .properties-grid > .property-box{
+    border: solid 5px #83f1ff;
+}
+
+#Octaedro > div > div > .row > .properties-grid > .property-box{
+    background: linear-gradient(
+        45deg,
+        #8cd8eb,
+        #83fff5,
+        #c6fffc
+    );
+    color: var(--primary-color);
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+}
+
+#Dodecaedro h3{
+    background: linear-gradient(
+        -30deg,
+        rgb(0, 0, 0),
+        #6a4177,
+        #12a397,
+        #000000,
+        #6a4177,
+        #12a397,
+        #000000
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+    font-weight: bold;
+}
+
+#Dodecaedro > div > div > .properties-grid > .property-box{
+    border: solid 5px #6a4177;
+}
+
+#Dodecaedro > div > div > .row > .properties-grid > .property-box{
+    background: linear-gradient(
+        45deg,
+        #6a4177,
+        #12a397,
+        #000000
+    );
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+}
+
+#Icosaedro h3{
+    background: linear-gradient(
+        -30deg,
+        black,
+        #4a54d9,
+        #50a4e8,
+        #47cef0,
+        #4a54d9,
+        #50a4e8,
+        #47cef0
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+    font-weight: bold;
+}
+
+#Icosaedro > div > div > .properties-grid > .property-box{
+    border: solid 5px #4a54d9;
+}
+
+#Icosaedro > div > div > .row > .properties-grid > .property-box{
+    background: linear-gradient(
+        45deg,
+        #4a54d9,
+        #50a4e8,
+        #47cef0
+    );
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
+}
+
+@keyframes efecto_elemento {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+/*----------*/
+
+.solid-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem;
+}
+
+.Apartadados_card{
+    cursor: pointer;
+}
+.Apartadados_card a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.card-model-container {
+    background: var(--light-bg);
+    padding: 2rem;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Tablas */
+.containerTable{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.table{
+    border: solid 1px black;
+    width: max-content;
+    max-width: 80%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 7px -5px 0px rgba(0, 0, 0, 0.1);
+}
+.etiqueta_table{
+    font-style: italic;
+    font-size: 10pt;
+}
+
+/* Timeline histórica */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.timeline-date {
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Galería de arte */
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.art-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.art-item:hover {
+    transform: scale(1.05);
+}
+
+.art-image-container {
+    background: var(--light-bg);
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.art-description {
+    padding: 1.5rem;
+}
+
+/* Tabs personalizados */
+.custom-tabs {
+    border-bottom: 2px solid var(--light-bg);
+    margin-bottom: 2rem;
+}
+
+.custom-tab {
+    background: none;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.custom-tab:hover {
+    color: var(--secondary-color);
+}
+
+.custom-tab.active {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Contenedor de modelo 3D/AR */
+.interactive-model {
+    background: #00000000;
+    border-radius: 15px;
+    padding: 2rem;
+    min-height: 500px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /* IMPORTANTE: NO usar display: flex aquí */
+}
+
+/* CRÍTICO: Dar dimensiones explícitas al model-viewer */
+model-viewer,
+.model-3d {
+    width: 100% !important;
+    height: 450px !important;
+    display: block !important;
+    background: transparent;
+    border-radius: 10px;
+}
+
+/* Si el contenedor padre tiene display: flex, forzar tamaño */
+.col-lg-6 model-viewer {
+    min-height: 450px;
+}
+
+.ar-button {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.ar-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.6);
+}
+
+.control-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.control-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Propiedades matemáticas */
+.properties-grid {
+    display:flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.property-box {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+
+    flex: 1 1 100px;
+    min-width: 100px;
+}
+
+.property-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+}
+
+.property-value {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* QR Code para AR */
+.qr-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.qr-placeholder {
+    background: var(--light-bg);
+    min-height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .art-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Utilidades */
+.text-placeholder {
+    background: var(--light-bg);
+    height: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.badge-custom {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
