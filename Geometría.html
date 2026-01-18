@@ -6,6 +6,7 @@
     <title>Geometría XR: Sólidos Platónicos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
@@ -67,12 +68,12 @@
         <section class="mb-5" id="Definicion">
             <h3 class="mb-4">Definición Matemática</h3>
             <div class="row mb-3">
-                <div class="col-md-7 col-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                <div class="col-xl-7 col-12">
+                    <p>La palabra <em>poliedro</em> proviene del griego <em>polý</em>, que significa "muchos", y <em>hédra</em>, que significa "cara" o "base" (Oliván, 2014). En términos geométricos, Oliván (2014) define el concepto de la siguiente manera:</p>
+                    <p style="padding-left: 25px;"> Un poliedro es un cuerpo goemétrico en tres dimensiones cuyas caras son planas y que encierra un volumen finito. Los segmentos que unen dos caras se denominan aristas y los puntos en los que se cortan varias aristas se llaman vértices (p. 106).</p>
+                    <p>Los <em>sólidos platónicos</em> representan un caso particular de poliedros, específicamente, de poliedros <strong>regulares</strong>, es decir, todas sus caras, aristas y vértices son congruentes; en ellos, las caras se encuentran bajo los mismos ángulos y con igual número de aristas en cada vértice, lo que implica que todas las caras correspondan a un mismo polígono regular (Bellamy, 2016). Y, a la vez, <strong>convexos</strong> en donde para cualquier par de puntos pertenecientes al sólido, el segmento que los une queda completamente contenido dentro de él; en otras palabras, el sólido no presenta concavidades ni intersecciones hacia su interior.</p>
                 </div>
-                <div class="col-md-5 col-12 container_img">
+                <div class="col-xl-5 col-12 container_img">
                     <!--Imagen-->
                     <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
                 </div>
@@ -84,16 +85,14 @@
             <h3 class="mb-4">Notación de Schläfli</h3>
             <div class="row mb-3">
                 <div class="col-md-7 col-12">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                    <p>La notación de Schläfli constituye un sistema simbólico que permite representar de manera compacta la estructura geométrica de los poliedros regulares. Esta notación, introducida por el matemático suizo Ludwig Schläfli (1814-1895) en el siglo XIX, describe a cada sólido mediante un par ordenado de números \(\{p,q\}\), donde ambos parámetros codifican relaciones combinatorias entre las caras y los vértices del poliedro. En términos generales, \(p\) indica el número de lados del polígono que conforma cada cara, mientras que \(q\) representa el número de caras que concurren en un mismo vértice o como el número de aristas que llegan a cada vértice (Bertol, 2015; Henao, 2011).</p>
+                    <p>La notación de Schläfli constituye un lenguaje matemático que condensa las características estructurales de los sólidos platónicos de modo que permite describirles de manera precisa y elegante.</p>
                 </div>
                 <div class="col-md-5 col-12 container_img">
                     <!--Imagen-->
                     <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
                 </div>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima exercitationem nobis possimus rerum ad qui error vel nihil eos necessitatibus officia eum non, vero maiores ea id itaque et odit?</p>
             
             <div class="containerTable">
                 <table class="table">
@@ -129,24 +128,13 @@
                 <p class="etiqueta_table">Notación de Schläfli para cada sólido platónico.</p>
             </div>
             
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore modi saepe, recusandae fugiat eaque, veritatis aut, voluptatem veniam ducimus quidem nobis molestias quibusdam deleniti numquam tenetur illum doloribus. Blanditiis, porro?</p>
+            <p>Este sistema no solo ofrece una forma resumida de caraterísticas, sino que revela las correspondencias profundas entre la combinatoria, la simetría y la dualidad que definen la geometría de los sólidos platónicos.</p>
         </section>
 
         <!-- Demostración visual -->
         <section class="mb-5" id="Porque5">
                 <h3 class="mb-4">¿Por qué solo son 5 sólidos platónicos?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae, tempore ratione quidem fugit et saepe dolorum inventore odit sit temporibus adipisci dolor sunt nam tempora architecto expedita aspernatur quaerat.</p>
-
-                <!-- Condiciones -->
-                <section class="mb-4" id="Condiciones">
-                    <h5 class="mb-2">Condiciones de convexidad y regularidad</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates similique blanditiis numquam, ipsum provident obcaecati eius. Vitae labore eos odio culpa quam, dignissimos odit velit sint commodi veritatis possimus cumque.</p>
-                    <ul>
-                        <li>[Condición 1: Mínimo 3 caras por vértice]</li>
-                        <li>[Condición 2: Suma de ángulos < 360°]</li>
-                        <li>[Soluciones: {3,3}, {4,3}, {3,4}, {5,3}, {3,5}]</li>
-                    </ul>
-                </section>
+                <p>Hay que tener en cuenta que un vértice de un poliedro es el punto común a 3 o más caras, ya que si es menos, dicho vértice se convierte en tan solo un punto de una recta; en consecuencia, es claro que con 2 caras es imposible construir un poliedro o, en otras palabras, un vértice es la intersección de al menos 3 caras, esto con el fin de permitirle su tridimensionalidad. Por otra parte, si se suma el factor de regularidad, es decir, que todas las caras sean congruentes y regulares, se necesita que la suma de los ángulos que concurren en un mismo vértice debe ser menor a 360°, de modo que las caras no se sobrepogan entre sí.</p>
 
                 <!-- Demostración -->
                 <section class="mb-4" id="Demostracion">
@@ -154,8 +142,9 @@
                     
                     <div class="row mb-3">
                         <div class="col-md-7 col-12">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
+                            <p>Lo anterior es más evidente mediante la notación de Schläfli: Para que un par \(\{p,q\}\) describa un poliedro <em>convexo</em>, siguiendo las condiciones antes mencionadas, la disposición de las \(q\) caras, congruentes entre sí (<em>regularidad</em>), que concurren en cada vértice debe ser tal que la suma de sus ángulos interiores planos sea estrictamente menor que 360° (\(2\pi\) radianes) (DeHovitz, 2016).</p>
+                            <p>Se sabe que el ángulo interior (en radianes) de un polígono regular de \(p\) lados se expresa como: \[\alpha=\dfrac{(p-2)\pi}{p}\]</p>
+                            <p>Por tanto, en cada vértice concurren \(q\) de estos ángulos, cuya suma total debe ser menor que \(2\pi\), es decir: \[q\cdot\dfrac{(p-2)\pi}{p}< 2\pi\]</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
                         </div>
                         <div class="col-md-5 col-12 container_img">
