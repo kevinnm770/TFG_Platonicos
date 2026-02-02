@@ -145,7 +145,7 @@
                             <p>Lo anterior es más evidente mediante la notación de Schläfli: Para que un par \(\{p,q\}\) describa un poliedro <em>convexo</em>, siguiendo las condiciones antes mencionadas, la disposición de las \(q\) caras, congruentes entre sí (<em>regularidad</em>), que concurren en cada vértice debe ser tal que la suma de sus ángulos interiores planos sea estrictamente menor que 360° (\(2\pi\) radianes) (DeHovitz, 2016).</p>
                             <p>Se sabe que el ángulo interior (en radianes) de un polígono regular de \(p\) lados se expresa como: \[\alpha=\dfrac{(p-2)\pi}{p}\]</p>
                             <p>Por tanto, en cada vértice concurren \(q\) de estos ángulos, cuya suma total debe ser menor que \(2\pi\), es decir: \[q\cdot\dfrac{(p-2)\pi}{p}< 2\pi\]</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                            <p>Simplificando y eliminando el factor común \(\pi\), se obtiene la desigualdad fundamental que caracteriza la convexidad de los poliedros regulares: \[(p-2)(q-2)<4 \]</p>
                         </div>
                         <div class="col-md-5 col-12 container_img">
                             <!--Imagen-->
@@ -153,7 +153,9 @@
                         </div>
                     </div>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam mollitia dolorem, a veniam officia maiores! Reprehenderit delectus ex ab officiis iste ullam veniam molestias. Quo perspiciatis quaerat unde eligendi reiciendis.</p>
+                    <p>Al combinar esta inecuación con las condiciones mínimas \(p\geq 3\) y \(q\geq 3\) delimita de manera estricta los pares \(\{p,q\}\) posibles, por lo que se obtiene un conjunto finito de 5 soluciones enteras que satisfacen simultaneamente la regularidad y la convexidad, los cuales son: \[\{3,3\}, \{4,3\}, \{3,4\}, \{5,3\}, \{3,5\}\]</p>
+
+                    <p>Cada uno corresponde a un sólido platónico distinto: el <strong>tetraedro</strong>, el <strong>cubo</strong>, el <strong>octaedro</strong>, el <strong>dodecaedro</strong> y el <strong>icosaedro</strong>, respectivamente.</p>
                     
                     <div class="text-center my-3">
                         <div class="property-box d-inline-block my-3">
@@ -162,7 +164,7 @@
                         </div>
                     </div>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam impedit harum debitis sint consequuntur at quia, nam itaque sapiente dignissimos fugiat quibusdam eveniet laudantium tempora amet aliquid magnam eaque alias.</p>
+                    <p>Simplificando y eliminando el factor común </p>
                     
                     <div class="interactive-model">
                         <i class="fas fa-shapes fa-3x mb-3" style="opacity: 0.3;"></i>
@@ -180,7 +182,7 @@
             <section class="mb-4" id="TeoremaEuler">
                 <h4 class="mb-2">Teorema de Euler para poliedros</h4>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                <p>Entre las relaciones geométricas que describen la estructura de los sólidos platónicos, destaca la establecida por el matemático suizo Leonhard Euler (1707-1783), cuya ecuación expresa de manera simple la conexión entre el número de vértices, aristas y caras de cualquier poliedro convexo, incluidos claramente a los sólidos platónicos. En su forma general, la relación se expresa como:</p>
                 
                 <div class="text-center my-3">
                     <div class="property-box d-inline-block">
@@ -189,8 +191,6 @@
                         <p class="property-label">V: Vértices, A: Aristas, C: Caras</p>
                     </div>
                 </div>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corporis laudantium obcaecati ipsa! Quia doloribus hic delectus atque, blanditiis placeat dolorum maiores, magnam exercitationem ipsa soluta. Ab aut reprehenderit repellendus.</p>
 
                 <div class="containerTable">
                     <table class="table">
@@ -206,33 +206,38 @@
                         <tbody>
                             <tr>
                                 <td>Tetraedro</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>4</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>2</td>
                             </tr>
                             <tr>
                                 <td>Hexaedro (cubo)</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>8</td>
+                                <td>12</td>
+                                <td>6</td>
+                                <td>2</td>
                             </tr>
                             <tr>
                                 <td>Octaedro</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>6</td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>2</td>
                             </tr>
                             <tr>
                                 <td>Dodecaedro</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>20</td>
+                                <td>30</td>
+                                <td>12</td>
+                                <td>2</td>
                             </tr>
                             <tr>
                                 <td>Icosaedro</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>12</td>
+                                <td>30</td>
+                                <td>20</td>
+                                <td>2</td>
                             </tr>
                         </tbody>
                     </table>
