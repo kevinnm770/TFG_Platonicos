@@ -149,4 +149,11 @@ document.addEventListener('DOMContentLoaded', function() {
             navContenido.className="navOculto";
         }
     );
+
+    
 });
+
+function resetPolypad(numFrame) {
+    const iframe = document.getElementById('polypadFrame'+numFrame);
+    iframe.src = iframe.src; // Recarga el iframe
+}
