@@ -84,11 +84,11 @@
         <section class="mb-5" id="Schlafli">
             <h3 class="mb-4">Notación de Schläfli</h3>
             <div class="row mb-3">
-                <div class="col-md-7 col-12">
+                <div class="col-xl-7 col-12">
                     <p>La notación de Schläfli constituye un sistema simbólico que permite representar de manera compacta la estructura geométrica de los poliedros regulares. Esta notación, introducida por el matemático suizo Ludwig Schläfli (1814-1895) en el siglo XIX, describe a cada sólido mediante un par ordenado de números \(\{p,q\}\), donde ambos parámetros codifican relaciones combinatorias entre las caras y los vértices del poliedro. En términos generales, \(p\) indica el número de lados del polígono que conforma cada cara, mientras que \(q\) representa el número de caras que concurren en un mismo vértice o como el número de aristas que llegan a cada vértice (Bertol, 2015; Henao, 2011).</p>
                     <p>La notación de Schläfli constituye un lenguaje matemático que condensa las características estructurales de los sólidos platónicos de modo que permite describirles de manera precisa y elegante.</p>
                 </div>
-                <div class="col-md-5 col-12 container_img">
+                <div class="col-xl-5 col-12 container_img">
                     <!--Imagen-->
                     <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
                 </div>
@@ -141,22 +141,19 @@
                     <h5 class="mb-2">Demostración visual</h5>
                     
                     <div class="row mb-3">
-                        <div class="col-md-7 col-12">
+                        <div class="col-xl-7 col-12">
                             <p>Lo anterior es más evidente mediante la notación de Schläfli: Para que un par \(\{p,q\}\) describa un poliedro <em>convexo</em>, siguiendo las condiciones antes mencionadas, la disposición de las \(q\) caras, congruentes entre sí (<em>regularidad</em>), que concurren en cada vértice debe ser tal que la suma de sus ángulos interiores planos sea estrictamente menor que 360° (\(2\pi\) radianes) (DeHovitz, 2016).</p>
                             <p>Se sabe que el ángulo interior (en radianes) de un polígono regular de \(p\) lados se expresa como: \[\alpha=\dfrac{(p-2)\pi}{p}\]</p>
                             <p>Por tanto, en cada vértice concurren \(q\) de estos ángulos, cuya suma total debe ser menor que \(2\pi\), es decir: \[q\cdot\dfrac{(p-2)\pi}{p}< 2\pi\]</p>
-                            <p>Simplificando y eliminando el factor común \(\pi\), se obtiene la desigualdad fundamental que caracteriza la convexidad de los poliedros regulares: \[(p-2)(q-2)<4 \]</p>
                         </div>
-                        <div class="col-md-5 col-12 container_img">
+                        <div class="col-xl-5 col-12 container_img">
                             <!--Imagen-->
-                            <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                            <img src="imagenes/img1_TFG.png" title="Ejemplo práctico de la desigualdad para el caso de un pentágono regular" alt="Ejemplo práctico de la desigualdad para el caso de un pentágono regular" height="400px">
                         </div>
                     </div>
 
-                    <p>Al combinar esta inecuación con las condiciones mínimas \(p\geq 3\) y \(q\geq 3\) delimita de manera estricta los pares \(\{p,q\}\) posibles, por lo que se obtiene un conjunto finito de 5 soluciones enteras que satisfacen simultaneamente la regularidad y la convexidad, los cuales son: \[\{3,3\}, \{4,3\}, \{3,4\}, \{5,3\}, \{3,5\}\]</p>
+                    <p>Simplificando y eliminando el factor común \(\pi\), se obtiene la desigualdad fundamental que caracteriza la convexidad de los poliedros regulares: </p>
 
-                    <p>Cada uno corresponde a un sólido platónico distinto: el <strong>tetraedro</strong>, el <strong>cubo</strong>, el <strong>octaedro</strong>, el <strong>dodecaedro</strong> y el <strong>icosaedro</strong>, respectivamente.</p>
-                    
                     <div class="text-center my-3">
                         <div class="property-box d-inline-block my-3">
                             <p class="property-label">Desigualdad fundamental</p>
@@ -164,12 +161,39 @@
                         </div>
                     </div>
 
-                    <p>Simplificando y eliminando el factor común </p>
+
+                    <p>Al combinar esta inecuación con las condiciones mínimas \(p\geq 3\) y \(q\geq 3\) delimita de manera estricta los pares \(\{p,q\}\) posibles, por lo que se obtiene un conjunto finito de 5 soluciones enteras que satisfacen simultaneamente la regularidad y la convexidad, los cuales son: \[\{3,3\}, \{4,3\}, \{3,4\}, \{5,3\}, \{3,5\}\]</p>
+
+                    <div class="my-5 container_img">
+                        <!--Imagen-->
+                        <img src="imagenes/img2_Geometria_TFG.png" title="Soluciones enteras de (p-2)(q-2)<4" alt="Soluciones enteras de (p-2)(q-2)<4" width="50%">
+                    </div>
+
+
+                    <p>Los cuales cada uno corresponde a uno de los 5 sólidos platónicos: el <strong>tetraedro</strong>, el <strong>cubo</strong>, el <strong>octaedro</strong>, el <strong>dodecaedro</strong> y el <strong>icosaedro</strong>, respectivamente.</p>
                     
-                    <div class="interactive-model">
-                        <i class="fas fa-shapes fa-3x mb-3" style="opacity: 0.3;"></i>
-                        <p>[VISUALIZACIÓN INTERACTIVA]</p>
-                        <p style="font-size: 0.9rem;">(Configuraciones de polígonos en vértices)</p>
+                    <div class="interactive-polypad">
+                        <div class="polypad-header">
+                            <h5>Las 5 posibilidades de plegar un vértice tridimensional con polígonos regulares</h5>
+                            <div class="polypad-controls">
+                                <button class="btn-polypad" onclick="resetPolypad(1)">
+                                    <i class="fas fa-redo"></i> Reiniciar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="polypad-container">
+                            <iframe 
+                                id="polypadFrame1"
+                                src="https://polypad.amplify.com/embed/z2Z7fkuaihUNWA?embed=1&controls=0&ui=0"
+                                frameborder="0"
+                                scrolling="no"
+                                seamless
+                                allowtransparency="true"
+                                class="polypad-embed"
+                                style="height: 400px;">
+                            </iframe>
+                        </div>
                     </div>
                 </section>
         </section>
@@ -182,7 +206,7 @@
             <section class="mb-4" id="TeoremaEuler">
                 <h4 class="mb-2">Teorema de Euler para poliedros</h4>
                 
-                <p>Entre las relaciones geométricas que describen la estructura de los sólidos platónicos, destaca la establecida por el matemático suizo Leonhard Euler (1707-1783), cuya ecuación expresa de manera simple la conexión entre el número de vértices, aristas y caras de cualquier poliedro convexo, incluidos claramente a los sólidos platónicos. En su forma general, la relación se expresa como:</p>
+                <p>Entre las relaciones geométricas que describen la estructura de los sólidos platónicos, destaca la establecida por el matemático suizo <strong>Leonhard Euler</strong> (1707-1783), cuya ecuación expresa de manera simple la conexión entre el número de vértices, aristas y caras de cualquier poliedro convexo, incluidos claramente a los sólidos platónicos. En su forma general, la relación se expresa como:</p>
                 
                 <div class="text-center my-3">
                     <div class="property-box d-inline-block">
@@ -249,23 +273,23 @@
             <section class="mb-4" id="Angulos">
                 <h4 class="mb-2">Ángulos poliédricos, diédros y centrales</h4>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
-                <div class="container_img mb-3">
+                <p>Otro aspecto a resaltar es sobre su igualdad de ángulos poliédricos la cual es una condición goemétrica que asegura la homogeneidad del sólido. Un <strong>ángulo poliédrico</strong> o, también llamado ángulo sólido, se forma cuando varias caras se encuentran en un vértice, generando un espacio angular tridimensional que, en los sólidos platónicos, todos los ángulos poliédricos son congruentes, lo que significa que la disposición espacial de las caras en torno a cada vértice es idéntica en todo el sólido (Bertol, 2016).</p>
+                <p>Del mismo modo, el <strong>ángulo diédrico</strong> constituye otro elemento esencial en la estructura geométrica de los sólidos platónicos. Este ángulo se forma entre dos caras adyacentes que comparten una arista común, midiendo la inclinación entre los planos que las contienen (?).</p>
+
+                <div class="container_img my-5">
                     <!--Imagen-->
-                    <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo diedro de un dodecaedro" height="100%">
+                    <img src="imagenes/imgAngDiedro_Geometria_TFG.png" alt="Ángulo diedro de un dodecaedro" title="Ángulo diedro de un dodecaedro" height="300px">
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
-                <div class="container_img mb-3">
+                <p>Ya que todas las caras son polígonos regulares iguales y el mismo número de caras se encuentra en cada vértice, garantiza que todos los <strong>ángulos diedros sean congruentes entre sí</strong> (Romañach y Toboso, 2016, citados en Herrera et al., 2023). Esta condición implica que cada arista presenta la misma apertura espacial, asegurando la simetría tridimensional de la figura.</p>
+                <p>Por su parte, el <strong>ángulo central</strong> se define a partir de la relación entre el centro goemétrico del poliedro y los vértices del mismo. Este ángulo se forma al trazar líneas que unen el centro del sólido con los extremos de una arista, representando la proporción entre la distancia radial de los vértices y la apertura espacial de las caras. En los sólidos platónicos, este ángulo es constante, debido a que "Todas las aristas tiene la misma longitud" (Romañach y Toboso, 2016, citado en Herrera et al., 2023, p. 175).</p>
+                
+                <div class="container_img my-5">
                     <!--Imagen-->
-                    <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo central de un dodecaedro" height="100%">
+                    <img src="imagenes/imgAngCentral_Geometria_TFG.png" alt="Visualización del ángulo diedro de un dodecaedro" height="300px">
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim temporibus sunt adipisci quo voluptas ducimus eveniet laudantium, expedita animi laboriosam cupiditate illo magnam excepturi eos ipsum vitae nobis voluptatibus numquam.</p>
+                <p>Las mididas de los ángulos diedros y centrales de los sólidos platónicos se resumen en la siguiente tabla:</p>
 
                 <div class="containerTable">
                     <table class="table">
@@ -304,7 +328,11 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="etiqueta_table">Ángulos característicos de los sólidos platónicos.</p>
+                    <p class="etiqueta_table">
+                        Ángulos característicos de los sólidos platónicos.
+                        <br>
+                        Recuperados de <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJRAPIDM.2016.078743" target="_blank"> Bertol, D. (2016). The Parametric Making of Geometry: the Platonic Solids. Deakin University</a>
+                    </p>
                 </div>
             </section>
 
@@ -312,8 +340,22 @@
             <section class="mb-4" id="Dualidad">
                 <h4 class="mb-2">Dualidad</h4>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
+                <p>La dualidad constituye una de las propiedades más fundamentales de los sólidos platónicos, ya que establece una correspondencia exacta entre los elementos geométricos de un poliedro y los de otro que se construye a partir de él. En términos formales, Quesada (2006) define este principio como:</p>
+
+                <p style="padding-left: 25px;">Se define el poliedro \(P_d\) dual a un poliedro dado \(P_0\) como el poliedro resultante de tomar los centros de las caras del poliedro \(P_0\) y tomarlos como vértices de nuestro nuevo poliedro \(P_d\). El poliedro dual de un poliedro dual es el inicial: \((P_d)_d=P_0\). Así pues se establece una reciprocidad entre las caras del poliedro y los vértices de su dual, y los vértices del inicial y las caras del dual (p. 47).</p>
                 
+                <div class="container_img mb-3">
+                    <!--Imagen-->
+                    <img src="imagenes/imgDualidad_Geometria_TFG.png" alt="Representación visual de la dualidad de los sólidos platónicos" title="Representación visual de la dualidad de los sólidos platónicos" width="80%">
+                    <p class="etiqueta_table">
+                        Recuperado de <a href="https://www.amarun.org/images/amarun/materiales/ejercicios/geometria_algebraica/Simetrias.pdf" target="_blank">Montoya, L. (2020). Grupos de simetría de objetos geométricos. AMARUN.</a>
+                    </p>
+                </div>
+
+                <p>De esta forma, si el poliedro original es un sólido platónico cuya notación de Schläfli es \(\{p,q\}\), entonces su dual es aquel cuya notación de Schläfli es \(\{q,p\}\). Es decir, la operación de dualidad sobre los conjuntos de los sólidos platónicos es cerrada, ya que la dualidad relaciona un sólido platónico con otro y no con un poliedro de otra familia.</p>
+
+                <p>La dualidad implica, por tanto, una relación de reciprocidad, donde cada cara del sólido original se transforma en un vértice del dual y viceversa, manteniendo el número de aristas constante. Esta correspondencia da lugar a los pares de sólidos duales entre sí: <strong>el hexaedro y el octaedro</strong>, <strong>el dodecaedro y el icosaedro</strong>, y <strong>el tetraedro consigo mismo</strong>, ya que tiene la misma cantidad de vértices que caras.</p>
+
                 <div class="containerTable">
                     <table class="table">
                         <thead class="table-light">
@@ -377,17 +419,8 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p class="etiqueta_table">Dualidad de los Sólidos platónicos.</p>
                 </div>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
-                <div class="container_img mb-3">
-                    <!--Imagen-->
-                    <img src="imagenes/IMG_default.jpg" alt="Visualización del ángulo diedro de un dodecaedro" height="100%">
-                </div>
-
+                <p class="etiqueta_table mb-3">Dualidad de los Sólidos platónicos.</p>
             </section>
 
             <!-- Simetría -->
