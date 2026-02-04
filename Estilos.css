@@ -1,7 +1,7 @@
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #1e52a0;
-    --sombra: #1e52a069;
+    --sombra: #1e52a044;
     --accent-color: #e74c3c;
     --light-bg: #ecf0f1;
     --dark-text: #2c3e50;
@@ -202,9 +202,129 @@ body {
     text-align: center;
 }
 img{
-    border: solid 1px gray;
     border-radius: 10px;
-    box-shadow: 7px -5px 10px var(--sombra);
+    box-shadow: 7px -1px 15px var(--sombra);
+}
+
+/* CONTENEDOR DE POLYPADS */
+.interactive-polypad {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.polypad-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.polypad-header h4 {
+    color: var(--primary-color);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.polypad-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-polypad {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-polypad:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.polypad-container {
+    width: 100%;
+    overflow: hidden;
+    background: var(--light-bg);
+}
+
+.polypad-embed {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    overflow: hidden;
+}
+
+.polypad-embed::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.polypad-embed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media (max-width: 1200px) {
+    .polypad-container {
+        height: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    .polypad-container {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .polypad-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .polypad-controls {
+        width: 100%;
+    }
+    
+    .btn-polypad {
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .polypad-container {
+        height: 450px;
+    }
+}
+
+@media (max-width: 576px) {
+    .polypad-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .polypad-container {
+        height: 350px;
+    }
 }
 
 /* Container para cada sólido */
@@ -460,9 +580,10 @@ img{
 /* Tablas */
 .containerTable{
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     text-align: center;
     width: 100%;
+    overflow-x: auto;
 }
 .table{
     border: solid 1px black;
@@ -475,6 +596,7 @@ img{
     box-shadow: 7px -5px 0px rgba(0, 0, 0, 0.1);
 }
 .etiqueta_table{
+    text-align: center;
     font-style: italic;
     font-size: 10pt;
 }
