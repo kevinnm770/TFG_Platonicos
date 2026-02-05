@@ -42,7 +42,6 @@
             <li>
                 <a href="#Porque5">¿Por qué solo 5?</a>
                 <ul class="ul_Subsecciones">
-                    <li><a href="#Condiciones">Condiciones de convexidad y regularidad</a></li>
                     <li><a href="#Demostracion">Demostración visual</a></li>
                 </ul>
             </li>
@@ -90,7 +89,7 @@
                 </div>
                 <div class="col-xl-5 col-12 container_img">
                     <!--Imagen-->
-                    <img src="imagenes/IMG_default.jpg" alt="Ejemplo visual de la notación de Schläfli" height="100%">
+                    <img src="imagenes/imgLS_Geometria_TFG.jpg" alt="Ludwig Schläfli (1814-1895)" title="Ludwig Schläfli (1814-1895)" style="min-width: 250px;width: 25%;">
                 </div>
             </div>
             
@@ -146,9 +145,9 @@
                             <p>Se sabe que el ángulo interior (en radianes) de un polígono regular de \(p\) lados se expresa como: \[\alpha=\dfrac{(p-2)\pi}{p}\]</p>
                             <p>Por tanto, en cada vértice concurren \(q\) de estos ángulos, cuya suma total debe ser menor que \(2\pi\), es decir: \[q\cdot\dfrac{(p-2)\pi}{p}< 2\pi\]</p>
                         </div>
-                        <div class="col-xl-5 col-12 container_img">
+                        <div class="col-xl-5 col-12 mb-xl-2 mt-xl-0 mt-4 mb-4 container_img">
                             <!--Imagen-->
-                            <img src="imagenes/img1_TFG.png" title="Ejemplo práctico de la desigualdad para el caso de un pentágono regular" alt="Ejemplo práctico de la desigualdad para el caso de un pentágono regular" height="400px">
+                            <img src="imagenes/img1_TFG.png" title="Ejemplo práctico de la desigualdad para el caso de un pentágono regular" alt="Ejemplo práctico de la desigualdad para el caso de un pentágono regular" style="min-width: 350px;width: 40%;">
                         </div>
                     </div>
 
@@ -161,25 +160,18 @@
                         </div>
                     </div>
 
-
                     <p>Al combinar esta inecuación con las condiciones mínimas \(p\geq 3\) y \(q\geq 3\) delimita de manera estricta los pares \(\{p,q\}\) posibles, por lo que se obtiene un conjunto finito de 5 soluciones enteras que satisfacen simultaneamente la regularidad y la convexidad, los cuales son: \[\{3,3\}, \{4,3\}, \{3,4\}, \{5,3\}, \{3,5\}\]</p>
 
-                    <div class="my-5 container_img">
+                    <div class="my-4 container_img">
                         <!--Imagen-->
-                        <img src="imagenes/img2_Geometria_TFG.png" title="Soluciones enteras de (p-2)(q-2)<4" alt="Soluciones enteras de (p-2)(q-2)<4" width="50%">
+                        <img src="imagenes/img2_Geometria_TFG.png" title="Soluciones enteras de (p-2)(q-2)<4" alt="Soluciones enteras de (p-2)(q-2)<4" style="min-width: 350px;width: 40%;">
                     </div>
 
-
-                    <p>Los cuales cada uno corresponde a uno de los 5 sólidos platónicos: el <strong>tetraedro</strong>, el <strong>cubo</strong>, el <strong>octaedro</strong>, el <strong>dodecaedro</strong> y el <strong>icosaedro</strong>, respectivamente.</p>
+                    <p>Donde cada uno corresponde a uno de los 5 sólidos platónicos: el <strong>tetraedro</strong>, el <strong>cubo</strong>, el <strong>octaedro</strong>, el <strong>dodecaedro</strong> y el <strong>icosaedro</strong>, respectivamente.</p>
                     
                     <div class="interactive-polypad">
                         <div class="polypad-header">
                             <h5>Las 5 posibilidades de plegar un vértice tridimensional con polígonos regulares</h5>
-                            <div class="polypad-controls">
-                                <button class="btn-polypad" onclick="resetPolypad(1)">
-                                    <i class="fas fa-redo"></i> Reiniciar
-                                </button>
-                            </div>
                         </div>
                         
                         <div class="polypad-container">
@@ -193,6 +185,12 @@
                                 class="polypad-embed"
                                 style="height: 400px;">
                             </iframe>
+                        </div>
+
+                        <div class="polypad-controls">
+                            <button class="btn-polypad" onclick="resetPolypad(1)">
+                                <i class="fas fa-redo"></i>
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -360,62 +358,62 @@
                     <table class="table">
                         <thead class="table-light">
                             <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Tetraedro</th>
-                                <th scope="col">Hexaedro (cubo)</th>
-                                <th scope="col">Octaedro</th>
+                                <th scope="col" style="border-right:1px solid black;"></th>
+                                <th scope="col" style="border-right:1px solid black;">Tetraedro</th>
+                                <th scope="col">Hexaedro</th>
+                                <th scope="col" style="border-right:1px solid black;">Octaedro</th>
                                 <th scope="col">Dodecaedro</th>
                                 <th scope="col">Icosaedro</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Aristas</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td style="border-right:1px solid black;">Aristas</td>
+                                <td style="border-right:1px solid black;">6</td>
+                                <td>12</td>
+                                <td style="border-right:1px solid black;">12</td>
+                                <td>30</td>
+                                <td>30</td>
                             </tr>
                             <tr>
-                                <td>Caras</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td style="border-right:1px solid black;">Caras</td>
+                                <td style="border-right:1px solid black;">4</td>
+                                <td>6</td>
+                                <td style="border-right:1px solid black;">8</td>
+                                <td>12</td>
+                                <td>20</td>
                             </tr>
                             <tr>
-                                <td>Vértices</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td style="border-right:1px solid black;">Vértices</td>
+                                <td style="border-right:1px solid black;">4</td>
+                                <td>8</td>
+                                <td style="border-right:1px solid black;">6</td>
+                                <td>20</td>
+                                <td>12</td>
                             </tr>
                             <tr>
-                                <td>Lados por cara</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td style="border-right:1px solid black;">Lados por cara</td>
+                                <td style="border-right:1px solid black;">3</td>
+                                <td>4</td>
+                                <td style="border-right:1px solid black;">3</td>
+                                <td>5</td>
+                                <td>3</td>
                             </tr>
                             <tr>
-                                <td>Caras por vértice</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td style="border-right:1px solid black;">Caras por vértice</td>
+                                <td style="border-right:1px solid black;">3</td>
+                                <td>3</td>
+                                <td style="border-right:1px solid black;">4</td>
+                                <td>3</td>
+                                <td>5</td>
                             </tr>
                             <tr>
-                                <td>Símbolo de Schläfli</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td style="border-right:1px solid black;">Símbolo de Schläfli</td>
+                                <td style="border-right:1px solid black;">\(\{3,3\}\)</td>
+                                <td>\(\{4,3\}\)</td>
+                                <td style="border-right:1px solid black;">\(\{3,4\}\)</td>
+                                <td>\(\{5,3\}\)</td>
+                                <td>\(\{3,5\}\)</td>
                             </tr>
                         </tbody>
                     </table>
@@ -427,8 +425,12 @@
             <section id="Simetria">
                 <h4 class="mb-2">Simetría</h4>
                 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maiores quisquam expedita earum! Blanditiis illum earum vitae doloremque veritatis mollitia laborum delectus id pariatur nesciunt animi natus, optio numquam facilis.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti cum corporis voluptatum, debitis quasi ad repellat distinctio sint saepe eligendi quisquam fuga odit fugit error aut? Pariatur praesentium vitae eligendi!</p>
+                <p>Para finalizar, la simetría es una de las propiedades más distintivas de los sólidos platónicos, porque describe la capacidad de un cuerpo para conservar su forma y su estructura en el espacio después de una transformación geométrica (es decir, tras realizar ciertos movimientos rígidos).</p>
+
+                <p>En el contexto tridimensional de los sólidos platónicos, las <strong>rotaciones</strong> son giros alrededor de ejes que atraviesan el sólido (por ejemplo, ejes que pasan por vértices, por el punto medio de aristas o por el centro de las caras), mientras que las <strong>reflexiones</strong> se realizan respecto a planos que dividen el sólido en dos partes congruentes (Montoya, 2020). En conjunto, estas transformaciones constituyen <strong>grupos de simetría</strong>: colecciones de movimientos que pueden aplicarse al sólido sin alterar su estructura geométrica.</p>
+
+                <p>Además, todo sólido regular admite un número finito de transformaciones rígidas que preservan longitudes y ángulos. Esto implica que, desde el punto de vista geométrico, todos sus vértices (y análogamente sus aristas y caras) son indistinguibles, es decir, la simetría se distribuye de manera uniforme en toda la figura. Por ello, se afirma que “sólo hay tres grupos de rotación irreducibles finitos: <strong>tetraédrica</strong>, <strong>octaédrica</strong> e <strong>icosaédrica</strong>” (Levin, 2015, p. 115). Estos grupos tienen, respectivamente, <strong>12</strong>, <strong>24</strong> y <strong>60</strong> rotaciones; en consecuencia, el <strong>tetraedro</strong> comparte las 12 rotaciones del grupo tetraédrico; el <strong>cubo</strong> y el <strong>octaedro</strong> comparten las 24 rotaciones del grupo octaédrico; y el <strong>dodecaedro</strong> y el <strong>icosaedro</strong> comparten las 60 rotaciones del grupo icosaédrico.</p>
+
             
                 <div class="containerTable">
                     <table class="table">
@@ -442,33 +444,35 @@
                         <tbody>
                             <tr>
                                 <td>Tetraedro</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Tetraédrica</td>
+                                <td>12</td>
                             </tr>
                             <tr>
                                 <td>Hexaedro (cubo)</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>octaédrica</td>
+                                <td>24</td>
                             </tr>
                             <tr>
                                 <td>Octaedro</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>octaédrica</td>
+                                <td>24</td>
                             </tr>
                             <tr>
                                 <td>Dodecaedro</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Icosaédrica</td>
+                                <td>60</td>
                             </tr>
                             <tr>
                                 <td>Icosaedro</td>
-                                <td>---</td>
-                                <td>---</td>
+                                <td>Icosaédrica</td>
+                                <td>60</td>
                             </tr>
                         </tbody>
                     </table>
                     <p class="etiqueta_table">Grupos de simetría de los 5 sólidos platónicos.</p>
                 </div>
+
+                <p>Estas correspondencias refuerzan la estrecha relación entre los pares de <strong>sólidos duales</strong>, los cuales conservan el mismo grupo de simetría rotacional.</p>
             </section>
         </section>
 
