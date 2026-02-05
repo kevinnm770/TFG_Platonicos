@@ -220,12 +220,9 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-    gap: 1rem;
 }
 
-.polypad-header h4 {
+.polypad-header h5 {
     color: var(--primary-color);
     margin: 0;
     display: flex;
@@ -242,13 +239,14 @@ img{
     background: var(--secondary-color);
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.9rem;
     transition: all 0.3s;
     display: flex;
     align-items: center;
+    width: min-content;
     gap: 0.5rem;
 }
 
@@ -301,15 +299,6 @@ img{
         align-items: flex-start;
     }
     
-    .polypad-controls {
-        width: 100%;
-    }
-    
-    .btn-polypad {
-        flex: 1;
-        justify-content: center;
-    }
-    
     .polypad-container {
         height: 450px;
     }
@@ -324,6 +313,9 @@ img{
 @media (max-width: 480px) {
     .polypad-container {
         height: 350px;
+    }
+    .polypad-header h5{
+        font-size: 12pt;
     }
 }
 
