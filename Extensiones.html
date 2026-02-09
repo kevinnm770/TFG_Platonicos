@@ -6,6 +6,7 @@
     <title>Geometría XR: Sólidos Platónicos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <body>
@@ -40,14 +41,14 @@
                 <a href="">Sólidos Arquimedeanos</a>
                 <ul class="ul_Subsecciones">
                     <li class="SeccionActiva"><a href="#Historia_Arquimedeanos">Historia</a><span class="marcador"></span></li>
-                    <li><a href="#Construccion_Arquimedeanos">Construicción geométrica</a></li>
+                    <li><a href="#Construccion_Arquimedeanos">Construcción geométrica</a></li>
                 </ul>
             </li>
             <li>
                 <a href="">Sólidos de Kepler-Poinsot</a>
                 <ul class="ul_Subsecciones">
                     <li><a href="#Historia_KeplerPoinsot">Historia</a></li>
-                    <li><a href="#Construccion_KeplerPoinsot">Construicción geométrica</a></li>
+                    <li><a href="#Construccion_KeplerPoinsot">Construcción geométrica</a></li>
                 </ul>
             </li>
         </ul>
@@ -80,48 +81,41 @@
 
             <h5 id="Construccion_Arquimedeanos">Construcción geométrica</h5>
 
-            <p>Tal como se mencionó anteriormente, los sólidos arquimedianos derivan directamente de los sólidos platónicos mediante transformaciones geométricas. Una de estas transformaciones es el truncamiento, el cual consiste en cortar los vértices o aristas de las figuras originales, generando nuevas caras y combinaciones de polígonos regulares en cada vértice. De este modo, tal como explica Anderson (2008), “los primeros cinco sólidos arquimedianos se crean truncando los sólidos platónicos originales” (p. 5), que serían el tetraedro truncado, el cubo truncado, el octaedro truncado, el dodecaedro truncado y el icosaedro truncado (ver Figura 24), en los cuales los vértices se reemplazan por polígonos regulares que se integran a la estructura inicial (Anderson, 2008).</p>
-            <p>Este método también permite obtener poliedros mixtos, como el cuboctaedro, generado al conectar los puntos medios de las aristas del cubo (Anderson, 2008). Incluso, algunas figuras pueden derivarse de más de un sólido platónico, como el icosidodecaedro, que “se puede crear truncando el dodecaedro truncado” (Anderson, 2008, p. 9) tal como se aprecia en la Figura 24.</p>
-
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <h5>Por truncamiento</h5>
-                    <p>Proceso geométrico que corta vértices o aristas de un poliedro regular para generar nuevas caras y combinaciones de polígonos regulares (Anderson, 2008).</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Por expansión</h5>
-                    <p>Consiste en desplazar radialmente las caras o aristas de un sólido, manteniendo su orientación y tamaño, y rellenando los espacios vacíos con nuevas figuras (Ball y Coxeter, 1987, citados en Anderson, 2008).</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Por rotación (esnubificación)</h5>
-                    <p>Implica desplazar y girar las caras del poliedro original, generando cuerpos con una simetría menos evidente (Sousa, 2014).</p>
-                </div>
-            </div>
+            <p>Tal como se mencionó anteriormente, los sólidos arquimedianos derivan directamente de los sólidos platónicos mediante transformaciones geométricas. Una de estas transformaciones es el <strong>truncamiento</strong>, el cual consiste en cortar los vértices o aristas de las figuras originales, generando nuevas caras y combinaciones de polígonos regulares en cada vértice. De este modo, tal como explica Anderson (2008), “los primeros cinco sólidos arquimedianos se crean truncando los sólidos platónicos originales” (p. 5), que serían el tetraedro truncado, el cubo truncado, el octaedro truncado, el dodecaedro truncado y el icosaedro truncado, en los cuales los vértices se reemplazan por polígonos regulares que se integran a la estructura inicial (Anderson, 2008).</p>
+            <p>Este método también permite obtener poliedros mixtos, como el cuboctaedro, generado al conectar los puntos medios de las aristas del cubo (Anderson, 2008). Incluso, algunas figuras pueden derivarse de más de un sólido platónico, como el icosidodecaedro, que “se puede crear truncando el dodecaedro truncado” (Anderson, 2008, p. 9).</p>
 
             <div class="container_img mb-3 mt-4">
                 <!--Imagen-->
-                <img src="imagenes/IMG_default.jpg" alt="Espacio reservado para Figura 24" height="100%">
+                <img src="imagenes/imgTrucamiento_Extensiones_TFG.jpg" alt="Generación de los sólidos arquimedeanos" title="Generación de los sólidos arquimedeanos" style="max-width:100%;">
             </div>
-            <p class="text-center"><em>Figura 24: Generación de los sólidos arquimedeanos por truncamiento</em></p>
-            <p><em>Nota.</em> de González, P. M. (s.f.). <em>La Historia de la Matemática como recurso didáctico e instrumento de integración cultural de la Matemática</em>. https://matematicasiesoja.wordpress.com/wp-content/uploads/2020/04/4poliedros.pdf</p>
+            <p class="etiqueta_table">
+                Generación de los sólidos arquimedeanos por truncamiento. 
+                <br>
+                Tomada de
+                <a href="https://matematicasiesoja.wordpress.com/wp-content/uploads/2020/04/14poliedros.pdf" target="_blank">González, P. M. (s.f.). La Historia de la Matemática como recurso didáctico e instrumento de integración cultural de la Matemática</a>
+            </p>
 
-            <p>Otra forma de obtener sólidos arquimedianos es a través de la expansión, que consiste en desplazar radialmente las caras o aristas de un sólido, manteniendo su orientación y tamaño, y rellenando los espacios vacíos con nuevas figuras (Ball y Coxeter, 1987, citados en Anderson, 2008), tal como se muestra en la Figura 25.</p>
+            <p>Otra forma de obtener sólidos arquimedianos es a través de la <strong>expansión</strong>, que consiste en desplazar radialmente las caras o aristas de un sólido, manteniendo su orientación y tamaño, y rellenando los espacios vacíos con nuevas figuras (Ball y Coxeter, 1987, citados en Anderson, 2008).</p>
 
             <div class="container_img mb-3">
                 <!--Imagen-->
-                <img src="imagenes/IMG_default.jpg" alt="Espacio reservado para Figura 25" height="100%">
+                <img src="imagenes/imgEjExpansion_Extensiones_TFG.jpg" alt="Ejemplo de expansión del hexaedro para obtener al rombicuboctaedro" title="Ejemplo de expansión del hexaedro para obtener al rombicuboctaedro" style="min-width: 50%;max-width: 300px;">
             </div>
-            <p class="text-center"><em>Figura 25: Ejemplo de expansión del hexaedro para obtener al rombicuboctaedro</em></p>
+            <p class="etiqueta_table">
+                Ejemplo de expansión del hexaedro para obtener al rombicuboctaedro
+            </p>
 
-            <p>La última transformación empleada para derivar sólidos arquimedianos es la esnubificación o rotación, un proceso que implica desplazar y girar las caras del poliedro original, generando cuerpos con una simetría menos evidente, por ejemplo, el cubo doblemente truncado o cubo romo que se obtiene cuando separamos las caras del cubo, las giramos y rellenamos los espacios formados entre las caras con 32 triángulos equiláteros tal como se muestra en la Figura 26, y lo mismo pasa con el dodecaedro doblemente truncado a partir del dodecaedro (Sousa, 2014).</p>
+            <p>La última transformación empleada para derivar sólidos arquimedianos es la <strong>esnubificación</strong> o <strong>rotación</strong>, un proceso que implica desplazar y girar las caras del poliedro original, generando cuerpos con una simetría menos evidente, por ejemplo, el cubo doblemente truncado o cubo romo que se obtiene cuando separamos las caras del cubo, las giramos y rellenamos los espacios formados entre las caras con 32 triángulos equiláteros, y lo mismo pasa con el dodecaedro doblemente truncado a partir del dodecaedro (Sousa, 2014).</p>
 
             <div class="container_img mb-3">
                 <!--Imagen-->
-                <img src="imagenes/IMG_default.jpg" alt="Espacio reservado para Figura 26" height="100%">
+                <img src="imagenes/imgEjRotacion_Extensiones_TFG.jpg" alt="Ejemplo de rotación del hexaedro para obtener al cubo doblemente truncado" title="Ejemplo de rotación del hexaedro para obtener al cubo doblemente truncado" style="min-width: 50%;max-width: 300px;">
             </div>
-            <p class="text-center"><em>Figura 26: Ejemplo de rotación del hexaedro para obtener al cubo doblemente truncado</em></p>
+            <p class="etiqueta_table">
+                Ejemplo de rotación del hexaedro para obtener al cubo doblemente truncado
+            </p>
 
-            <p>En cuanto a sus propiedades métricas, se puede mencionar a la relación de Euler (<em>V</em> − <em>E</em> + <em>F</em> = 2, con <em>V</em>, <em>E</em> y <em>F</em> la cantidad de vértices, aristas y caras, respectivamente) debido a que, como se había explicado para los sólidos platónicos, esta condición se aplica para todos los poliedros convexos independientemente si son regulares o no, tal como se observa en la Tabla 6.</p>
+            <p>En cuanto a sus propiedades métricas, se puede mencionar a la relación de Euler (\(V-E+F=2\), con \(V, E\) y \(F\) la cantidad de vértices, aristas y caras, respectivamente) debido a que, como se había explicado para los sólidos platónicos (ver <a href="Geometría.html#TeoremaEuler">Teorema de Euler para los sólidos platónicos</a>), esta condición se aplica para <strong>todos los poliedros convexos</strong> independientemente si son regulares o no, tal como se observa en la siguiente tabla:</p>
 
             <div class="table-responsive mb-3">
                 <table class="table table-bordered text-center">
@@ -131,7 +125,7 @@
                             <th>Vértices (V)</th>
                             <th>Aristas (E)</th>
                             <th>Caras (F)</th>
-                            <th>V − E + F</th>
+                            <th>\(V − E + F\)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -229,10 +223,27 @@
                     </tbody>
                 </table>
             </div>
-            <p class="text-center"><em>Cuadro 6: Teorema de Euler para los sólidos arquimedeanos.</em></p>
+            <p class="etiqueta_table">Teorema de Euler para los sólidos arquimedeanos</p>
 
-            <p>Asimismo, otra propiedad geométrica que tienen los sólidos arquimedianos es con respecto a sus ángulos y su número de vértices, la cual establece que (2π − β)V = 4π, con β como la suma de los ángulos de las caras que concurren en un mismo vértice y <em>V</em> el número total de vértices (Ball y Coxeter, 1987, citados en Anderson, 2008).</p>
+            <p>Asimismo, otra propiedad geométrica que tienen los sólidos arquimedianos es con respecto a sus <strong>ángulos</strong> y su <strong>número de vértices</strong>, la cual Anderson (2008, citado en Ball y Coxeter, 1987) establece que:</p>
+
+            <div class="text-center my-3">
+                <div class="property-box d-inline-block">
+                    <p class="property-label">Relación importante</p>
+                    <p class="property-value">\((2\pi-\beta)V=4\pi\)</p>
+                    <p class="property-label">\(\beta\): la suma de ángulos de las caras que concurren en un mismo vértice, V: el número de vértices</p>
+                </div>
+            </div>
+
             <p>Finalmente, Sousa (2014) destaca un aspecto geométrico singular, al decir que “todos los sólidos arquimedianos se pueden colocar dentro de un tetraedro regular, de modo que cuatro de sus caras se encuentran sobre las caras del tetraedro” (p. 13).</p>
+
+            <div class="container_img mb-3 mt-4">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Sólido arquimedeano dentro un tetraedro regular" title="Sólido arquimedeano dentro un tetraedro regular" style="max-width:100%;">
+            </div>
+            <p class="etiqueta_table">
+                Sólido arquimedeano dentro un tetraedro regular
+            </p>
 
         </section>
 
@@ -242,47 +253,76 @@
 
             <p>Los sólidos de Kepler-Poinsot representan una extensión del concepto clásico de regularidad geométrica que, a diferencia de los sólidos platónicos, permiten la intersección de sus superficies, es decir, no son convexos pero conservan la regularidad en sus caras y vértices. En este sentido, Arguedas (2014) señala que “un sólido de Kepler (también llamado sólido de Kepler-Poinsot) es un poliedro regular no convexo, cuyas caras son todas polígonos regulares y que tiene en todos sus vértices el mismo número de caras que se encuentran” (p. 6).</p>
             
-            <div class="container_img mb-3">
+            <div class="container_img mb-3 mt-4">
                 <!--Imagen-->
-                <img src="imagenes/IMG_default.jpg" alt="Espacio reservado para Figura 21" height="100%">
+                <img src="imagenes/imgSolidosKeplerPoinsot_Extensiones_TFG.jpg" alt="Sólidos de Kepler-Poinsot" title="Sólidos de Kepler-Poinsot" style="min-width: 50%;max-width: 300px;">
             </div>
-            <p class="text-center"><em>Figura 21: Sólidos de Kepler-Poinsot</em></p>
-            <p><em>Nota.</em> de Liu, A. (2020), <em>The Stars Above Us</em> [Tesis], Harvard University. https://www.math.harvard.edu/media/AllenLiuTheStarsAboveUsThesis.pdf</p>
+            <p class="etiqueta_table">
+                Sólidos de Kepler-Poinsot
+                <br>
+                Tomada de <a href="https://www.math.harvard.edu/media/AllenLiuTheStarsAboveUsThesis.pdf" target="_blank">Liu, A. (2020). The Stars Above Us [Tesis]. Harvard University.</a>
+            </p>
 
             <h5 id="Historia_KeplerPoinsot">Historia</h5>
 
-            <p>Históricamente, en 1619, el matemático y astrofísico alemán Johannes Kepler (1571-1630) en su obra <em>Harmonices Mundi</em>, por medio de ensamblajes de pentagramas e intrigado con la manipulación de los sólidos platónicos, reconoce dos sólidos regulares no convexos redescubriendo así el pequeño dodecaedro estrellado, ya que había sido utilizado años atrás por Paolo Uccello con su diseño de un mosaico en el piso de la basílica de San Marcos en Venecia, y el gran dodecaedro estrellado (ver Figura 21); definiéndolos como poliedros regulares, a pesar de su naturaleza no convexa (Gómez Moreno, 2019; Mosquera López, 2019). Por otra parte, en 1809, el matemático y físico francés Louis Poinsot (1777-1859) amplía la familia de los sólidos estelados, incluyendo a los otros dos poliedros no convexos regulares, el gran icosaedro y el gran dodecaedro (Fundación Polar, 2006, p. 23) (ver Figura 21).</p>
-            <p>Para 1811, el matemático francés Augustin Cauchy demuestra que hay únicamente nueve poliedros regulares, donde 5 son convexos (los Sólidos Platónicos) y los otros 4 son no convexos, que son los Sólidos de Kepler-Poinsot (pequeño dodecaedro estrellado, gran dodecaedro estrellado, gran icosaedro y el gran dodecaedro) basándose del proceso denominado estelación del dodecaedro y del icosaedro (Mosquera López, 2019).</p>
+            <p>Históricamente, en 1619, el matemático y astrofísico alemán <strong>Johannes Kepler</strong> (1571-1630) en su obra <em>Harmonices Mundi</em>, por medio de ensamblajes de pentagramas e intrigado con la manipulación de los sólidos platónicos, reconoce dos sólidos regulares no convexos redescubriendo así el pequeño dodecaedro estrellado, ya que había sido utilizado años atrás por Paolo Uccello con su diseño de un mosaico en el piso de la basílica de San Marcos en Venecia, y el gran dodecaedro estrellado; definiéndolos como poliedros regulares, a pesar de su naturaleza no convexa (Gómez Moreno, 2019; Mosquera López, 2019).</p>
 
             <div class="container_img mb-3">
                 <!--Imagen-->
-                <img src="imagenes/IMG_default.jpg" alt="Espacio reservado para Figura 22" height="100%">
+                <img src="imagenes/IMG_default.jpg" alt="Retrato de Johannes Kepler (1572-1630)" title="Retrato de Johannes Kepler (1572-1630)" height="100%">
+                <p class="etiqueta_table">
+                    Retrato de Johannes Kepler (1572-1630)
+                </p>
             </div>
-            <p class="text-center"><em>Figura 22: Estelación de un dodecaedro</em></p>
+
+            <p>Por otra parte, en 1809, el matemático y físico francés <strong>Louis Poinsot</strong> (1777-1859) amplía la familia de los sólidos estelados, incluyendo a los otros dos poliedros no convexos regulares, el gran icosaedro y el gran dodecaedro (Fundación Polar, 2006, p. 23).</p>
+
+            <div class="container_img mb-3">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Retrato de Louis Poinsot (1777-1859)" title="Retrato de Louis Poinsot (1777-1859)" height="100%">
+                <p class="etiqueta_table">
+                    Retrato de Louis Poinsot (1777-1859)
+                </p>
+            </div>
+
+            <p>Para 1811, el matemático francés <strong>Augustin Cauchy</strong> demuestra que hay únicamente nueve poliedros regulares, donde 5 son convexos (los Sólidos Platónicos) y los otros 4 son no convexos, que son los Sólidos de Kepler-Poinsot (pequeño dodecaedro estrellado, gran dodecaedro estrellado, gran icosaedro y el gran dodecaedro) basándose del proceso denominado estelación del dodecaedro y del icosaedro (Mosquera López, 2019).</p>
+
+            <div class="container_img mb-3">
+                <!--Imagen-->
+                <img src="imagenes/IMG_default.jpg" alt="Retrato de Augustin Cauchy" title="Retrato de Augustin Cauchy" height="100%">
+                <p class="etiqueta_table">
+                    Retrato de Augustin Cauchy
+                </p>
+            </div>
 
             <h5 id="Construccion_KeplerPoinsot">Construcción geométrica</h5>
 
-            <p>La estelación es el proceso geométrico mediante el cual se extienden las caras o aristas de un poliedro más allá de sus límites hasta que vuelven a intersectarse, formando nuevas regiones que configuran un sólido más complejo (Mosquera, 2005). En términos formales, si se toma un poliedro convexo (como los platónicos), se prolongan sus planos hasta que delimitan nuevas poligonales cerradas; el sólido estrellado será el conjunto de esas regiones (ver Figura 22).</p>
+            <p>La <strong>estelación</strong> es el proceso geométrico mediante el cual se extienden las caras o aristas de un poliedro más allá de sus límites hasta que vuelven a intersectarse, formando nuevas regiones que configuran un sólido más complejo (Mosquera, 2005). En términos formales, si se toma un poliedro convexo (como los platónicos), se prolongan sus planos hasta que delimitan nuevas poligonales cerradas; el sólido estrellado será el conjunto de esas regiones.</p>
 
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <p>Un aspecto muy interesante es su dualidad ya que, al igual que los sólidos platónicos, los sólidos de Kepler-Poinsot, sus duales también son otros sólidos de Kepler-Poinsot (ver Figura 23). Esta relación nos permite generalizar de modo que el dual de un sólido regular es siempre otro sólido regular independientemente si es convexo o no.</p>
-                    <ul>
-                        <li>Pequeño dodecaedro estrellado</li>
-                        <li>Gran dodecaedro estrellado</li>
-                        <li>Gran icosaedro</li>
-                        <li>Gran dodecaedro</li>
-                    </ul>
-                    <p>De este modo, se observa que el dual del Pequeño dodecaedro estrellado es el Gran dodecaedro, y el dual del Gran dodecaedro estrellado es el Gran icosaedro.</p>
-                </div>
-                <div class="col-md-12">
-                    <div class="container_img mb-3">
-                        <!--Imagen-->
-                        <img src="imagenes/IMG_default.jpg" alt="Espacio reservado para Figura 23" height="100%">
-                    </div>
-                    <p class="text-center"><em>Figura 23: Dualidad de los Sólidos de Kepler-Poinsot</em></p>
-                </div>
+            <div class="container_img mb-3 mt-4">
+                <!--Imagen-->
+                <img src="imagenes/imgEstelacionDodecaedro_Extensiones_TFG.jpg" alt="Estelación de un dodecaedro" title="Estelación de un dodecaedro" style="min-width: 350px;width: 40%;">
             </div>
+            <p class="etiqueta_table">
+                Estelación de un dodecaedro
+            </p>
+
+            <p>Un aspecto muy interesante es su <strong>dualidad</strong> ya que, al igual que los sólidos platónicos, los sólidos de Kepler-Poinsot, sus duales también son otros sólidos de Kepler-Poinsot. Esta relación nos permite generalizar de modo que el dual de un sólido regular es siempre otro sólido regular independientemente si es convexo o no.</p>
+            <ul>
+                <li>Pequeño dodecaedro estrellado</li>
+                <li>Gran dodecaedro estrellado</li>
+                <li>Gran icosaedro</li>
+                <li>Gran dodecaedro</li>
+            </ul>
+            <p>De este modo, se observa que el dual del Pequeño dodecaedro estrellado es el Gran dodecaedro, y el dual del Gran dodecaedro estrellado es el Gran icosaedro.</p>
+            
+            <div class="container_img mb-3 mt-4">
+                <!--Imagen-->
+                <img src="imagenes/imgDualidadKeplerPoinsot_Extensiones_TFG.jpg" alt="Dualidad de los sólidos de Kepler-Poinsot" title="Dualidad de los sólidos de Kepler-Poinsot" style="min-width: 50%;max-width: 300px;">
+            </div>
+            <p class="etiqueta_table">
+                Dualidad de los sólidos de Kepler-Poinsot
+            </p>
         </section>
 
         <hr>
