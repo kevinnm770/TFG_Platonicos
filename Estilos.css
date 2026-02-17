@@ -201,10 +201,10 @@ body {
 .container_img{
     text-align: center;
 }
-img{
+/*img{
     border-radius: 10px;
     box-shadow: 7px -1px 15px var(--sombra);
-}
+}*/
 
 /* CONTENEDOR DE POLYPADS */
 .interactive-polypad {
