@@ -836,3 +836,97 @@ footer {
     border-radius: 20px;
     font-size: 0.9rem;
 }
+
+/* Modelos de la seccion Arte
+/* GRID como la imagen: 4 columnas, baja a 2 y 1 responsive */
+.galeria-3d{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 450px){
+  .galeria-3d{ grid-template-columns: repeat(2, minmax(240px, 1fr)); }
+}
+@media (max-width: 450px){
+  .galeria-3d{ grid-template-columns: 1fr; }
+}
+
+/* Tarjeta */
+.card-3d{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Rectángulo grande (zona del model-viewer) */
+.mv-stage{
+  position: relative;
+  width: 100%;
+  height: 210px;          /* ajustá si querés más alto */
+  background: #eef1f3;    /* gris claro como el placeholder */
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+/* model-viewer ocupa todo el rectángulo */
+.mv{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Overlay centrado “OBRA----” */
+.mv-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #2b2b2b;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.mv-icon{
+  width: 38px;
+  height: 38px;
+  fill: #9aa3aa;
+  opacity: 0.9;
+}
+
+.mv-label{
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Texto debajo */
+.card-3d-body{
+  padding-top: 18px;
+}
+
+.artist{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.tag-row{
+  margin-bottom: 10px;
+}
+
+.tag-pill{
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: #e74c3c;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.desc{
+  font-size: 14px;
+  color: #2f2f2f;
+}
