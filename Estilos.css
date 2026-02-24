@@ -678,14 +678,32 @@ body {
 }
 
 /* Contenedor de modelo 3D/AR */
+.btnDiv .btn_model{
+    border: solid 2px gray;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    background-color: #00000000;
+    transition: all ease 0.5s;
+}
+
+.btnDiv .btn_model:hover{
+    border-color: gray;
+    background-color: gray;
+    color: white;
+}
+
+.btnDiv .btn_active{
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
 .interactive-model {
     background: #00000000;
     border-radius: 15px;
     padding: 2rem;
     min-height: 500px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
     position: relative;
     /* IMPORTANTE: No usar display: flex aquí */
 }
