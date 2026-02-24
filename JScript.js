@@ -149,11 +149,30 @@ document.addEventListener('DOMContentLoaded', function() {
             navContenido.className="navOculto";
         }
     );
-
     
 });
 
 function resetPolypad(numFrame) {
     const iframe = document.getElementById('polypadFrame'+numFrame);
     iframe.src = iframe.src; // Recarga el iframe
+}
+
+function changeModel(btn,fig_str){
+    const btns=[btn.parentNode.parentNode.children[0].children[0],
+                btn.parentNode.parentNode.children[1].children[0]];
+
+    if(!btn.className.includes('btn_active')){
+        btns[0].className="btn_model";
+        btns[1].className="btn_model";
+        
+        btn.className="btn_model btn_active";
+
+        if(btn.getAttribute('data-modelMode')=='solid'){
+            document.getElementById('model_wireframe_'+fig_str).style.display="none";
+            document.getElementById('model_solid_'+fig_str).style.display="";
+        }else if(btn.getAttribute('data-modelMode')=='wireframe'){
+            document.getElementById('model_solid_'+fig_str).style.display="none";
+            document.getElementById('model_wireframe_'+fig_str).style.display="";
+        }
+    }
 }
