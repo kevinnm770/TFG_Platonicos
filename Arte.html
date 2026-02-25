@@ -74,9 +74,12 @@
                 <h3 class="mb-4">Leonardo da Vinci</h3>
                 <div class="row mb-3">
                     <div class="col-md-7 col-12">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo enim aliquid maxime pariatur, praesentium magni dolores voluptates illo dicta eligendi eius voluptatum sint corporis aut! Unde quaerat quod voluptatibus quos.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maxime qui perferendis possimus et quo. Sunt dignissimos quisquam voluptatibus tempora et voluptates soluta nemo, tenetur unde! Nam, asperiores! Optio, deserunt.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis nesciunt voluptatum deserunt, doloribus quis, fuga commodi odit eaque aut, quidem qui consequuntur. Recusandae nihil quaerat impedit sed perferendis. Commodi, excepturi!</p>
+                        <p> Artista e ingeniero italiano del Renacimiento; su trabajo se caracteriza por el uso perpectiva, 
+                            óptica, anatomía y diseño mecánico.</p>
+                        <h5>Aporte al desarrollo de sólidos platónicos:</h5>
+                        <p>Fija un estándar de <i>visualización técnica</i>: el poliedro deja de ser solo "idea filosófica" y se convierte 
+                            en un objeto que se puede comprender por proyeccion. En <i>De divina proportione</i> las láminas atribuidas a 
+                            Leonardo consolidan el uso de poliedros como modelos didácticos para perspectiva y para el vínculo "proporción-forma".</p>
                     </div>
                     <div class="col-md-5 col-12 container_img">
                         <!--Imagen-->
@@ -110,7 +113,7 @@
     <div class="card-3d-body">
       <div class="artist">[Leonardo da Vinci]</div>
       <div class="tag-row">
-        <span class="tag-pill">xxxx</span>
+        <span class="tag-pill">Duodecaedron</span>
       </div>
       <div class="desc">[Descripción de la obra y contexto]</div>
     </div>
@@ -170,32 +173,6 @@
       <div class="desc">[Descripción de la obra y contexto]</div>
     </div>
   </article>
-
-  <!-- Card 4 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/dodecaedro.glb"
-        alt="Dodecaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-      <div class="artist">[Leonardo da Vinci]</div>
-      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
 </section>
 
             <!-- Jamnitzer -->
@@ -213,54 +190,95 @@
                     </div>
 
                     <div class="art-gallery">
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Wenzel Jamnitzer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Wenzel Jamnitzer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Wenzel Jamnitzer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Wenzel Jamnitzer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
+
+<section class="galeria-3d">
+  <!-- Card 1 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/ESCENA3.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <!-- Overlay “OBRA----” (placeholder visual) -->
+      <div>
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row">
+        <span class="tag-pill">Duodecaedron</span>
+      </div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+        <model-viewer
+        src="Modelos_blender/tetraedro.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/octaedro.glb"
+        alt="Octaedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        class="mv"
+      ></model-viewer>
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+</section>
                     </div>
                 </div>
             </section>
@@ -280,54 +298,95 @@
                     </div>
 
                     <div class="art-gallery">
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Lorenz Stöer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Lorenz Stöer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Lorenz Stöer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Lorenz Stöer</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
+
+<section class="galeria-3d">
+  <!-- Card 1 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/ESCENA3.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <!-- Overlay “OBRA----” (placeholder visual) -->
+      <div>
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row">
+        <span class="tag-pill">Duodecaedron</span>
+      </div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+        <model-viewer
+        src="Modelos_blender/tetraedro.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/octaedro.glb"
+        alt="Octaedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        class="mv"
+      ></model-viewer>
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+</section>
                     </div>
                 </div>
             </section>
@@ -347,54 +406,95 @@
                     </div>
 
                     <div class="art-gallery">
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Johannes Kepler</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Johannes Kepler</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Johannes Kepler</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Johannes Kepler</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
+
+<section class="galeria-3d">
+  <!-- Card 1 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/ESCENA3.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <!-- Overlay “OBRA----” (placeholder visual) -->
+      <div>
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row">
+        <span class="tag-pill">Duodecaedron</span>
+      </div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+        <model-viewer
+        src="Modelos_blender/tetraedro.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/octaedro.glb"
+        alt="Octaedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        class="mv"
+      ></model-viewer>
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+</section>
                     </div>
                 </div>
             </section>
@@ -414,54 +514,95 @@
                     </div>
 
                     <div class="art-gallery">
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>M.C. Escher</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>M.C. Escher</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>M.C. Escher</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>M.C. Escher</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
+
+<section class="galeria-3d">
+  <!-- Card 1 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/ESCENA3.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <!-- Overlay “OBRA----” (placeholder visual) -->
+      <div>
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row">
+        <span class="tag-pill">Duodecaedron</span>
+      </div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+        <model-viewer
+        src="Modelos_blender/tetraedro.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/octaedro.glb"
+        alt="Octaedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        class="mv"
+      ></model-viewer>
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+</section>
                     </div>
                 </div>
             </section>
@@ -481,54 +622,95 @@
                     </div>
 
                     <div class="art-gallery">
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Salvador Dalí</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Salvador Dalí</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Salvador Dalí</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="art-image-container">
-                                <i class="fas fa-palette fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">OBRA</p>
-                                <p style="font-size: 0.8rem;">----</p>
-                            </div>
-                            <div class="art-description">
-                                <h5>Salvador Dalí</h5>
-                                <span class="badge-custom">xxxx</span>
-                                <p>[Descripción de la obra y contexto]</p>
-                            </div>
-                        </section>
+
+<section class="galeria-3d">
+  <!-- Card 1 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/ESCENA3.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <!-- Overlay “OBRA----” (placeholder visual) -->
+      <div>
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row">
+        <span class="tag-pill">Duodecaedron</span>
+      </div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+        <model-viewer
+        src="Modelos_blender/tetraedro.glb" 
+        alt="Tetraedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        class="mv"
+      ></model-viewer>
+
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="card-3d">
+    <div class="mv-stage">
+      <model-viewer
+        src="Modelos_blender/octaedro.glb"
+        alt="Octaedro"
+        camera-controls
+        auto-rotate
+        shadow-intensity="1"
+        exposure="1"
+        class="mv"
+      ></model-viewer>
+      <div >
+        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+        </svg>
+        <span class="mv-label">OBRA----</span>
+      </div>
+    </div>
+    <div class="card-3d-body">
+      <div class="artist">[Leonardo da Vinci]</div>
+      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+      <div class="desc">[Descripción de la obra y contexto]</div>
+    </div>
+  </article>
+</section>
                     </div>
                 </div>
             </section>
