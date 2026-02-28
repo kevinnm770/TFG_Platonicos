@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Estilos.css">
 </head>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 <body>
 
     <!-- Navegación Principal -->
@@ -57,15 +58,23 @@
                     <span class="timeline-date">[3000 a.C.]</span>
                     <h3>[Ecos Prehistóricos]</h3>
                     <div class="row align-items-center">
-                        <div class="col-md-4">
-                            <div class="art-image-container">
-                                <i class="fas fa-image fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">[IMAGEN: Esferas neolíticas]</p>
+                        <!-- Modelo 3D Principal -->
+                        <div class="col-12 mb-4">
+                            <div class="interactive-model" id="model_solid_neolitico">
+                                <model-viewer 
+                                    src="Modelos_blender/neolitico.glb"
+                                    alt="neolitico"
+                                    camera-controls
+                                    shadow-intensity="3"
+                                    camera-orbit="180deg 75deg 5m"
+                                    field-of-view="50deg"
+                                    min-camera-orbit="160deg 70deg 10m"
+                                    max-camera-orbit="200deg 80deg 10m"
+                                    class="model-3d">
+                                </model-viewer>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <p>[Texto sobre hallazgos neolíticos en Escocia]</p>
-                        </div>
+                    </div>
                     </div>
                 </section>
 
