@@ -884,15 +884,17 @@ footer {
 .card-3d{
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  height: 600px;
 }
 
 /* Rectángulo grande (zona del model-viewer) */
 .mv-stage{
   position: relative;
   width: 100%;
-  height: auto;          /* ajustá si querés más alto */
-  background: #a8b0b6;    /* gris claro como el placeholder */
-  border-radius: 2px;
+  height: auto;
+  background: #ffffff; /* Antes: #a8b0b6 */
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -932,7 +934,9 @@ footer {
 
 /* Texto debajo */
 .card-3d-body{
-  padding-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.336);
+  border-radius: 20px;
 }
 
 .artist{
@@ -942,7 +946,8 @@ footer {
 }
 
 .tag-row{
-  margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .tag-pill{

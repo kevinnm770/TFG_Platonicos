@@ -47,608 +47,606 @@
     </nav>
 
     <!-- Sección: Los 5 Sólidos (Detallados) -->
-    <section id="solidos" class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title">LOS CINCO SÓLIDOS PLATÓNICOS</h2>
-            <p class="section-subtitle">
-                En esta sección te adentrarás en el análisis de los <strong>cinco sólidos platónicos</strong> de forma visual e interactiva: conocerás sus rasgos más importantes, su relación con ideas clásicas de la naturaleza y la simetría, y podrás observarlos desde distintos ángulos para apreciar cómo están construidos. Así, comprenderás mejor por qué, desde la Antigüedad hasta hoy, siguen siendo tan relevantes en la geometría, el arte y el diseño.
-            </p>
-            
-            <!-- Tetraedro -->
-             <div class="Solido_container" id="Tetraedro">             
-                <div class="row">
-                    <h3 class="mb-4">TETRAEDRO <i class="fa-solid fa-fire"></i></h3>
+    <main id="solidos" class="content-section container py-5">
+        <h2 class="section-title">LOS CINCO SÓLIDOS PLATÓNICOS</h2>
+        <p class="section-subtitle">
+            En esta sección te adentrarás en el análisis de los <strong>cinco sólidos platónicos</strong> de forma visual e interactiva: conocerás sus rasgos más importantes, su relación con ideas clásicas de la naturaleza y la simetría, y podrás observarlos desde distintos ángulos para apreciar cómo están construidos. Así, comprenderás mejor por qué, desde la Antigüedad hasta hoy, siguen siendo tan relevantes en la geometría, el arte y el diseño.
+        </p>
+        
+        <!-- Tetraedro -->
+            <div class="Solido_container" id="Tetraedro">             
+            <div class="row">
+                <h3 class="mb-4">TETRAEDRO <i class="fa-solid fa-fire"></i></h3>
 
-                    <!-- Propiedades -->
-                    <div class="col-lg-6">                        
-                        <h4>Elemento asociado: <strong>FUEGO</strong></h4>
-                        <div class="properties-grid">
-                            <div class="property-box">
-                                <p class="property-label">Caras</p>
-                                <p class="property-value">4</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Vértices</p>
-                                <p class="property-value">4</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Aristas</p>
-                                <p class="property-value">6</p>
-                            </div>
+                <!-- Propiedades -->
+                <div class="col-lg-6">                        
+                    <h4>Elemento asociado: <strong>FUEGO</strong></h4>
+                    <div class="properties-grid">
+                        <div class="property-box">
+                            <p class="property-label">Caras</p>
+                            <p class="property-value">4</p>
                         </div>
-                        <div class="row">
-                            <div class="properties-grid col-12">
-                                <div class="property-box" style="position: relative;">
-                                    <p class="property-label">Notación Schläfli</p>
-                                    <p class="property-value">{3,3}</p>
-                                    <p class="extra" style="color: white;"><em>"3 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo diedro</p>
-                                    <p class="property-value">\(70.53^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo central</p>
-                                    <p class="property-value">\(109.47^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Dual</p>
-                                    <p class="property-value">TETRAEDRO</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Grupo simétrico</p>
-                                    <p class="property-value">TETRAÉDRICA</p>
-                                </div>
-                            </div>
+                        <div class="property-box">
+                            <p class="property-label">Vértices</p>
+                            <p class="property-value">4</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Aristas</p>
+                            <p class="property-value">6</p>
                         </div>
                     </div>
-
-                    <!-- Modelo 3D Principal -->
-                    <div class="col-lg-6 col-12 mb-4">
-                        <div class="interactive-model" id="model_solid_tetraedro">
-                            <model-viewer 
-                                src="Modelos_blender/tetraedro.glb"
-                                alt="Tetraedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="interactive-model" style="display: none;" id="model_wireframe_tetraedro">
-                            <model-viewer 
-                                src="Modelos_blender/Tetraedro_wireframe.glb"
-                                alt="Tetraedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="row btnDiv">
-                            <div class="col-6 text-end">
-                                <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'tetraedro');">Sólido</button>
+                    <div class="row">
+                        <div class="properties-grid col-12">
+                            <div class="property-box" style="position: relative;">
+                                <p class="property-label">Notación Schläfli</p>
+                                <p class="property-value">{3,3}</p>
+                                <p class="extra" style="color: white;"><em>"3 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
                             </div>
-                            <div class="col-6">
-                                <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'tetraedro');">Wireframe</button>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo diedro</p>
+                                <p class="property-value">\(70.53^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo central</p>
+                                <p class="property-value">\(109.47^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Dual</p>
+                                <p class="property-value">TETRAEDRO</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Grupo simétrico</p>
+                                <p class="property-value">TETRAÉDRICA</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <!-- Desarrollo Plano -->
-                    <div class="col-md-3 col-0"></div>
-                    <div class="col-md-6 mb-4">
-                        <div class="qr-container">
-                            <h4>Desarrollo plano</h4>                               
-                                <div class="polypad-container qr-placeholder">
-                                    <iframe 
-                                        id="polypadFrame1"
-                                        src="https://polypad.amplify.com/embed/qwAsQV3ZO5kpcA?embed=1&controls=0&ui=0"
-                                        frameborder="0"
-                                        scrolling="no"
-                                        seamless
-                                        allowtransparency="true"
-                                        class="polypad-embed"
-                                        style="height: 300px;">
-                                    </iframe>
-                                </div>
-                            <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
+                <!-- Modelo 3D Principal -->
+                <div class="col-lg-6 col-12 mb-4">
+                    <div class="interactive-model" id="model_solid_tetraedro">
+                        <model-viewer 
+                            src="Modelos_blender/tetraedro.glb"
+                            alt="Tetraedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="interactive-model" style="display: none;" id="model_wireframe_tetraedro">
+                        <model-viewer 
+                            src="Modelos_blender/Tetraedro_wireframe.glb"
+                            alt="Tetraedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="row btnDiv">
+                        <div class="col-6 text-end">
+                            <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'tetraedro');">Sólido</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'tetraedro');">Wireframe</button>
                         </div>
                     </div>
-                    <div class="col-md-3 col-0"></div>
                 </div>
             </div>
 
-            <!-- Hexaedro -->
-            <div class="Solido_container" id="Hexaedro">
-                <div class="row">
-                    <h3 class="mb-4">HEXAEDRO <i class="fa-solid fa-tree"></i></h3>
-
-                    <!-- Propiedades -->
-                    <div class="col-lg-6">
-                        <h4>Elemento asociado: <strong>MADERA</strong></h4>
-                        <div class="properties-grid">
-                            <div class="property-box">
-                                <p class="property-label">Caras</p>
-                                <p class="property-value">6</p>
+            <div class="row">
+                <!-- Desarrollo Plano -->
+                <div class="col-md-3 col-0"></div>
+                <div class="col-md-6 mb-4">
+                    <div class="qr-container">
+                        <h4>Desarrollo plano</h4>                               
+                            <div class="polypad-container qr-placeholder">
+                                <iframe 
+                                    id="polypadFrame1"
+                                    src="https://polypad.amplify.com/embed/qwAsQV3ZO5kpcA?embed=1&controls=0&ui=0"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    seamless
+                                    allowtransparency="true"
+                                    class="polypad-embed"
+                                    style="height: 300px;">
+                                </iframe>
                             </div>
-                            <div class="property-box">
-                                <p class="property-label">Vértices</p>
-                                <p class="property-value">8</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Aristas</p>
-                                <p class="property-value">12</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="properties-grid col-12" style="position: relative;">
-                                <div class="property-box">
-                                    <p class="property-label">Notación Schläfli</p>
-                                    <p class="property-value">{4,3}</p>
-                                    <p class="extra" style="color: white;"><em>"3 caras por vértice, de 4 lados (cuadrado)"</em></p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo diedro</p>
-                                    <p class="property-value">\(90^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo central</p>
-                                    <p class="property-value">\(70.53^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Dual</p>
-                                    <p class="property-value">OCTAEDRO</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Grupo simétrico</p>
-                                    <p class="property-value">OCTAÉDRICA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modelo 3D Principal -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="interactive-model" id="model_solid_hexaedro">
-                            <model-viewer 
-                                src="Modelos_blender/Hexaedro.glb"
-                                alt="Hexaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="interactive-model" style="display: none;" id="model_wireframe_hexaedro">
-                            <model-viewer 
-                                src="Modelos_blender/Hexaedro_wireframe.glb"
-                                alt="Hexaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="row btnDiv">
-                            <div class="col-6 text-end">
-                                <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'hexaedro');">Sólido</button>
-                            </div>
-                            <div class="col-6">
-                                <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'hexaedro');">Wireframe</button>
-                            </div>
-                        </div>
+                        <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
                     </div>
                 </div>
-
-                <div class="row">
-                    <!-- Desarrollo Plano -->
-                    <div class="col-md-3 col-0"></div>
-                    <div class="col-md-6 mb-4">
-                        <div class="qr-container">
-                            <h4>Desarrollo plano</h4>                               
-                                <div class="polypad-container qr-placeholder">
-                                    <iframe 
-                                        id="polypadFrame1"
-                                        src="https://polypad.amplify.com/embed/ErHxaYUdrWK1Yg?embed=1&controls=0&ui=0"
-                                        frameborder="0"
-                                        scrolling="no"
-                                        seamless
-                                        allowtransparency="true"
-                                        class="polypad-embed"
-                                        style="height: 300px;">
-                                    </iframe>
-                                </div>
-                            <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-0"></div>
-                </div>
-            </div>
-
-            <!-- Octaedro -->
-            <div class="Solido_container" id="Octaedro">
-                <div class="row">
-                    <h3 class="mb-4">OCTAEDRO <i class="fa-solid fa-wind"></i></h3>
-
-                    <!-- Propiedades -->
-                    <div class="col-lg-6">
-                        <h4>Elemento asociado: <strong>AIRE</strong></h4>
-                        <div class="properties-grid">
-                            <div class="property-box">
-                                <p class="property-label">Caras</p>
-                                <p class="property-value">8</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Vértices</p>
-                                <p class="property-value">6</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Aristas</p>
-                                <p class="property-value">12</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="properties-grid col-12" style="position: relative;">
-                                <div class="property-box">
-                                    <p class="property-label">Notación Schläfli</p>
-                                    <p class="property-value">{3,4}</p>
-                                    <p class="extra" style="color: rgb(0, 0, 0);"><em>"4 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo diedro</p>
-                                    <p class="property-value">\(109.47^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo central</p>
-                                    <p class="property-value">\(90^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6" >
-                                <div class="property-box">
-                                    <p class="property-label">Dual</p>
-                                    <p class="property-value">HEXAEDRO</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Grupo simétrico</p>
-                                    <p class="property-value">OCTAÉDRICA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modelo 3D Principal -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="interactive-model" id="model_solid_octaedro">
-                            <model-viewer 
-                                src="Modelos_blender/octaedro.glb"
-                                alt="Octaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="interactive-model" style="display: none;" id="model_wireframe_octaedro">
-                            <model-viewer 
-                                src="Modelos_blender/Octaedro_wireframe.glb"
-                                alt="Octaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="row btnDiv">
-                            <div class="col-6 text-end">
-                                <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'octaedro');">Sólido</button>
-                            </div>
-                            <div class="col-6">
-                                <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'octaedro');">Wireframe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Desarrollo Plano -->
-                    <div class="col-md-3 col-0"></div>
-                    <div class="col-md-6 mb-4">
-                        <div class="qr-container">
-                            <h4>Desarrollo plano</h4>                               
-                                <div class="polypad-container qr-placeholder">
-                                    <iframe 
-                                        id="polypadFrame1"
-                                        src="https://polypad.amplify.com/embed/pWtpFNPhyUSemw?embed=1&controls=0&ui=0"
-                                        frameborder="0"
-                                        scrolling="no"
-                                        seamless
-                                        allowtransparency="true"
-                                        class="polypad-embed"
-                                        style="height: 300px;">
-                                    </iframe>
-                                </div>
-                            <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-0"></div>
-                </div>
-            </div>
-            <!-- Dodecaedro -->
-            <div class="Solido_container" id="Dodecaedro">
-                <div class="row">
-                    <h3 class="mb-4">DODECAEDRO <i class="fa-solid fa-bahai"></i></h3>
-
-                    <!-- Propiedades -->
-                    <div class="col-lg-6">
-                        <h4>Elemento asociado: <strong>UNIVERSO</strong></h4>
-                        <div class="properties-grid">
-                            <div class="property-box">
-                                <p class="property-label">Caras</p>
-                                <p class="property-value">12</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Vértices</p>
-                                <p class="property-value">20</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Aristas</p>
-                                <p class="property-value">30</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="properties-grid col-12" style="position: relative;">
-                                <div class="property-box">
-                                    <p class="property-label">Notación Schläfli</p>
-                                    <p class="property-value">{5,3}</p>
-                                    <p class="extra" style="color: white;"><em>"3 caras por vértice, de 5 lados (pentágono)"</em></p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo diedro</p>
-                                    <p class="property-value">\(116.57^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo central</p>
-                                    <p class="property-value">\(41.81^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Dual</p>
-                                    <p class="property-value">ICOSAEDRO</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Grupo simétrico</p>
-                                    <p class="property-value">ICOSAÉDRICA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modelo 3D Principal -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="interactive-model" id="model_solid_dodecaedro">
-                            <model-viewer 
-                                src="Modelos_blender/dodecaedro.glb"
-                                alt="Dodecaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="interactive-model" style="display: none;" id="model_wireframe_dodecaedro">
-                            <model-viewer 
-                                src="Modelos_blender/Dodecaedro_wireframe.glb"
-                                alt="Dodecaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="row btnDiv">
-                            <div class="col-6 text-end">
-                                <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'dodecaedro');">Sólido</button>
-                            </div>
-                            <div class="col-6">
-                                <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'dodecaedro');">Wireframe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Desarrollo Plano -->
-                    <div class="col-md-3 col-0"></div>
-                    <div class="col-md-6 mb-4">
-                        <div class="qr-container">
-                            <h4>Desarrollo plano</h4>                               
-                                <div class="polypad-container qr-placeholder">
-                                    <iframe 
-                                        id="polypadFrame1"
-                                        src="https://polypad.amplify.com/embed/QNWQ0uJmRvglg?embed=1&controls=0&ui=0"
-                                        frameborder="0"
-                                        scrolling="no"
-                                        seamless
-                                        allowtransparency="true"
-                                        class="polypad-embed"
-                                        style="height: 300px;">
-                                    </iframe>
-                                </div>
-                            <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-0"></div>
-                </div>
-            </div>
-
-            <!-- Icosaedro -->
-            <div class="Solido_container" id="Icosaedro">
-                <div class="row">
-                    <h3 class="mb-4">ICOSAEDRO <i class="fa-solid fa-water"></i></h3>
-
-                    <!-- Propiedades -->
-                    <div class="col-lg-6">
-                        <h4>Elemento asociado: <strong>AGUA</strong></h4>
-                        <div class="properties-grid">
-                            <div class="property-box">
-                                <p class="property-label">Caras</p>
-                                <p class="property-value">20</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Vértices</p>
-                                <p class="property-value">12</p>
-                            </div>
-                            <div class="property-box">
-                                <p class="property-label">Aristas</p>
-                                <p class="property-value">30</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="properties-grid col-12" style="position: relative;">
-                                <div class="property-box">
-                                    <p class="property-label">Notación Schläfli</p>
-                                    <p class="property-value">{3,5}</p>
-                                    <p class="extra" style="color: white;"><em>"5 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo diedro</p>
-                                    <p class="property-value">\(138.19^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Ángulo central</p>
-                                    <p class="property-value">\(63.44^\circ\)</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Dual</p>
-                                    <p class="property-value">DODECAEDRO</p>
-                                </div>
-                            </div>
-                            <div class="properties-grid col-md-6">
-                                <div class="property-box">
-                                    <p class="property-label">Grupo simétrico</p>
-                                    <p class="property-value">ICOSAÉDRICA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modelo 3D Principal -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="interactive-model" id="model_solid_icosaedro">
-                            <model-viewer 
-                                src="Modelos_blender/icosaedro.glb"
-                                alt="Icosaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="interactive-model" style="display: none;" id="model_wireframe_icosaedro">
-                            <model-viewer 
-                                src="Modelos_blender/Icosaedro_wireframe.glb"
-                                alt="Icosaedro"
-                                camera-controls
-                                auto-rotate
-                                shadow-intensity="1"
-                                ar
-                                ar-modes="webxr scene-viewer quick-look"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                        <div class="row btnDiv">
-                            <div class="col-6 text-end">
-                                <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'icosaedro');">Sólido</button>
-                            </div>
-                            <div class="col-6">
-                                <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'icosaedro');">Wireframe</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <!-- Desarrollo Plano -->
-                    <div class="col-md-3 col-0"></div>
-                    <div class="col-md-6 mb-4">
-                        <div class="qr-container">
-                            <h4>Desarrollo plano</h4>                               
-                                <div class="polypad-container qr-placeholder">
-                                    <iframe 
-                                        id="polypadFrame1"
-                                        src="https://polypad.amplify.com/embed/Wf2kRZJ7Pdvy2w?embed=1&controls=0&ui=0"
-                                        frameborder="0"
-                                        scrolling="no"
-                                        seamless
-                                        allowtransparency="true"
-                                        class="polypad-embed"
-                                        style="height: 300px;">
-                                    </iframe>
-                                </div>
-                            <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-0"></div>
-                </div>
+                <div class="col-md-3 col-0"></div>
             </div>
         </div>
-    </section>
+
+        <!-- Hexaedro -->
+        <div class="Solido_container" id="Hexaedro">
+            <div class="row">
+                <h3 class="mb-4">HEXAEDRO <i class="fa-solid fa-tree"></i></h3>
+
+                <!-- Propiedades -->
+                <div class="col-lg-6">
+                    <h4>Elemento asociado: <strong>MADERA</strong></h4>
+                    <div class="properties-grid">
+                        <div class="property-box">
+                            <p class="property-label">Caras</p>
+                            <p class="property-value">6</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Vértices</p>
+                            <p class="property-value">8</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Aristas</p>
+                            <p class="property-value">12</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="properties-grid col-12" style="position: relative;">
+                            <div class="property-box">
+                                <p class="property-label">Notación Schläfli</p>
+                                <p class="property-value">{4,3}</p>
+                                <p class="extra" style="color: white;"><em>"3 caras por vértice, de 4 lados (cuadrado)"</em></p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo diedro</p>
+                                <p class="property-value">\(90^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo central</p>
+                                <p class="property-value">\(70.53^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Dual</p>
+                                <p class="property-value">OCTAEDRO</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Grupo simétrico</p>
+                                <p class="property-value">OCTAÉDRICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modelo 3D Principal -->
+                <div class="col-lg-6 mb-4">
+                    <div class="interactive-model" id="model_solid_hexaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Hexaedro.glb"
+                            alt="Hexaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="interactive-model" style="display: none;" id="model_wireframe_hexaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Hexaedro_wireframe.glb"
+                            alt="Hexaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="row btnDiv">
+                        <div class="col-6 text-end">
+                            <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'hexaedro');">Sólido</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'hexaedro');">Wireframe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Desarrollo Plano -->
+                <div class="col-md-3 col-0"></div>
+                <div class="col-md-6 mb-4">
+                    <div class="qr-container">
+                        <h4>Desarrollo plano</h4>                               
+                            <div class="polypad-container qr-placeholder">
+                                <iframe 
+                                    id="polypadFrame1"
+                                    src="https://polypad.amplify.com/embed/ErHxaYUdrWK1Yg?embed=1&controls=0&ui=0"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    seamless
+                                    allowtransparency="true"
+                                    class="polypad-embed"
+                                    style="height: 300px;">
+                                </iframe>
+                            </div>
+                        <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-0"></div>
+            </div>
+        </div>
+
+        <!-- Octaedro -->
+        <div class="Solido_container" id="Octaedro">
+            <div class="row">
+                <h3 class="mb-4">OCTAEDRO <i class="fa-solid fa-wind"></i></h3>
+
+                <!-- Propiedades -->
+                <div class="col-lg-6">
+                    <h4>Elemento asociado: <strong>AIRE</strong></h4>
+                    <div class="properties-grid">
+                        <div class="property-box">
+                            <p class="property-label">Caras</p>
+                            <p class="property-value">8</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Vértices</p>
+                            <p class="property-value">6</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Aristas</p>
+                            <p class="property-value">12</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="properties-grid col-12" style="position: relative;">
+                            <div class="property-box">
+                                <p class="property-label">Notación Schläfli</p>
+                                <p class="property-value">{3,4}</p>
+                                <p class="extra" style="color: rgb(0, 0, 0);"><em>"4 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo diedro</p>
+                                <p class="property-value">\(109.47^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo central</p>
+                                <p class="property-value">\(90^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6" >
+                            <div class="property-box">
+                                <p class="property-label">Dual</p>
+                                <p class="property-value">HEXAEDRO</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Grupo simétrico</p>
+                                <p class="property-value">OCTAÉDRICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modelo 3D Principal -->
+                <div class="col-lg-6 mb-4">
+                    <div class="interactive-model" id="model_solid_octaedro">
+                        <model-viewer 
+                            src="Modelos_blender/octaedro.glb"
+                            alt="Octaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="interactive-model" style="display: none;" id="model_wireframe_octaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Octaedro_wireframe.glb"
+                            alt="Octaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="row btnDiv">
+                        <div class="col-6 text-end">
+                            <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'octaedro');">Sólido</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'octaedro');">Wireframe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Desarrollo Plano -->
+                <div class="col-md-3 col-0"></div>
+                <div class="col-md-6 mb-4">
+                    <div class="qr-container">
+                        <h4>Desarrollo plano</h4>                               
+                            <div class="polypad-container qr-placeholder">
+                                <iframe 
+                                    id="polypadFrame1"
+                                    src="https://polypad.amplify.com/embed/pWtpFNPhyUSemw?embed=1&controls=0&ui=0"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    seamless
+                                    allowtransparency="true"
+                                    class="polypad-embed"
+                                    style="height: 300px;">
+                                </iframe>
+                            </div>
+                        <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-0"></div>
+            </div>
+        </div>
+        <!-- Dodecaedro -->
+        <div class="Solido_container" id="Dodecaedro">
+            <div class="row">
+                <h3 class="mb-4">DODECAEDRO <i class="fa-solid fa-bahai"></i></h3>
+
+                <!-- Propiedades -->
+                <div class="col-lg-6">
+                    <h4>Elemento asociado: <strong>UNIVERSO</strong></h4>
+                    <div class="properties-grid">
+                        <div class="property-box">
+                            <p class="property-label">Caras</p>
+                            <p class="property-value">12</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Vértices</p>
+                            <p class="property-value">20</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Aristas</p>
+                            <p class="property-value">30</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="properties-grid col-12" style="position: relative;">
+                            <div class="property-box">
+                                <p class="property-label">Notación Schläfli</p>
+                                <p class="property-value">{5,3}</p>
+                                <p class="extra" style="color: white;"><em>"3 caras por vértice, de 5 lados (pentágono)"</em></p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo diedro</p>
+                                <p class="property-value">\(116.57^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo central</p>
+                                <p class="property-value">\(41.81^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Dual</p>
+                                <p class="property-value">ICOSAEDRO</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Grupo simétrico</p>
+                                <p class="property-value">ICOSAÉDRICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modelo 3D Principal -->
+                <div class="col-lg-6 mb-4">
+                    <div class="interactive-model" id="model_solid_dodecaedro">
+                        <model-viewer 
+                            src="Modelos_blender/dodecaedro.glb"
+                            alt="Dodecaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="interactive-model" style="display: none;" id="model_wireframe_dodecaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Dodecaedro_wireframe.glb"
+                            alt="Dodecaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="row btnDiv">
+                        <div class="col-6 text-end">
+                            <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'dodecaedro');">Sólido</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'dodecaedro');">Wireframe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Desarrollo Plano -->
+                <div class="col-md-3 col-0"></div>
+                <div class="col-md-6 mb-4">
+                    <div class="qr-container">
+                        <h4>Desarrollo plano</h4>                               
+                            <div class="polypad-container qr-placeholder">
+                                <iframe 
+                                    id="polypadFrame1"
+                                    src="https://polypad.amplify.com/embed/QNWQ0uJmRvglg?embed=1&controls=0&ui=0"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    seamless
+                                    allowtransparency="true"
+                                    class="polypad-embed"
+                                    style="height: 300px;">
+                                </iframe>
+                            </div>
+                        <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-0"></div>
+            </div>
+        </div>
+
+        <!-- Icosaedro -->
+        <div class="Solido_container" id="Icosaedro">
+            <div class="row">
+                <h3 class="mb-4">ICOSAEDRO <i class="fa-solid fa-water"></i></h3>
+
+                <!-- Propiedades -->
+                <div class="col-lg-6">
+                    <h4>Elemento asociado: <strong>AGUA</strong></h4>
+                    <div class="properties-grid">
+                        <div class="property-box">
+                            <p class="property-label">Caras</p>
+                            <p class="property-value">20</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Vértices</p>
+                            <p class="property-value">12</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Aristas</p>
+                            <p class="property-value">30</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="properties-grid col-12" style="position: relative;">
+                            <div class="property-box">
+                                <p class="property-label">Notación Schläfli</p>
+                                <p class="property-value">{3,5}</p>
+                                <p class="extra" style="color: white;"><em>"5 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo diedro</p>
+                                <p class="property-value">\(138.19^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo central</p>
+                                <p class="property-value">\(63.44^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Dual</p>
+                                <p class="property-value">DODECAEDRO</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Grupo simétrico</p>
+                                <p class="property-value">ICOSAÉDRICA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modelo 3D Principal -->
+                <div class="col-lg-6 mb-4">
+                    <div class="interactive-model" id="model_solid_icosaedro">
+                        <model-viewer 
+                            src="Modelos_blender/icosaedro.glb"
+                            alt="Icosaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="interactive-model" style="display: none;" id="model_wireframe_icosaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Icosaedro_wireframe.glb"
+                            alt="Icosaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
+                    <div class="row btnDiv">
+                        <div class="col-6 text-end">
+                            <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'icosaedro');">Sólido</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'icosaedro');">Wireframe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Desarrollo Plano -->
+                <div class="col-md-3 col-0"></div>
+                <div class="col-md-6 mb-4">
+                    <div class="qr-container">
+                        <h4>Desarrollo plano</h4>                               
+                            <div class="polypad-container qr-placeholder">
+                                <iframe 
+                                    id="polypadFrame1"
+                                    src="https://polypad.amplify.com/embed/Wf2kRZJ7Pdvy2w?embed=1&controls=0&ui=0"
+                                    frameborder="0"
+                                    scrolling="no"
+                                    seamless
+                                    allowtransparency="true"
+                                    class="polypad-embed"
+                                    style="height: 300px;">
+                                </iframe>
+                            </div>
+                        <p><strong>Selecciona</strong>, <strong>desliza</strong> el spin y <strong>rota</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-0"></div>
+            </div>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer class="m-0">
