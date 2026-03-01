@@ -898,6 +898,22 @@ footer {
   overflow: hidden;
 }
 
+.mv-stage-image{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(100%);
+  transition: transform 0.45s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.mv-stage-image.is-visible{
+  transform: translateY(0);
+}
+
 /* model-viewer ocupa todo el rectángulo */
 .mv{
   width: 100%;

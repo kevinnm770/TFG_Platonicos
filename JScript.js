@@ -149,6 +149,28 @@ document.addEventListener('DOMContentLoaded', function() {
             navContenido.className="navOculto";
         }
     );
+
+    const botonesObra = document.querySelectorAll('button[id^="btn-obra-"]');
+
+    botonesObra.forEach((boton) => {
+        const idImagen = boton.getAttribute('data-image-id');
+        const imagen = document.getElementById(idImagen);
+        const card = boton.closest('.card-3d');
+        const stage = card ? card.querySelector('.mv-stage') : null;
+
+        if (!imagen || !stage) {
+            return;
+        }
+
+        imagen.classList.add('mv-stage-image');
+        imagen.style.display = 'block';
+        stage.appendChild(imagen);
+
+        boton.addEventListener('click', function() {
+            const visible = imagen.classList.toggle('is-visible');
+            boton.setAttribute('aria-pressed', visible ? 'true' : 'false');
+        });
+    });
     
 });
 
