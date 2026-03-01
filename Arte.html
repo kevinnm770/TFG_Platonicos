@@ -62,691 +62,684 @@
     </nav>
 
     <!-- Sección: Arte y Manifestaciones Visuales -->
-    <section id="arte" class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title">MANIFESTACIONES ARTÍSTICAS</h2>
-            <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptatum enim eum vel consectetur accusantium, dolores explicabo quod facere, exercitationem eius! Rem obcaecati reprehenderit assumenda ipsa eos eligendi consectetur vel?</p>
+    <main id="arte" class="container py-5">
 
-            <!-- Galería de Arte -->
+          <h2 class="section-title">MANIFESTACIONES ARTÍSTICAS</h2>
+          <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est voluptatum enim eum vel consectetur accusantium, dolores explicabo quod facere, exercitationem eius! Rem obcaecati reprehenderit assumenda ipsa eos eligendi consectetur vel?</p>
 
-            <!-- Da Vinci -->
-            <section class="mb-5" id="DaVinci">
-                <h3 class="mb-4">Leonardo da Vinci(1452 - 1519)</h3>
-                <div class="row mb-3">
-                    <div class="col-md-7 col-12">
-                        <p> Artista e ingeniero italiano del Renacimiento; su trabajo se caracteriza por el uso perpectiva, 
-                            óptica, anatomía y diseño mecánico.</p>
-                        <h5>Aporte al desarrollo de los sólidos platónicos:</h5>
-                        <p>Fija un estándar de <i>visualización técnica</i>: el poliedro deja de ser solo "idea filosófica" y se convierte 
-                            en un objeto que se puede comprender por proyeccion. En <i>De divina proportione</i> las láminas atribuidas a 
-                            Leonardo consolidan el uso de poliedros como modelos didácticos para perspectiva y para el vínculo "proporción-forma".</p>
-                    </div>
-                    <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
-                       <figure class="artist-hero__media">
-                      <img class="artist-hero__img"
-                        src="imagenes/Artistas/Cara_davimci.jpg"
-                        alt="Leonardo da Vinci" />
-                      </figure>
-                    </div>
+          <!-- Galería de Arte -->
 
-<section class="galeria-3d">
-  <!-- Card 1 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/ESCENA3.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
+          <h2 id="Renacimiento_arte" class="mb-5 text-center" style="font-size: 27pt;text-decoration: underline;"><em>Renacimiento</em></h2>
 
-      <!-- Overlay “OBRA----” (placeholder visual) -->
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
-        </svg>
-      </div>
-    </div>
+          <!-- Da Vinci -->
+          <section class="mb-5" id="DaVinci">
+            <h3 class="mb-4">Leonardo da Vinci(1452 - 1519)</h3>
+            <div class="row mb-3">
+                <div class="col-md-7 col-12">
+                    <p> Artista e ingeniero italiano del Renacimiento; su trabajo se caracteriza por el uso perpectiva, 
+                        óptica, anatomía y diseño mecánico.</p>
+                    <h6>Aporte al desarrollo de los sólidos platónicos:</h6>
+                    <p>Fija un estándar de <i>visualización técnica</i>: el poliedro deja de ser solo "idea filosófica" y se convierte 
+                        en un objeto que se puede comprender por proyeccion. En <i>De divina proportione</i> las láminas atribuidas a 
+                        Leonardo consolidan el uso de poliedros como modelos didácticos para perspectiva y para el vínculo "proporción-forma".</p>
+                </div>
+                <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
+                    <figure class="artist-hero__media">
+                      <img class="artist-hero__img" src="imagenes/Artistas/Cara_davimci.jpg" alt="Leonardo da Vinci" />
+                    </figure>
+                </div>
+            </div>
 
-    <div class="card-3d-body">
-      <!-- <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row">
-        <span class="tag-pill">Duodecaedron vacuss (1509)</span>
-      </div>
-      <div class="desc">Obra creada para De Divina Proportione, muestra el dodecaedro como "esqueleto"</div>
-    </div>
-  </article>
+            <div class="galeria-3d">
+              <!-- Obra 1 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/ESCENA3.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
 
-  <!-- Card 2 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-        <model-viewer
-        src="Modelos_blender/tetraedro.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
+                  <!-- Overlay “OBRA----” (placeholder visual) -->
+                  <div>
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+                    </svg>
+                  </div>
+                </div>
 
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-       <!--<div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Stella octangula (1509)</span></div>
-      <div class="desc">Ejemplo temprano de poliedro regular compuesto en la cultura renacentista, formado por dos tetraedris interpenetrados.</div>
-    </div>
-  </article>
+                <div class="card-3d-body">
+                  <!-- <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row">
+                    <span class="tag-pill">Duodecaedron vacuss (1509)</span>
+                  </div>
+                  <div class="desc">Obra creada para De Divina Proportione, muestra el dodecaedro como "esqueleto"</div>
+                </div>
+              </article>
 
-  <!-- Card 3 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/octaedro.glb"
-        alt="Octaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-       <!--<div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Tetraedro truncado (1509)</span></div>
-      <div class="desc">Muestra el truncamiento de los vértices del tetraedro. Conecta los sólidos plátonicos con transformaciones que generan sólidos semiregulares.</div>
-    </div>
-  </article>
-</section>
+              <!-- Obra 2 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                    <model-viewer
+                    src="Modelos_blender/tetraedro.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
 
-            <!-- Jamnitzer -->
-            <section class="mb-5" id="Jamnitzer">
-                <h3 class="mb-4">Wenzel Jamnitzer(1510-1585)</h3>
-                <div class="row mb-3">
-                    <div class="col-md-7 col-12">
-                        <p>Orfebre y grabador de Núremberg, Alemania, reconocido por su publicación de un repertorio de 
-                          variaciones poliedricas de sólidos platónicos, destacando el gran uso de la perspectiva en sus 
-                        ilustraciones.</p>
-                        <h5>Aporte al desarrollo de los sólidos Platónicos </h5>
-                        <p>Convierte los sólidos platónicos en un sistema de transformaciones (variaciones, compuestos, ornamentaciones).</p>
-                      </div>
-                     <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
-                       <figure class="artist-hero__media">
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                  <!--<div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Stella octangula (1509)</span></div>
+                  <div class="desc">Ejemplo temprano de poliedro regular compuesto en la cultura renacentista, formado por dos tetraedris interpenetrados.</div>
+                </div>
+              </article>
+
+              <!-- Obra 3 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/octaedro.glb"
+                    alt="Octaedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    class="mv"
+                  ></model-viewer>
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                  <!--<div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Tetraedro truncado (1509)</span></div>
+                  <div class="desc">Muestra el truncamiento de los vértices del tetraedro. Conecta los sólidos plátonicos con transformaciones que generan sólidos semiregulares.</div>
+                </div>
+              </article>
+            </div>
+
+          </section>
+
+          <!-- Jamnitzer -->
+          <section class="mb-5" id="Jamnitzer">
+              <h3 class="mb-4">Wenzel Jamnitzer(1510-1585)</h3>
+              <div class="row mb-3">
+                  <div class="col-md-7 col-12">
+                    <p>Orfebre y grabador de Núremberg, Alemania, reconocido por su publicación de un repertorio de 
+                      variaciones poliedricas de sólidos platónicos, destacando el gran uso de la perspectiva en sus 
+                    ilustraciones.</p>
+                    <h6>Aporte al desarrollo de los sólidos Platónicos </h6>
+                    <p>Convierte los sólidos platónicos en un sistema de transformaciones (variaciones, compuestos, ornamentaciones).</p>
+                  </div>
+                  <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
+                    <figure class="artist-hero__media">
                       <img class="artist-hero__img"
                         src="imagenes/Artistas/Cara_Wenzel.jpg"
                         alt="Wenzel Jamnitzer" />
-                      </figure>
-                    </div>                   <div class="art-gallery">
+                    </figure>
+                  </div>
+              </div>
 
-<section class="galeria-3d">
-  <!-- Card 1 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/ESCENA3.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
+              <div class="galeria-3d">
+                <!-- Obra 1 -->
+                <article class="card-3d">
+                  <div class="mv-stage">
+                    <model-viewer
+                      src="Modelos_blender/ESCENA3.glb" 
+                      alt="Tetraedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      ar
+                      ar-modes="webxr scene-viewer quick-look"
+                      class="mv"
+                    ></model-viewer>
 
-      <!-- Overlay “OBRA----” (placeholder visual) -->
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="card-3d-body">
-     <!--<div class="artist">Wenzel Jamnitzer</div>--> 
-      <div class="tag-row">
-        <span class="tag-pill">Variaciones Tetraedro</span>
-      </div>
-      <div class="desc">Diferentes formas derivadas del tetraedro regular.</div>
-    </div>
-  </article>
-
-  <!-- Card 2 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-        <model-viewer
-        src="Modelos_blender/tetraedro.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!--  <div class="artist">Wenzel Jamnitzer</div>-->
-      <div class="tag-row"><span class="tag-pill">Variaciones Octaedro</span></div>
-      <div class="desc">Diferentes formas derivadas del octaedro regular.</div>
-    </div>
-  </article>
-
-  <!-- Card 3 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/octaedro.glb"
-        alt="Octaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!--  <div class="artist">Wenzel Jamnitzer</div>-->
-      <div class="tag-row"><span class="tag-pill">Variaciones Dodecaedro</span></div>
-      <div class="desc">Diferentes formas derivadas del dodecaedro regular.</div>
-    </div>
-  </article>
-</section>
+                    <!-- Overlay “OBRA----” (placeholder visual) -->
+                    <div>
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+                      </svg>
                     </div>
+                  </div>
+
+                  <div class="card-3d-body">
+                  <!--<div class="artist">Wenzel Jamnitzer</div>--> 
+                    <div class="tag-row">
+                      <span class="tag-pill">Variaciones Tetraedro</span>
+                    </div>
+                    <div class="desc">Diferentes formas derivadas del tetraedro regular.</div>
+                  </div>
+                </article>
+
+                <!-- Obra 2 -->
+                <article class="card-3d">
+                  <div class="mv-stage">
+                      <model-viewer
+                      src="Modelos_blender/tetraedro.glb" 
+                      alt="Tetraedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      ar
+                      ar-modes="webxr scene-viewer quick-look"
+                      class="mv"
+                    ></model-viewer>
+
+                    <div >
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                      </svg>
+                      <span class="mv-label">OBRA----</span>
+                    </div>
+                  </div>
+                  <div class="card-3d-body">
+                  <!--  <div class="artist">Wenzel Jamnitzer</div>-->
+                    <div class="tag-row"><span class="tag-pill">Variaciones Octaedro</span></div>
+                    <div class="desc">Diferentes formas derivadas del octaedro regular.</div>
+                  </div>
+                </article>
+
+                <!-- Obra 3 -->
+                <article class="card-3d">
+                  <div class="mv-stage">
+                    <model-viewer
+                      src="Modelos_blender/octaedro.glb"
+                      alt="Octaedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      class="mv"
+                    ></model-viewer>
+                    <div >
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                      </svg>
+                      <span class="mv-label">OBRA----</span>
+                    </div>
+                  </div>
+                  <div class="card-3d-body">
+                  <!--  <div class="artist">Wenzel Jamnitzer</div>-->
+                    <div class="tag-row"><span class="tag-pill">Variaciones Dodecaedro</span></div>
+                    <div class="desc">Diferentes formas derivadas del dodecaedro regular.</div>
+                  </div>
+                </article>
+              </div>
+
+          </section>
+          
+          <!-- Stoer-->
+          <section class="mb-3" id="Stoer">
+              <h3 class="mb-4">Lorenz Stöer(s.XVI)</h3>
+              <div class="row mb-3">
+                <div class="col-md-7 col-12">
+                    <p>Grabador alemán; en "<i>Geometria et Perspectiva</i>" inserta poliedros en paisajes arquitectónicos para entrenar la vista en perspectiva.</p>
+                    <h6>Aporte al desarrollo de los sólidos Platónicos </h6>
+                    <p>Convierte la geometría en <i>escena</i> facilitando su comprensión espacial y composición visual.</p> 
+                  </div>
+                <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
+                  <figure class="artist-hero__media">
+                    <img class="artist-hero__img" src="imagenes/Artistas/Cara_stoer.jpg" alt="Lorenz Stöer" />
+                  </figure>
                 </div>
-            </section>
-            
-            <!-- Stoer-->
-            <section class="mb-5" id="Stoer">
-                <h3 class="mb-4">Lorenz Stöer(s.XVI)</h3>
-                <div class="row mb-3">
-                    <div class="col-md-7 col-12">
-                       <p>Grabador alemán; en "<i>Geometria et Perspectiva</i>" inserta poliedros en paisajes arquitectónicos para entrenar la
-                      vista en perspectiva.</p>
-                        <h5>Aporte al desarrollo de los sólidos Platónicos </h5>
-                        <p>Convierte la geometría en <i>escena</i> facilitando su comprensión espacial y composición visual.</p> 
-                      </div>
-                    <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
-                       <figure class="artist-hero__media">
-                      <img class="artist-hero__img"
-                        src="imagenes/Artistas/Cara_stoer.jpg"
-                        alt="Lorenz Stöer" />
-                      </figure>
+              </div>
+          
+              <div class="galeria-3d">
+                <!-- Obra 1 -->
+                <article class="card-3d">
+                  <div class="mv-stage">
+                    <model-viewer
+                      src="Modelos_blender/Stoer/Obra1_stoer.glb" 
+                      alt="Tetraedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      ar
+                      ar-modes="webxr scene-viewer quick-look"
+                      class="mv"
+                    ></model-viewer>
+
+                    <!-- Overlay “OBRA----” (placeholder visual) -->
+                    <div>
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+                      </svg>
                     </div>
-                    <div class="art-gallery">
+                  </div>
 
-<section class="galeria-3d">
-  <!-- Card 1 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/Stoer/Obra1_stoer.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <!-- Overlay “OBRA----” (placeholder visual) -->
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="card-3d-body">
-      <!-- <div class="artist">[Leonardo da Vinci]</div>--> 
-      <div class="tag-row">
-        <span class="tag-pill">Poliedro central en ruinas (1567)</span>
-      </div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-
-  <!-- Card 2 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-        <model-viewer
-        src="Modelos_blender/Stoer/Obra2_stoer.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-       <!--<div class="artist">[Leonardo da Vinci]</div>-->  
-      <div class="tag-row"><span class="tag-pill">POr definir</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-
-  <!-- Card 3 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/Stoer/Obra3_stoer.glb"
-        alt="Octaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-      <!-- <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">xxxx</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-</section>
+                  <div class="card-3d-body">
+                    <!-- <div class="artist">[Leonardo da Vinci]</div>--> 
+                    <div class="tag-row">
+                      <span class="tag-pill">Poliedro central en ruinas (1567)</span>
                     </div>
+                    <div class="desc">[Descripción de la obra y contexto]</div>
+                  </div>
+                </article>
+
+                <!-- Obra 2 -->
+                <article class="card-3d">
+                  <div class="mv-stage">
+                      <model-viewer
+                      src="Modelos_blender/Stoer/Obra2_stoer.glb" 
+                      alt="Tetraedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      ar
+                      ar-modes="webxr scene-viewer quick-look"
+                      class="mv"
+                    ></model-viewer>
+
+                    <div >
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                      </svg>
+                      <span class="mv-label">OBRA----</span>
+                    </div>
+                  </div>
+                  <div class="card-3d-body">
+                    <!--<div class="artist">[Leonardo da Vinci]</div>-->  
+                    <div class="tag-row"><span class="tag-pill">POr definir</span></div>
+                    <div class="desc">[Descripción de la obra y contexto]</div>
+                  </div>
+                </article>
+
+                <!-- Obra 3 -->
+                <article class="card-3d">
+                  <div class="mv-stage">
+                    <model-viewer
+                      src="Modelos_blender/Stoer/Obra3_stoer.glb"
+                      alt="Octaedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      class="mv"
+                    ></model-viewer>
+                    <div >
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                      </svg>
+                      <span class="mv-label">OBRA----</span>
+                    </div>
+                  </div>
+                  <div class="card-3d-body">
+                    <!-- <div class="artist">[Leonardo da Vinci]</div>-->
+                    <div class="tag-row"><span class="tag-pill">xxxx</span></div>
+                    <div class="desc">[Descripción de la obra y contexto]</div>
+                  </div>
+                </article>
+              </div>
+          </section>
+
+          <hr>
+
+          <h2 id="EpocaCientifica_arte" class="my-5 text-center" style="font-size: 27pt;text-decoration: underline;"><em>Época científica</em></h2>
+
+          <!-- Kepler-->
+          <section class="mb-3" id="Kepler">
+            <h3 class="mb-4">Johannes Kepler (1571-1630)</h3>
+            <div class="row mb-3">
+              <div class="col-md-7 col-12">
+                <p>Astrónomo y matemático; busca armonías geométricas del cosmo y formaliza sólidos estrellados regulares</p>
+                <h6>Aporte al desarrollo de los sólidos Platónicos </h6>
+                <p>Pone los sólidos platónicos como hipótesis cosmológica y amplía la regularidad hacia lo no convexo.</p>
+              </div>
+              <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
+                  <figure class="artist-hero__media">
+                <img class="artist-hero__img"
+                  src="imagenes/Artistas/Cara_keppler.jpg"
+                  alt="Johannes Kepler" />
+                </figure>
+              </div>
+            </div>
+
+            <div class="galeria-3d">
+              <!-- Obra 1 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/ESCENA3.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
+
+                  <!-- Overlay “OBRA----” (placeholder visual) -->
+                  <div>
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+                    </svg>
+                  </div>
                 </div>
-            </section>
 
-            <!-- Kepler-->
-            <section class="mb-5" id="Kepler">
-                <h3 class="mb-4">Johannes Kepler (1571-1630)</h3>
-                <div class="row mb-3">
-                    <div class="col-md-7 col-12">
-                        <p>Astrónomo y matemático; busca armonías geométricas del cosmo y formaliza sólidos estrellados regulares</p>
-                        <h5>Aporte al desarrollo de los sólidos Platónicos </h5>
-                        <p>Pone los sólidos platónicos como hipótesis cosmológica y amplía la regularidad hacia lo no convexo.</p>                    </div>
-                    <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
-                       <figure class="artist-hero__media">
-                      <img class="artist-hero__img"
-                        src="imagenes/Artistas/Cara_keppler.jpg"
-                        alt="Johannes Kepler" />
-                      </figure>
-                    </div>
-
-                    <div class="art-gallery">
-
-<section class="galeria-3d">
-  <!-- Card 1 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/ESCENA3.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <!-- Overlay “OBRA----” (placeholder visual) -->
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="card-3d-body">
-     <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row">
-        <span class="tag-pill">Mysterium Cosmographicum (1596)</span>
-      </div>
-      <div class="desc">Esferas concentricas con sólidos platónicos inscritos, donde la geometría intrenta explicar el orden del universo.</div>
-    </div>
-  </article>
-
-  <!-- Card 2 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-        <model-viewer
-        src="Modelos_blender/tetraedro.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Pequeño dodecaedro estrellado </span></div>
-      <div class="desc">Estelación del dodecaedro regular, donde cada cara es reemplazada por una estrella pentagonal. </div>
-    </div>
-  </article>
-
-  <!-- Card 3 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/octaedro.glb"
-        alt="Octaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-      <!-- <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Gran dodecaedro estrellado </span></div>
-      <div class="desc">Estelación mas extrema del dodecaedro regular, donde cada cara es reemplazada por una estrella pentagramal. </div>
-    </div>
-  </article>
-</section>
-                    </div>
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row">
+                    <span class="tag-pill">Mysterium Cosmographicum (1596)</span>
+                  </div>
+                  <div class="desc">Esferas concentricas con sólidos platónicos inscritos, donde la geometría intrenta explicar el orden del universo.</div>
                 </div>
-            </section>
+              </article>
 
-            <!-- Escher-->
-            <section class="mb-5" id="Escher">
-                <h3 class="mb-4">M.C. Escher (1898-1972)</h3>
-                <div class="row mb-3">
-                    <div class="col-md-7 col-12">
-                        <p>Artista danes reconocido por su trabajo con patrones geometricos creando construcciones imposibles, telaciones e ilusiones opticas.</p>
-                        <h5>Aporte al desarrollo de los sólidos Platónicos </h5>
-                        <p>Convierte los poliedros en dispositivos poéticos y lógicos, haciendolos parte de paradojas espaciales.</p>                    </div>
-                    <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
-                       <figure class="artist-hero__media">
-                      <img class="artist-hero__img"
-                        src="imagenes/Artistas/Cara_escher.jpg"
-                        alt="M.C. Escher" />
-                      </figure>
-                    </div>
-                    <div class="art-gallery">
+              <!-- Obra 2 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                    <model-viewer
+                    src="Modelos_blender/tetraedro.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
 
-<section class="galeria-3d">
-  <!-- Card 1 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/ESCENA3.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <!-- Overlay “OBRA----” (placeholder visual) -->
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="card-3d-body">
-    <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row">
-        <span class="tag-pill">Stars</span>
-      </div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-
-  <!-- Card 2 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-        <model-viewer
-        src="Modelos_blender/tetraedro.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!-- <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Waterfall</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-
-  <!-- Card 3 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/octaedro.glb"
-        alt="Octaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Por definir</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-</section>
-                    </div>
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
                 </div>
-            </section>
-       
-
-            <!-- Gaudi-->
-            <section class="mb-5" id="Gaudi">
-                <h3 class="mb-4">Antoni Gaudí (1852-1926)</h3>
-                <div class="row mb-3">
-                    <div class="col-md-7 col-12">
-                        <p>Arquitecto y diseñador catalán, reconocido por su trabajo "La sagrada familia";integra sólidos platónicos de forma consciente, estética y estructural; en pináculos se identifican dodecaedros e icosaedros explícitos. </p>
-                        <h5>Aporte al desarrollo de los sólidos Platónicos </h5>
-                        <p>LLeva los sólidos al arte construido, integrándolos en sus diseños arquitectónicos de manera innovadora y estética.</p>                    </div>
-                    <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
-                       <figure class="artist-hero__media">
-                      <img class="artist-hero__img"
-                        src="imagenes/Artistas/Cara_gaudi.jpg"
-                        alt="Antoni Gaudí" />
-                      </figure>
-                    </div>
-                    <div class="art-gallery">
-
-<section class="galeria-3d">
-  <!-- Card 1 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/ESCENA3.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <!-- Overlay “OBRA----” (placeholder visual) -->
-      <div>
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="card-3d-body">
-    <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row">
-        <span class="tag-pill">Icosaedro de Gaudí</span>
-      </div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-
-  <!-- Card 2 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-        <model-viewer
-        src="Modelos_blender/tetraedro.glb" 
-        alt="Tetraedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        ar
-        ar-modes="webxr scene-viewer quick-look"
-        class="mv"
-      ></model-viewer>
-
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!-- <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Dodecaedro de Gaudí</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-
-  <!-- Card 3 -->
-  <article class="card-3d">
-    <div class="mv-stage">
-      <model-viewer
-        src="Modelos_blender/octaedro.glb"
-        alt="Octaedro"
-        camera-controls
-        auto-rotate
-        shadow-intensity="1"
-        exposure="1"
-        class="mv"
-      ></model-viewer>
-      <div >
-        <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-        </svg>
-        <span class="mv-label">OBRA----</span>
-      </div>
-    </div>
-    <div class="card-3d-body">
-     <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-      <div class="tag-row"><span class="tag-pill">Por definir</span></div>
-      <div class="desc">[Descripción de la obra y contexto]</div>
-    </div>
-  </article>
-</section>
-                    </div>
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Pequeño dodecaedro estrellado </span></div>
+                  <div class="desc">Estelación del dodecaedro regular, donde cada cara es reemplazada por una estrella pentagonal. </div>
                 </div>
-            </section>
+              </article>
 
-                    </div>
+              <!-- Obra 3 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/octaedro.glb"
+                    alt="Octaedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    class="mv"
+                  ></model-viewer>
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
                 </div>
-            </section>
+                <div class="card-3d-body">
+                  <!-- <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Gran dodecaedro estrellado </span></div>
+                  <div class="desc">Estelación mas extrema del dodecaedro regular, donde cada cara es reemplazada por una estrella pentagramal. </div>
+                </div>
+              </article>
+            </div>
 
-            <hr>
+          </section>
 
-            <section id="Referencias">
-                <h3 class="mb-4">Referencias</h3>
-                <ul>
-                    <li>Referencia</li>
-                    <li>Referencia</li>
-                    <li>Referencia</li>
-                    <li>Referencia</li>
-                </ul>
-            </section>
+          <hr>
 
-        </div>
-    </section>
+          <h2 id="ArteModerno" class="my-5 text-center" style="font-size: 27pt;text-decoration: underline;"><em>Arte moderno</em></h2>
+
+          <!-- Escher-->
+          <section class="mb-5" id="Escher">
+            <h3 class="mb-4">M.C. Escher (1898-1972)</h3>
+            <div class="row mb-3">
+              <div class="col-md-7 col-12">
+                <p>Artista danes reconocido por su trabajo con patrones geometricos creando construcciones imposibles, telaciones e ilusiones opticas.</p>
+                <h6>Aporte al desarrollo de los sólidos Platónicos </h6>
+                <p>Convierte los poliedros en dispositivos poéticos y lógicos, haciendolos parte de paradojas espaciales.</p>                    </div>
+              <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
+                <figure class="artist-hero__media">
+                  <img class="artist-hero__img" src="imagenes/Artistas/Cara_escher.jpg" alt="M.C. Escher" />
+                </figure>
+              </div>
+            </div>
+
+            <div class="galeria-3d">
+              <!-- Card 1 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/ESCENA3.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
+
+                  <!-- Overlay “OBRA----” (placeholder visual) -->
+                  <div>
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row">
+                    <span class="tag-pill">Stars</span>
+                  </div>
+                  <div class="desc">[Descripción de la obra y contexto]</div>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                    <model-viewer
+                    src="Modelos_blender/tetraedro.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
+
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                <!-- <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Waterfall</span></div>
+                  <div class="desc">[Descripción de la obra y contexto]</div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/octaedro.glb"
+                    alt="Octaedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    class="mv"
+                  ></model-viewer>
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Por definir</span></div>
+                  <div class="desc">[Descripción de la obra y contexto]</div>
+                </div>
+              </article>
+            </div>
+          </section>
+      
+          <!-- Gaudi-->
+          <section class="mb-5" id="Gaudi">
+            <h3 class="mb-4">Antoni Gaudí (1852-1926)</h3>
+            <div class="row mb-3">
+              <div class="col-md-7 col-12">
+                  <p>Arquitecto y diseñador catalán, reconocido por su trabajo "La sagrada familia";integra sólidos platónicos de forma consciente, estética y estructural; en pináculos se identifican dodecaedros e icosaedros explícitos. </p>
+                  <h6>Aporte al desarrollo de los sólidos Platónicos </h6>
+                  <p>LLeva los sólidos al arte construido, integrándolos en sus diseños arquitectónicos de manera innovadora y estética.</p>                    </div>
+              <div class="col-md-5 col-12 container_img" style="margin-bottom: 2rem;">
+                <figure class="artist-hero__media">
+                  <img class="artist-hero__img"
+                    src="imagenes/Artistas/Cara_gaudi.jpg"
+                    alt="Antoni Gaudí" />
+                </figure>
+              </div>
+            </div>
+
+            <div class="galeria-3d">
+              <!-- Card 1 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/ESCENA3.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
+
+                  <!-- Overlay “OBRA----” (placeholder visual) -->
+                  <div>
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7zm-3 6a1 1 0 110-2 1 1 0 010 2zm3-2a1 1 0 110-2 1 1 0 010 2zm3 3a1 1 0 110-2 1 1 0 010 2z"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row">
+                    <span class="tag-pill">Icosaedro de Gaudí</span>
+                  </div>
+                  <div class="desc">[Descripción de la obra y contexto]</div>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                    <model-viewer
+                    src="Modelos_blender/tetraedro.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
+
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                <!-- <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Dodecaedro de Gaudí</span></div>
+                  <div class="desc">[Descripción de la obra y contexto]</div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="card-3d">
+                <div class="mv-stage">
+                  <model-viewer
+                    src="Modelos_blender/octaedro.glb"
+                    alt="Octaedro"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    class="mv"
+                  ></model-viewer>
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <div class="tag-row"><span class="tag-pill">Por definir</span></div>
+                  <div class="desc">[Descripción de la obra y contexto]</div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <hr>
+
+          <section id="Referencias" class="mb-4">
+              <h3 >Referencias</h3>
+              <ul>
+                  <li>Referencia</li>
+                  <li>Referencia</li>
+                  <li>Referencia</li>
+                  <li>Referencia</li>
+              </ul>
+          </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="m-0">
@@ -756,7 +749,7 @@
                 <p>Proyecto de Tesis - Licenciatura en Enseñanza de la Matemática</p>
                 <p>Instituto Tecnológico de Costa Rica</p>
                 <p class="mt-3">Autores: Kevin Naranjo Mendoza & Youser Nuñez Alvarado</p>
-                <p>[Tutor: Ph.D. Jorge Monge Fallas</p>
+                <p>Tutor: Ph.D. Jorge Monge Fallas</p>
                 <p>I Semestre 2026</p>
             </div>
         </div>
