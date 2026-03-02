@@ -6,12 +6,12 @@
     <title>Geometría XR: Sólidos Platónicos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="Estilos.css">
 </head>
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
 <body>
 
-    <!-- Navegación Principal -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#inicio">
@@ -37,195 +37,200 @@
 
     <nav id="navContenido" class="navVisible">
         <ul class="ul_Secciones">
-            <li class="SeccionActiva"><a href="#neolitico">Ecos prehistoricos</a><span class="marcador"></span></li>
+            <li class="SeccionActiva"><a href="#neolitico">Ecos prehistóricos</a><span class="marcador"></span></li>
             <li><a href="#griego">Formalización griega</a></li>
-            <li><a href="#Renacimiento">Renacimiento y orden cosmico</a></li>
-            <li><a href="#EpocaCientifica">Euler y la Fórmula Poliédrica</a></li>
+            <li><a href="#Renacimiento">Renacimiento</a></li>
+            <li><a href="#EpocaCientifica">Geometría moderna</a></li>
+            <li><a href="#simbolismo">Geometría sagrada</a></li>
+            <li><a href="#aurea">Proporción áurea</a></li>
             <li><a href="#Referencias">Referencias</a></li>
         </ul>
     </nav>
 
-    <!-- Sección: Historia y Evolución -->
     <main id="historia" class="content-section container py-5">
-        <h2 class="section-title">HISTORIA Y SIMBOLISMO</h2>
-        <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos provident quod incidunt veritatis quibusdam ea illo ducimus blanditiis, beatae in ratione corrupti, quasi at pariatur, aliquam delectus quia eaque minima!</p>
+        <h2 class="section-title">ORIGEN Y EVOLUCIÓN HISTÓRICA</h2>
+        <p class="section-subtitle">Desde hallazgos neolíticos hasta la geometría moderna, los sólidos platónicos pasaron de ser formas simbólicas a convertirse en objetos matemáticos rigurosos y modelos culturales duraderos (Extremiana et al., 2001; González, 2013; Quesada, 2006a).</p>
 
-        <!-- Timeline -->
         <div class="timeline">
-            <!-- Item 1: Neolítico -->
             <section class="timeline-item" id="neolitico">
-                <span class="timeline-date">[3000 a.C.]</span>
-                <h3>[Ecos Prehistóricos]</h3>
-                <div class="row align-items-center">
-                    <!-- Modelo 3D Principal -->
-                    <div class="col-12 mb-4">
-                        <div class="interactive-model" id="model_solid_neolitico">
-                            <model-viewer 
-                                src="Modelos_blender/neolitico.glb"
-                                alt="neolitico"
-                                camera-controls
-                                shadow-intensity="3"
-                                camera-orbit="180deg 75deg 5m"
-                                field-of-view="50deg"
-                                min-camera-orbit="160deg 70deg 10m"
-                                max-camera-orbit="200deg 80deg 10m"
-                                class="model-3d">
-                            </model-viewer>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </section>
-
-            <!-- Item 2: Grecia -->
-            <section class="timeline-item" id="griego">
-                <span class="timeline-date">[Siglo V-IV a.C.]</span>
-                <h3>[Formalización Griega]</h3>
-                <div class="row">
-                    <div class="col-md-8">
-                        <h5>[Pitágoras y Teeteto]</h5>
-                        <p>[Texto sobre tradiciones pitagóricas]</p>
-                        
-                        <h5>[Platón y el Timeo]</h5>
-                        <p>[Texto sobre cosmogonía platónica]</p>
-                        
-                        <h5>[Euclides - Los Elementos]</h5>
-                        <p>[Texto sobre demostración de unicidad]</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="art-image-container">
-                            <i class="fas fa-scroll fa-3x" style="opacity: 0.3;"></i>
-                            <p class="mt-2">[IMÁGENES: Manuscritos griegos]</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Item 3: Renacimiento -->
-            <section class="timeline-item" id="Renacimiento">
-                <span class="timeline-date">[s. XV-XVIII]</span>
-                <h3>[Renacimiento y Orden Cósmico]</h3>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h5>[Luca Pacioli]</h5>
-                        <p>[Texto sobre De Divina Proportione]</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h5>[Johannes Kepler]</h5>
-                        <p>[Texto sobre Mysterium Cosmographicum]</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Item 4: Euler -->
-            <section class="timeline-item" id="EpocaCientifica">
-                <span class="timeline-date">[1750]</span>
-                <h3>[Euler y la Fórmula Poliédrica]</h3>
-                <div class="text-center">
+                <span class="timeline-date">c. 3200-2500 a.C.</span>
+                <h3>Ecos prehistóricos: hallazgos neolíticos en Escocia</h3>
+                <p>Las <em>Neolithic Carved Stone Balls</em> muestran patrones simétricos que recuerdan estructuras de poliedros regulares. Aunque no prueban una teoría formal, sí sugieren una intuición geométrica temprana asociada a prácticas rituales y simbólicas (Extremiana et al., 2001; González, 2013).</p>
+                <div class="text-center mt-4">
                     <div class="property-box d-inline-block">
-                        <p class="property-label">[Fórmula de Euler]</p>
+                        <p class="property-label">Lectura histórica</p>
+                        <p class="property-value">Simetría empírica antes de la formalización griega</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timeline-item" id="griego">
+                <span class="timeline-date">siglos VI-IV a.C.</span>
+                <h3>La formalización griega</h3>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h5>Pitagóricos y Teeteto</h5>
+                        <p>En la Grecia clásica, el estudio de los poliedros pasó del uso artesanal a la clasificación matemática. La tradición pitagórica impulsó su dimensión cosmológica y Teeteto sistematizó los cinco sólidos regulares convexos, base para la exposición posterior de Euclides (Hoyuelos, 2018; González, 2013).</p>
+
+                        <h5>Platón y el <em>Timeo</em></h5>
+                        <p>Platón vinculó tetraedro, octaedro, icosaedro y cubo con fuego, aire, agua y tierra; el dodecaedro quedó asociado al cosmos. Esta lectura no es una demostración matemática, sino una síntesis filosófica que consolidó el nombre de “sólidos platónicos” (Platón, 2023; Saulino, 2021).</p>
+
+                        <h5>Euclides y la demostración de unicidad</h5>
+                        <p>En el Libro XIII de <em>Los Elementos</em>, Euclides prueba que solo existen cinco poliedros regulares convexos bajo condiciones de regularidad y convexidad, cerrando la clasificación clásica (González, 2013; Quesada, 2006a).</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="container_img mt-3 mt-lg-0">
+                            <img src="imagenes/imgLS_Geometria_TFG.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
+                            <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timeline-item" id="Renacimiento">
+                <span class="timeline-date">siglos XV-XVIII</span>
+                <h3>Renacimiento y orden cósmico</h3>
+                <div class="row align-items-start">
+                    <div class="col-lg-6">
+                        <h5>Pacioli, Leonardo y la cultura visual</h5>
+                        <p>Durante el Renacimiento, los sólidos regulares articularon matemática, arte y perspectiva. En <em>De divina proportione</em>, Pacioli y los dibujos de Leonardo reforzaron el vínculo entre proporción, belleza y estructura del mundo (Pacioli, 1509; Platón, 2004).</p>
+                        <div class="container_img mt-3">
+                            <img src="imagenes/Pacioli_DaVinci_Dodecaedro.png" alt="Pacioli y dodecaedro" title="Pacioli y dodecaedro" style="min-width:260px;width:82%;">
+                            <p class="etiqueta_table mt-2">Retrato de Luca Pacioli con presencia de sólidos en el entorno pictórico.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h5>Kepler y la cosmología poliédrica</h5>
+                        <p>En <em>Mysterium Cosmographicum</em>, Kepler propuso que las órbitas planetarias conocidas podían entenderse mediante sólidos platónicos anidados. Luego, en <em>Harmonices Mundi</em>, amplió el análisis hacia poliedros estrellados, hoy llamados sólidos de Kepler (Kepler, 1619; García, 2009).</p>
+                        <div class="container_img mt-3">
+                            <img src="imagenes/RetratoKepler.jpg" alt="Retrato de Johannes Kepler" title="Retrato de Johannes Kepler" style="min-width:220px;width:55%;">
+                            <p class="etiqueta_table mt-2">Johannes Kepler y su programa cosmológico geométrico.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timeline-item" id="EpocaCientifica">
+                <span class="timeline-date">siglos XIX-XX</span>
+                <h3>Geometría moderna y continuidad clásica</h3>
+                <p>En la modernidad, el estudio de los sólidos platónicos se reformula con teoría de grupos, grafos y topología, manteniendo su valor como modelos de regularidad y simetría (Quesada, 2006; DeHovitz, 2016). A la vez, el teorema de Euler para poliedros convexos consolidó una relación estructural fundamental:</p>
+                <div class="text-center my-3">
+                    <div class="property-box d-inline-block">
+                        <p class="property-label">Fórmula de Euler</p>
                         <p class="property-value">V - A + C = 2</p>
                     </div>
                 </div>
-                <p class="mt-3">[Texto sobre el teorema de Euler]</p>
+                <p>Esta expresión revalida, en lenguaje moderno, la consistencia de la clasificación de los cinco sólidos regulares convexos (Quesada, 2006a).</p>
             </section>
         </div>
-    
 
-        <!-- Sección: Geometría Sagrada y Simbolismo -->
         <section id="simbolismo" class="content-section">
             <div class="container">
-                <h2 class="section-title">[GEOMETRÍA SAGRADA Y SIMBOLISMO]</h2>
-                <p class="section-subtitle">[Subtítulo sobre simbolismo filosófico]</p>
+                <h2 class="section-title">GEOMETRÍA SAGRADA Y SIMBOLISMO FILOSÓFICO</h2>
+                <p class="section-subtitle">La tradición filosófica asocia los sólidos con una lectura espiritual del orden del universo, distinta de su demostrabilidad matemática estricta (Saulino, 2021; Platón, 2023).</p>
 
                 <div class="row">
-                    <!-- Teoría -->
                     <div class="col-md-6 mb-4">
-                        <div class="solid-card">
+                        <div class="solid-card h-100">
                             <div class="card-content">
-                                <h3>[Concepto de Geometría Sagrada]</h3>
-                                <p>[Texto explicativo]</p>
+                                <h3>Concepto y límites del enfoque</h3>
+                                <p>La geometría sagrada interpreta regularidad, proporción y simetría como huella de armonía cósmica. Sin embargo, desde la matemática, solo son demostrables propiedades geométricas (regularidad, convexidad, clasificación), no su lectura metafísica (Saulino, 2021; Platón, 2004).</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Proporción Áurea -->
                     <div class="col-md-6 mb-4">
-                        <div class="solid-card">
-                            <div class="card-model-container">
-                                <i class="fas fa-divide fa-3x" style="opacity: 0.3;"></i>
-                                <p class="mt-2">[VISUALIZACIÓN: Proporción Áurea φ]</p>
-                            </div>
+                        <div class="solid-card h-100">
                             <div class="card-content">
-                                <h3>[La Proporción Áurea (φ)]</h3>
-                                <p>[Texto sobre φ y pentagrama pitagórico]</p>
+                                <h3>Correspondencia simbólica en el <em>Timeo</em></h3>
+                                <p>La tradición platónica asocia tetraedro-fuego, octaedro-aire, icosaedro-agua, cubo-tierra y dodecaedro-cosmos. Esta propuesta influyó en lecturas renacentistas y en el simbolismo cosmológico de Kepler (Platón, 2016; Kepler, 1621; Saulino, 2021).</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Asociación con elementos -->
-                <h3 class="text-center mt-5 mb-4">[Los Cinco Elementos Platónicos]</h3>
+                <h3 class="text-center mt-5 mb-4">Los cinco elementos platónicos</h3>
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <div class="property-box">
+                        <div class="property-box h-100">
                             <i class="fas fa-fire fa-2x mb-2"></i>
-                            <h5>[Tetraedro]</h5>
+                            <h5>Tetraedro</h5>
                             <p class="property-label">Fuego</p>
-                            <p>[Descripción breve]</p>
+                            <p>Agudeza y movilidad; figura ligada a lo dinámico en la lectura simbólica clásica (Platón, 2016).</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <div class="property-box">
+                        <div class="property-box h-100">
                             <i class="fas fa-wind fa-2x mb-2"></i>
-                            <h5>[Octaedro]</h5>
+                            <h5>Octaedro</h5>
                             <p class="property-label">Aire</p>
-                            <p>[Descripción breve]</p>
+                            <p>Intermedio de ligereza y estabilidad; asociado a mediación y equilibrio (Platón, 2016; Saulino, 2021).</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
-                        <div class="property-box">
+                        <div class="property-box h-100">
                             <i class="fas fa-cube fa-2x mb-2"></i>
-                            <h5>[Hexaedro]</h5>
+                            <h5>Hexaedro</h5>
                             <p class="property-label">Tierra</p>
-                            <p>[Descripción breve]</p>
+                            <p>Símbolo de firmeza por su estructura cuadrangular y estabilidad espacial (Platón, 2016).</p>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="property-box">
+                        <div class="property-box h-100">
                             <i class="fas fa-water fa-2x mb-2"></i>
-                            <h5>[Icosaedro]</h5>
+                            <h5>Icosaedro</h5>
                             <p class="property-label">Agua</p>
-                            <p>[Descripción breve]</p>
+                            <p>Asociado a fluidez y transformación por su alta triangulación (Saulino, 2021).</p>
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <div class="property-box">
+                        <div class="property-box h-100">
                             <i class="fas fa-star fa-2x mb-2"></i>
-                            <h5>[Dodecaedro]</h5>
+                            <h5>Dodecaedro</h5>
                             <p class="property-label">Éter/Cosmos</p>
-                            <p>[Descripción breve]</p>
+                            <p>Figura reservada al orden total del universo en la tradición platónica y neopitagórica (Platón, 2023; Pacioli, 1509).</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <hr>
+        <section id="aurea" class="mb-5">
+            <h3 class="mb-4">La proporción áurea (φ) y el pentagrama pitagórico</h3>
+            <p>La razón áurea \(\varphi=\frac{1+\sqrt{5}}{2}\) ocupa un lugar central en la tradición pitagórica y renacentista. En el pentágono regular, la diagonal y el lado cumplen \(d/a=\varphi\), relación clave para la construcción del dodecaedro y su vínculo dual con el icosaedro (Budinski, 2016; Romañach y Toboso, 2016).</p>
 
-            <section id="Referencias">
-                <h3 class="mb-4">Referencias</h3>
-                <ul>
-                    <li>Referencia</li>
-                    <li>Referencia</li>
-                    <li>Referencia</li>
-                    <li>Referencia</li>
-                </ul>
-            </section>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="container_img mt-3">
+                        <img src="imagenes/ImgProporcionAureaPentagono_TFG (1).png" alt="Relación áurea en el pentágono" title="Relación áurea en el pentágono" style="min-width:280px;width:85%;">
+                        <p class="etiqueta_table mt-2">Relación \(d/a=\varphi\) en el pentágono regular.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="container_img mt-3">
+                        <img src="imagenes/ang_central_dodecaedro.png" alt="Construcción pentagonal asociada" title="Construcción pentagonal asociada" style="min-width:280px;width:85%;">
+                        <p class="etiqueta_table mt-2">La estructura pentagonal como base simbólica y geométrica del dodecaedro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="mt-3">En términos simbólicos, el pentagrama se leyó como emblema de perfección y armonía; en términos matemáticos, expresa proporciones internas verificables en figuras pentagonales (Bonell, 1999; Romañach y Toboso, 2016).</p>
+        </section>
+
+        <hr>
+
+        <section id="Referencias">
+            <h3 class="mb-4">Referencias</h3>
+            <ul>
+                <li>Referencia</li>
+                <li>Referencia</li>
+                <li>Referencia</li>
+                <li>Referencia</li>
+            </ul>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="m-0">
         <div class="container">
             <div class="footer-content">
