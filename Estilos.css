@@ -358,7 +358,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    transition: background-color ease-in-out .7s;
+    transition: all ease-in-out .7s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -372,16 +372,33 @@ body {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    transition: background-color ease-in-out .7s;
+    transition: all ease-in-out .7s;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: 4px rgb(219, 219, 219) solid;
+    min-height: 200px;
 }
 .Solido_container_simbology:hover{
     background-color: #00000000;
     color: white;
+}
+
+.Solido_container_cosmology>h5,.Solido_container_cosmology>p{
+    z-index: 1;
+}
+
+.Solido_container_cosmology>img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+}
+.Solido_container_cosmology:hover{
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: white;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.671);
 }
 
 #Tetraedro h3{
