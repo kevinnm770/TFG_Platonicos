@@ -350,6 +350,57 @@ body {
     font-size: 8pt;
 }
 
+.Solido_container_simbology{
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all ease-in-out .7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Solido_container_cosmology{
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all ease-in-out .7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 4px rgb(219, 219, 219) solid;
+    min-height: 200px;
+}
+.Solido_container_simbology:hover{
+    background-color: #00000000;
+    color: white;
+}
+
+.Solido_container_cosmology>h5,.Solido_container_cosmology>p{
+    z-index: 1;
+}
+
+.Solido_container_cosmology>img{
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+}
+.Solido_container_cosmology:hover{
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: white;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.671);
+}
+
 #Tetraedro h3{
     background: linear-gradient(
         -30deg,
@@ -370,6 +421,31 @@ body {
     text-align: center;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
     font-weight: bold;
+}
+
+#Solido_container_Tetraedro::before{
+    background: linear-gradient(
+        -30deg,
+        black,
+        #d94a4a,
+        #e87050,
+        #f39c5a,
+        #d94a4a,
+        #e87050,
+        #f39c5a
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    padding: 4px;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+
+    z-index: -1;
 }
 
 #Tetraedro > div > div > .properties-grid > .property-box{
@@ -408,6 +484,31 @@ body {
     font-weight: bold;
 }
 
+#Solido_container_Hexaedro::before{
+    background: linear-gradient(
+        -30deg,
+        black,
+        #46302c,
+        #856445,
+        #a3694e,
+        #46302c,
+        #856445,
+        #a3694e
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    padding: 4px;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+
+    z-index: -1;
+}
+
 #Hexaedro > div > div > .properties-grid > .property-box{
     border: solid 5px #a3694e;
 }
@@ -443,6 +544,35 @@ body {
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
     font-weight: bold;
 }
+
+#Solido_container_Octaedro::before{
+    background: linear-gradient(
+        -30deg,
+        rgb(253, 253, 253),
+        #8cd8eb,
+        #83fff5,
+        #c6fffc,
+        #8cd8eb,
+        #83f1ff,
+        #c6fffc
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    padding: 4px;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+
+    z-index: -1;
+}
+#Solido_container_Octaedro:hover{
+    color: black;
+}
+
 
 #Octaedro > div > div > .properties-grid > .property-box{
     border: solid 5px #83f1ff;
@@ -480,6 +610,30 @@ body {
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
     font-weight: bold;
 }
+#Solido_container_Dodecaedro::before{
+    background: linear-gradient(
+        -30deg,
+        rgb(0, 0, 0),
+        #6a4177,
+        #12a397,
+        #000000,
+        #6a4177,
+        #12a397,
+        #000000
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    padding: 4px;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+
+    z-index: -1;
+}
 
 #Dodecaedro > div > div > .properties-grid > .property-box{
     border: solid 5px #6a4177;
@@ -515,6 +669,31 @@ body {
     text-align: center;
     text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.568);
     font-weight: bold;
+}
+
+#Solido_container_Icosaedro::before{
+    background: linear-gradient(
+        -30deg,
+        black,
+        #4a54d9,
+        #50a4e8,
+        #47cef0,
+        #4a54d9,
+        #50a4e8,
+        #47cef0
+    );
+    background-size: 400% 400%;
+    animation: efecto_elemento 15s ease infinite;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    padding: 4px;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+
+    z-index: -1;
 }
 
 #Icosaedro > div > div > .properties-grid > .property-box{
