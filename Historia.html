@@ -37,18 +37,29 @@
 
     <nav id="navContenido" class="navVisible">
         <ul class="ul_Secciones">
-            <li class="SeccionActiva"><a href="#neolitico">Ecos prehistóricos</a><span class="marcador"></span></li>
-            <li><a href="#griego">Formalización griega</a></li>
-            <li><a href="#Renacimiento">Renacimiento</a></li>
-            <li><a href="#EpocaCientifica">Geometría moderna</a></li>
-            <li><a href="#simbolismo">Geometría sagrada</a></li>
-            <li><a href="#aurea">Proporción áurea</a></li>
+            <li class="SeccionActiva">
+                <a href="#historia">Origen y evolución <span class="marcador"></span></a>
+                <ul class="ul_Subsecciones">
+                    <li class="SeccionActiva"><a href="#neolitico">Ecos prehistóricos</a></li>
+                    <li><a href="#griego">Formalización griega</a></li>
+                    <li><a href="#Renacimiento">Renacimiento</a></li>
+                    <li><a href="#EpocaCientifica">Geometría moderna</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#simbolismo">Geometría sagrada</a>
+                <ul class="ul_Subsecciones">
+                    <li><a href="#ElementosPlatonicos">Los cinco elementos platónicos</a></li>
+                    <li><a href="#CosmologiaKepler">Simbolismo cosmológico de Kepler</a></li>
+                    <li><a href="#aurea">Proporción áurea</a></li>
+                </ul>
+            </li>
             <li><a href="#Referencias">Referencias</a></li>
         </ul>
     </nav>
 
-    <main id="historia" class="content-section container py-5">
-        <section class="container">
+    <main class="content-section container py-5">
+        <section class="container" id="historia">
             <h2 class="section-title">ORIGEN Y EVOLUCIÓN HISTÓRICA</h2>
             <p class="section-subtitle mb-3">El estudio de los polígonos regulares se remonta a tiempos inclusive anteriores a su formalización en la Grecia clásica, teniendo presencia en diversas eras y culturas, desde las civilizaciones neolíticas hasta el periodo del Renacimiento, donde se reinterpretaron como signos de armonía y orden del universo.  A continuación, se presenta una reconstrucción histórica de su evolución.</p>
 
@@ -73,25 +84,33 @@
                     <h3>La formalización griega</h3>
                     <p> En la Antigua Grecia (siglos VI y III a.C.)  se produce un giro epistemológico que traslada los poliedros del ámbito de la manufactura y el rito al de la demostración y clasificación, resaltandose tres movimientos complementarios durante este periodo con los cuales se forja la clasificación matemática, se dota a los sólidos de un marco cosmológico y proporcional, y se proporciona la demostración rigurosa de su unicidad, lo que fija las bases de la geometría clásica.</p>
                     <div class="row mt-4">
-                        <div class="col-lg-7">
-                            <h5>Pitagóricos e Hipaso de Metaponto (siglo VI-V a.C)</h5>
-                            <p>El proceso organizado y riguroso de estudiar, definir, clasificar y enumerar estos cuerpos geométricos se inicia en el entorno pitagórico, escuela a la cual se le atribuye la construcción del <strong>tetraedro</strong> y la del <strong>dodecaedro</strong>, dándole a estas figuras gran carga simbólica y cosmológica. Estudios revelan el carácter reservado de este tema, dando pie al paradigma de <em>Hipaso de Metaponto</em> (siglo VI–V a.C.), a quien se sabe se sancionó de esta escuela por divulgar el método para inscribir un dodecaedro en la esfera, lo que ilustra el valor esotérico dado a estos conocimientos (Hoyuelos, 2018).</p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+
+                        <h5>Pitagóricos e Hipaso de Metaponto (siglo VI-V a.C)</h5>
+                        <p>El proceso organizado y riguroso de estudiar, definir, clasificar y enumerar estos cuerpos geométricos se inicia en el entorno pitagórico, escuela a la cual se le atribuye la construcción del <strong>tetraedro</strong> y la del <strong>dodecaedro</strong>, dándole a estas figuras gran carga simbólica y cosmológica. Estudios revelan el carácter reservado de este tema, dando pie al paradigma de <em>Hipaso de Metaponto</em> (siglo VI–V a.C.), a quien se sabe se sancionó de esta escuela por divulgar el método para inscribir un dodecaedro en la esfera, lo que ilustra el valor esotérico dado a estos conocimientos (Hoyuelos, 2018).</p>
+
+                        <div class="col-0 col-lg-2"></div>
+                        <div class="col-lg-4 col-12">
+                            <div class="container_img mt-3 mt-lg-0 h-100">
+                                <img src="imagenes/pitagoricos.jpg" alt="Representación de Pitágoras enseñando en su escuela" title="Representación de Pitágoras enseñando en su escuela" style="min-width:200px;width:100%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Representación de Pitágoras enseñando en su escuela</p>
                             </div>
                         </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="container_img mt-3 mb-5 mt-lg-0">
+                                <img src="imagenes/hipaso.jpg" alt="Retrato de Hipaso de Metaponto" title="Retrato de Hipaso de Metaponto" style="min-width:200px;width:50%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Hipaso de Metaponto</p>
+                            </div>
+                        </div>
+                        <div class="col-0 col-lg-2"></div>
 
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 py-auto">
                             <h5>Teeteto de Atenas (415-369 a.C)</h5>
                             <p> A él se le atribuye el estudio sistemático de los cinco poliedros regulares ,con la identificación explícita del <strong>octaedro</strong> y del <strong>icosaedro</strong>, y la formulación de que no existen otros poliedros convexos regulares distintos del tetraedro, hexaedro, octaedro, dodecaedro e icosaedro. Sus aportes alimentan la teoría de magnitudes inconmensurables (conocidos hoy día como los números irracionales) compilada en el Libro X de <em>Los Elementos</em> y preparan el terreno para la formalización definitiva que realizará <em>Euclides</em>.</p>
                         </div>
                         <div class="col-lg-5">
-                            <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                            <div class="container_img mt-3 mb-5 mt-lg-0">
+                                <img src="imagenes/teeteto.jpg" alt="Retrato de Teeteto de Atenas" title="Retrato de Teeteto de Atenas" style="min-width:200px;width:30%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Teeteto de Atenas</p>
                             </div>
                         </div>
 
@@ -103,9 +122,13 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                                <img src="imagenes/platon.jpg" alt="Retrato de Platón" title="Retrato de Platón" style="min-width:200px;width:50%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Platón</p>
                             </div>
+                        </div>
+                        <div class="container_img my-4 mt-lg-0">
+                            <img src="imagenes/Los-5-solidos-platonicos.png" alt="Los 5 sólidos platónicos" title="Los 5 sólidos platónicos" style="min-width:300px;width:40%;">
+                            <p class="etiqueta_table mt-2">Los 5 sólidos platónicos</p>
                         </div>
 
                         <div class="col-lg-7">
@@ -115,10 +138,26 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                                <img src="imagenes/euclides.jpg" alt="Retrato de Euclides" title="Retrato de Euclides" style="min-width:200px;width:50%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Euclides</p>
                             </div>
                         </div>
+
+                        <div class="col-0 col-lg-2"></div>
+                        <div class="col-lg-4 col-12 mt-4">
+                            <div class="container_img mt-3 mt-lg-0 h-100">
+                                <img src="imagenes/MosaicosRegulares_LosElementos (1).jpg" alt="Mosaicos regulares de la edición de Billingsley de Los Elementos de Euclides" title="Mosaicos regulares de la edición de Billingsley de Los Elementos de Euclides" style="min-width:200px;width:100%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Mosaicos regulares de la edición de Billingsley de Los Elementos de Euclides</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="container_img mt-3 pt-5 mb-5 mt-lg-0">
+                                <img src="imagenes/ProporcionesElementos_mejorada (1).jpg" alt="Bosquejo de las proporciones de las aristas de los sólidos platónicos con el diámetro de la esfera circunscrita" title="Bosquejo de las proporciones de las aristas de los sólidos platónicos con el diámetro de la esfera circunscrita" style="min-width:200px;width:100%;">
+                                <p class="etiqueta_table mt-2 mb-0">Bosquejo de las proporciones de las aristas de los sólidos platónicos con el diámetro de la esfera circunscrita</p>
+                                <p class="etiqueta_table" style="font-size: 8pt;">Tomada de <a href="https://matematicasiesoja.wordpress.com/wp-content/uploads/2020/04/14poliedros.pdf">González, P.L. (2013). Los sólidos platónicos: Historia de los poliedros regulares.</a></p>
+                            </div>
+                        </div>
+                        <div class="col-0 col-lg-2"></div>
                     </div>
                 </section>
 
@@ -127,56 +166,91 @@
                     <h3>El Renacimiento</h3>
                     <p>El Renacimiento reactivó el interés por la geometría como lenguaje de orden y proporción, integrando los poliedros en la práctica artística (perspectiva, representación y desarrollos en plano) y en una visión filosófico-cosmológica del mundo. En este horizonte, la divina proporción se convirtió en principio estético y constructivo; Pacioli la articuló con los sólidos platónicos y Leonardo la hizo visible en sus célebres láminas. Paralelamente, autores como Piero della Francesca y Dürer sistematizaron métodos de representación que consolidaron la presencia de los poliedros en la cultura visual de la época, mientras Jamnitzer exploró variaciones formales sin pretensión demostrativa. El proyecto alcanza su culminación simbólica con Kepler, quien, en el Mysterium Cosmographicum, concibió una cosmología poliédrica que enlaza belleza, matemática y orden celeste. Esta sección aborda, primero, el resurgimiento matemático y el simbolismo geométrico y, luego, el modelo cosmológico kepleriano</p>
                     <div class="row mt-4">
-                        <div class="col-lg-7">
-                            <h5>Luca Pacioli y Leonardo da Vinci (1445-1519)</h5>
-                            <p>Luca Pacioli (1445–1517) inspirado en Euclides y Platón, presenta en <em>Divina proportione</em> el estudio de los sólidos platónicos y arquimedianos, estableciendo correspondencias entre la proporción áurea y la divinidad; en la linea del <em>Timeo</em> le atribuye al dodecaedro al cielo o quintaesencia. Aunado a esto, la obra incluye sesenta dibujos realizados por Leonardo Da Vinci (1452–1519), obras que cuentan con notorio uso de la perspectiva (Pacioli, 1509; Platón, 2004).</p>
+
+                        <h5>Luca Pacioli y Leonardo da Vinci (1445-1519)</h5>
+                        <p>Luca Pacioli (1445–1517) inspirado en Euclides y Platón, presenta en <em>Divina proportione</em> el estudio de los sólidos platónicos y arquimedianos, estableciendo correspondencias entre la proporción áurea y la divinidad; en la linea del <em>Timeo</em> le atribuye al dodecaedro al cielo o quintaesencia. Aunado a esto, la obra incluye sesenta dibujos realizados por Leonardo Da Vinci (1452–1519), obras que cuentan con notorio uso de la perspectiva (Pacioli, 1509; Platón, 2004).</p>
+
+                        <div class="col-0 col-lg-2"></div>
+                        <div class="col-lg-4 col-12">
+                            <div class="container_img mt-3 mt-lg-0 h-100">
+                                <img src="imagenes/LucaPacioli (1).jpg" alt="Retrato de Luca Pacioli con un dodecaedro a su derecha, hecha por Jacobo de Barbari (1495)" title="Retrato de Luca Pacioli con un dodecaedro a su derecha, hecha por Jacobo de Barbari (1495)" style="min-width:200px;width:100%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Luca Pacioli con un dodecaedro a su derecha, hecha por Jacobo de Barbari (1495)</p>
+                            </div>
                         </div>
-                        <div class="col-lg-5">
+                        <div class="col-lg-4 col-12">
+                            <div class="container_img mt-3 mb-5 mt-lg-0">
+                                <img src="imagenes/Artistas/Cara_davimci.jpg" alt="Retrato de Leonardo da Vinci" title="Retrato de Leonardo da Vinci" style="min-width:200px;width:50%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Leonardo da Vinci</p>
+                            </div>
+                        </div>
+                        <div class="col-0 col-lg-2"></div>
+
+                        <div class="col-lg-7 mt-lg-5">
+                            <h5>Johannes Kepler (1571–1630)</h5>
+                            <p>Inspirado en los dibujos de Leonardo y la connotación simbólica de Platón, Johannes Kepler propone una cosmología poliédrica mediante su obra <em>Mysterium Cosmographicum</em> (1596) donde postula que las seis órbitas planetarias (Mercurio, Venus, Tierra, Marte, Júpiter, Saturno) están separadas por los cinco sólidos platónicos (Kepler, 1619)</p>
+                            <p>Además, en otra de sus grandes obras, el <em>Harmonices Mundi</em>, en su búsqueda del “plan del Creador” y de las “causas formales” del cosmos, concebido como un orden geométrico perfecto (Garcia, 2009), profundiza en los conceptos de convexidad y regularidad de los sólidos platónicos. Este análisis le permitió ampliar la noción de poliedro regular al considerar figuras que conservan la regularidad pero no la convexidad, dando origen a los hoy denominados sólidos de Kepler.</p>
+                        </div>
+                        <div class="col-lg-5 mt-lg-5 mb-5">
                             <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                                <img src="imagenes/Artistas/Cara_keppler.jpg" alt="Retrato de Johannes Kepler" title="Retrato de Johannes Kepler" style="min-width:200px;width:80%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Johannes Kepler</p>
                             </div>
                         </div>
 
-                        <div class="row my-3">
+                        <div class="col-lg-7 mt-lg-5">
+                            <h5>Leonhard Euler (1707–1783)</h5>
+                            <p>En 1750, Leonhard Euler dio a conocer su teorema para poliedros convexos (<a href="Geometría.html#TeoremaEuler">Teorema de Euler</a>). Él mismo expresó su asombro de que una propiedad tan general de la estereotomía (arte y técnica geométrica de cortar y ensamblar sólidos mediante el trazado preciso de sus superficies y secciones) no hubiese sido observada antes, pese a la antigüedad del estudio de los poliedros (mencionado en su correspondencia con Goldbach). La fórmula posee una prueba sencilla y hoy es objeto de estudio en topología; y que incluso esta fórmula de Euler, junto con las condiciones de regularidad, permite demostrar nuevamente que solo existen 5 poliedros regulares convexos, corroborando la clasificación clásica de Euclides.</p>
+                        </div>
+                        <div class="col-lg-5 mt-lg-5">
+                            <div class="container_img mt-3 mt-lg-0">
+                                <img src="imagenes/euler.jpg" alt="Retrato de Leonhard Euler" title="Retrato de Leonhard Euler" style="min-width:280px;width:50%;border-radius: 15px;">
+                                <p class="etiqueta_table mt-2">Retrato de Leonhard Euler</p>
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
                             <div class="col-lg-3">
                                 <h5>Pierro della Francesca <br>(1425–1492)</h5>
                                 <p>Realiza un estudio completo de los poliedros regulares, apoyado en el <em>Los Elementos</em> de Euclides, destaca que mientras los polígonos regulares son infinitos, solo hay cinco poliedros regulares.</p>
                             </div>
                             <div class="col-lg-3">
-                                <h5>lbert Dürer <br>(1471–1528)</h5>
-                                <p>Describe los platónicos y arquimedianos, con énfasis en elementos y proyecciones en el plano, dándole especial abordaje al dodecaedro e icosaedro mediante el uso de la proporción áurea.</p>
+                                <div class="container_img mt-3 mb-5 mb-lg-0 mt-lg-0">
+                                    <img src="imagenes/piero.jpg" alt="Retrato de Pierro della Francesca" title="Retrato de Pierro della Francesca" style="min-width:280px;width:50%;border-radius: 15px;">
+                                    <p class="etiqueta_table mt-2">Retrato de Pierro della Francesca</p>
+                                </div>
                             </div>
                             <div class="col-lg-3">
                                 <h5>Augustin Hirschvogel <br>(1503–1553)</h5>
                                 <p>Artista, matemático y cartógrafo alemán, quien explora a los cinco sólidos platónicos en su pequeño libro <em>Una instrucción verdadera y completa en geometría</em> (1543) mediante distintas perspectiva.</p>
                             </div>
                             <div class="col-lg-3">
+                                <div class="container_img mt-3 mt-lg-0">
+                                    <img src="imagenes/Hirschvogel.jpg" alt="Retrato de Augustin Hirschvogel" title="Retrato de Augustin Hirschvogel" style="min-width:280px;width:50%;border-radius: 15px;">
+                                    <p class="etiqueta_table mt-2">Retrato de Augustin Hirschvogel</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-lg-5">
+                            <div class="col-lg-3">
+                                <h5>Albert Dürer <br>(1471–1528)</h5>
+                                <p>Describe los platónicos y arquimedianos, con énfasis en elementos y proyecciones en el plano, dándole especial abordaje al dodecaedro e icosaedro mediante el uso de la proporción áurea.</p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="container_img mt-3 mb-5 mb-lg-0 mt-lg-0">
+                                    <img src="imagenes/durer.jpg" alt="Retrato de Albert Dürer" title="Retrato de Albert Dürer" style="min-width:280px;width:50%;border-radius: 15px;">
+                                    <p class="etiqueta_table mt-2">Retrato de Albert Dürer</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
                                 <h5>Wentzel Jamnitzer <br>(1508–1585)</h5>
                                 <p>Publica <em>Perspectiva corporum regularium</em> (1568), con veintitrés variaciones de cada sólido platónico y ejemplos arquimedianos, sin formalización matemática (Jamnitzer, 1568).</p>
                             </div>
-                        </div>
-
-                        <div class="col-lg-7">
-                            <h5>Johannes Kepler (1571–1630)</h5>
-                            <p>Inspirado en los dibujos de Leonardo y la connotación simbólica de Platón, Johannes Kepler propone una cosmología poliédrica mediante su obra <em>Mysterium Cosmographicum</em> (1596) donde postula que las seis órbitas planetarias (Mercurio, Venus, Tierra, Marte, Júpiter, Saturno) están separadas por los cinco sólidos platónicos (Kepler, 1619)</p>
-                            <p>Además, en otra de sus grandes obras, el <em>Harmonices Mundi</em>, en su búsqueda del “plan del Creador” y de las “causas formales” del cosmos, concebido como un orden geométrico perfecto (Garcia, 2009), profundiza en los conceptos de convexidad y regularidad de los sólidos platónicos. Este análisis le permitió ampliar la noción de poliedro regular al considerar figuras que conservan la regularidad pero no la convexidad, dando origen a los hoy denominados sólidos de Kepler.</p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-7">
-                            <h5>Leonhard Euler (1707–1783)</h5>
-                            <p>En 1750, Leonhard Euler dio a conocer su teorema para poliedros convexos (<a href="Geometría.html#TeoremaEuler">Teorema de Euler</a>). Él mismo expresó su asombro de que una propiedad tan general de la estereotomía (arte y técnica geométrica de cortar y ensamblar sólidos mediante el trazado preciso de sus superficies y secciones) no hubiese sido observada antes, pese a la antigüedad del estudio de los poliedros (mencionado en su correspondencia con Goldbach). La fórmula posee una prueba sencilla y hoy es objeto de estudio en topología; y que incluso esta fórmula de Euler, junto con las condiciones de regularidad, permite demostrar nuevamente que solo existen 5 poliedros regulares convexos, corroborando la clasificación clásica de Euclides.</p>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="container_img mt-3 mt-lg-0">
-                                <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="min-width:280px;width:80%;">
-                                <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                            <div class="col-lg-3">
+                                <div class="container_img mt-3 mt-lg-0">
+                                    <img src="imagenes/Artistas/Cara_Wenzel.jpg" alt="Retrato de Wentzel Jamnitzer" title="Retrato de Wentzel Jamnitzer" style="min-width:280px;width:50%;border-radius: 15px;">
+                                    <p class="etiqueta_table mt-2">Retrato de Wentzel Jamnitzer</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,8 +261,9 @@
                     <h3>Geometría moderna y continuidad clásica</h3>
                     <p>En la modernidad, los sólidos platónicos se estudian desde su <a href="Geometría.html#Simetria">simetrías</a> y combinatoria, empleando herramientas de teoría de grupos (área del álgebra que formaliza las simetrías mediante operaciones con estructura algebraica), grafos (estudio de estructuras formadas por vértices y aristas que modelan relaciones) y topología. Este cambio de foco mantiene su papel ejemplar como modelos de regularidad y estructura, debido a que los sólidos platónicos son fuertemente simétricos, es decir, poseen simetría puntual (un centro), múltiples ejes que pasan por ese centro (simetría axial) y planos de simetría que lo contienen. La representación mediante el uso de grafos sirve para clarificar y definir las relaciones entre vértices, aristas y caras, para un estudio mas completo de sus simetrías.</p>
                     <div class="container_img mt-lg-0">
-                        <img src="imagenes/IMG_default.jpg" alt="Representación de los cinco sólidos platónicos" title="Representación de los cinco sólidos platónicos" style="width:300px;">
-                        <p class="etiqueta_table mt-2">Representación clásica de los cinco sólidos platónicos.</p>
+                        <img src="imagenes/Grafos_sólidosPlatónicos (1).jpg" alt="Grafos asociados a cada sólido platónico" title="Grafos asociados a cada sólido platónico" style="width:300px;width: 60%;">
+                        <p class="etiqueta_table mt-2 mb-0">Grafos asociados a cada sólido platónico</p>
+                        <p class="etiqueta_table m-0" style="font-size: 8pt;">Tomada de <a href="https://www.academia.edu/9405740/Los_s%C3%B3lidos_plat%C3%B3nicos">Quesada, C. (2006). Los sólidos platónicos: Historia, Propiedades y Arte.</a></p>
                     </div>
                 </section>
             </section>
@@ -360,21 +435,21 @@
             </section>
 
             <section id="aurea">
-                <h3 class="mb-4">La proporción áurea (φ) y el pentagrama pitagórico</h3>
+                <h3 class="mb-4">La proporción áurea (\(\phi\)) y el pentagrama pitagórico</h3>
                 <p>El número áurea \(\phi= \tfrac{1+\sqrt{5}}{2}\approx 1.618\) o número de oro, ocupa un lugar central en la tradición pitagórica ya que reúne dos dimensiones: por un lado, una propiedad matemática bien definida; por el otro, una lectura mística y esotérico asociada a la armonía del cosmos (Romañach y Toboso, 2016). Diversos autores la presentan como un principio universal de belleza (Ghyka, 1983), en el renacimiento, Luca Pacioli le dio la denominación “divina” y fundamento su valor simbólico mediante analogías con atributos divinos (Pacioli, 1509).</p>
                 <p>La razón áurea “\(\phi\)” se encuentra presente en las figuras pentagonales, por lo que está estrechamente relacionada al dodecaedro, y de manera dual, al icosaedro. En el pentágono regular la razón entre la diagonal y la medida de sus lados es \(\phi\), con lo cual se cumple que para un pentágono regular cualquiera de lado “\(a\)”, la diagonal de este va a medir \(a \cdot\phi\) (Budinski, 2016; Romañach y Toboso, 2016)</p>
 
                 <div class="container_img my-3">
-                    <img src="imagenes/ImgProporcionAureaPentagono_TFG (1).png" alt="Relación áurea en el pentágono" title="Relación áurea en el pentágono" style="min-width:200px;width:50%;">
-                    <p class="etiqueta_table mt-2">Relación \(d/a=\varphi\) en el pentágono regular.</p>
+                    <img src="imagenes/RazonAureaPentagono (1).jpg" alt="Razón Áurea entre la diagonal y el lado de un pentágono" title="Razón Áurea entre la diagonal y el lado de un pentágono" style="min-width:200px;width:30%;">
+                    <p class="etiqueta_table mt-2">Razón Áurea entre la diagonal y el lado de un pentágono</p>
                 </div>
 
                 <p>De esta forma es posible establecer un proceso constructivo donde el dodecaedro puede obtenerse a partir de un cubo interno y de tres rectángulos ortogonales ligados a la proporción áurea. De manera dual, el icosaedro se construye a partir de tres rectángulos áureos mutuamente ortogonales, con lados en proporción “\(1:\phi\)”; en la descripción por coordenadas de estos sólidos, aparece de manera explicita (Romañach y Toboso, 2016).</p>
                 <p>El numero de oro se encuentra presente en el pentagrama, símbolo utilizado como emblema por parte de la escuela pitagórica (ver Figura 16), retomando la propiedad presente en <em>Los Elementos</em> de Euclides, donde este demuestra que en el pentágono regular las diagonales se cortan en media y extrema razón (Romañach y Toboso, 2016). En De divina proportione, Pacioli fundamenta su clasificación de la proporción divina en propiedades como su unicidad, la invariabilidad de \(\phi\), su irracionalidad y su función ordenadora en el dodecaedro (quintaesencia/ universo). Según su interpretación, el numero áureo se puede considerar símbolo de crecimiento, recurrencia e identidad a la variedad, y como paradigma de armonía formal en contextos filosóficos y artísticos (Bonell, 1999).</p>
 
                 <div class="container_img my-3">
-                    <img src="imagenes/ImgProporcionAureaPentagono_TFG (1).png" alt="Relación áurea en el pentágono" title="Relación áurea en el pentágono" style="min-width:200px;width:50%;">
-                    <p class="etiqueta_table mt-2">Relación \(d/a=\varphi\) en el pentágono regular.</p>
+                    <img src="imagenes/PentagramaPitagorico (1).png" alt="Pentagrama pitagórico" title="Pentagrama pitagórico" style="min-width:200px;width:50%;">
+                    <p class="etiqueta_table mt-2">Pentagrama pitagórico</p>
                 </div>
             </section>
         </section>
