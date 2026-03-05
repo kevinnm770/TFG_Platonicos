@@ -1190,7 +1190,7 @@ footer {
 }
 
 /* Responsive: en pantallas pequeñas se apila */
-@media (max-width: 900px){
+@media screen and (max-width: 900px){
   .artist-hero{
     grid-template-columns: 1fr;
   }
@@ -1200,4 +1200,6 @@ footer {
   .artist-hero__img{
     max-width: 420px;
   }
+
+  #neolitico_model{display: none;}
 }
