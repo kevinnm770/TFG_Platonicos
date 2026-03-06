@@ -446,7 +446,38 @@
             <div class="galeria-3d">
               <!-- Obra 1 -->
               <article class="card-3d">
-                <img id="img-obra-10" src="imagenes/modeloKepler.jpg" alt="Modelo cosmológico de Kepler" height="100%" style="display:none;">
+                <img id="img-obra-11" src="imagenes/Peq_dodecaedro_estrellado_Kepler.jpg" alt="Pequeño dodecaedro estrellado" height="100%" style="display:none;">
+                <div class="mv-stage">
+                    <model-viewer
+                    src="Modelos_blender/PequenioDodecaedroEstrellado_Kepler.glb" 
+                    alt="Pequeño dodecaedro estrellado"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    class="mv"
+                  ></model-viewer>
+
+                  <div >
+                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                    </svg>
+                    <span class="mv-label">OBRA----</span>
+                  </div>
+                </div>
+                <div class="card-3d-body">
+                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
+                  <button id="btn-obra-11" data-image-id="img-obra-11" aria-pressed="false" class="btn btn-outline-secondary" style="border-radius: 50%;padding: 0 5px 0 5px;float: right;"><i class="bi bi-image"></i></button>
+                  <div class="tag-row"><span class="tag-pill">Pequeño dodecaedro estrellado </span></div>
+                  <div class="desc">Estelación del dodecaedro regular, donde cada cara es reemplazada por una estrella pentagonal. </div>
+                </div>
+              </article>
+
+              <!-- Obra 2 -->
+              <article class="card-3d">
+                <img id="img-obra-10" src="imagenes/modeloKepler_original2.jpg" alt="Modelo cosmológico de Kepler" height="100%" style="display:none;">
                 <div class="mv-stage">
                   <model-viewer
                     src="Modelos_blender/ESCENA3.glb" 
@@ -475,37 +506,6 @@
                     <span class="tag-pill">Mysterium Cosmographicum (1596)</span>
                   </div>
                   <div class="desc">Esferas concentricas con sólidos platónicos inscritos, donde la geometría intrenta explicar el orden del universo.</div>
-                </div>
-              </article>
-
-              <!-- Obra 2 -->
-              <article class="card-3d">
-                <img id="img-obra-11" src="imagenes/Peq_dodecaedro_estrellado_Kepler.jpg" alt="Pequeño dodecaedro estrellado" height="100%" style="display:none;">
-                <div class="mv-stage">
-                    <model-viewer
-                    src="Modelos_blender/PequenioDodecaedroEstrellado_Kepler.glb" 
-                    alt="Pequeño dodecaedro estrellado"
-                    camera-controls
-                    auto-rotate
-                    shadow-intensity="1"
-                    exposure="1"
-                    ar
-                    ar-modes="webxr scene-viewer quick-look"
-                    class="mv"
-                  ></model-viewer>
-
-                  <div >
-                    <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-                    </svg>
-                    <span class="mv-label">OBRA----</span>
-                  </div>
-                </div>
-                <div class="card-3d-body">
-                <!--  <div class="artist">[Leonardo da Vinci]</div>-->
-                  <button id="btn-obra-11" data-image-id="img-obra-11" aria-pressed="false" class="btn btn-outline-secondary" style="border-radius: 50%;padding: 0 5px 0 5px;float: right;"><i class="bi bi-image"></i></button>
-                  <div class="tag-row"><span class="tag-pill">Pequeño dodecaedro estrellado </span></div>
-                  <div class="desc">Estelación del dodecaedro regular, donde cada cara es reemplazada por una estrella pentagonal. </div>
                 </div>
               </article>
 
