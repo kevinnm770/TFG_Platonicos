@@ -171,7 +171,20 @@ document.addEventListener('DOMContentLoaded', function() {
             boton.setAttribute('aria-pressed', visible ? 'true' : 'false');
         });
     });
-    
+
+    document.querySelectorAll('.desc').forEach(element=>{
+        const content=element.innerText;
+        const short_content=content.slice(0, 150)+" ...";
+        element.innerText=short_content;
+        element.addEventListener('mouseenter',function(){
+            element.innerText=content;
+            element.style.paddingBottom="20px";
+        });
+        element.addEventListener('mouseleave',function(){
+            element.innerText=short_content;
+            element.style.paddingBottom="0";
+        });
+    });
 });
 
 function resetPolypad(numFrame) {
