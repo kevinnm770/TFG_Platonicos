@@ -1039,6 +1039,27 @@ footer {
     .hero-title {
         font-size: 2rem;
     }
+
+    .hero-mobile-fullwidth {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero-mobile-fullwidth .hero-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-mobile-fullwidth .interactive-model {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero-mobile-fullwidth model-viewer,
+    .hero-mobile-fullwidth .model-3d {
+        width: 100% !important;
+    }
     
     .section-title {
         font-size: 1.8rem;
