@@ -1185,7 +1185,8 @@ footer {
 }
 
 .card-3d-body:hover{
-    height: max-content;
+    height: min-content;
+    padding-bottom: 20px;
 }
 
 .artist{

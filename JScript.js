@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
         element.innerText=short_content;
         element.addEventListener('mouseenter',function(){
             element.innerText=content;
-            element.style.paddingBottom="20px";
+            element.style.paddingBottom="50px";
         });
         element.addEventListener('mouseleave',function(){
             element.innerText=short_content;
