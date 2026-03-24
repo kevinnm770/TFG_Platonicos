@@ -12,7 +12,7 @@
 <body>
 
     <!-- Navegación Principal -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="main-navbar">
         <div class="container hero-mobile-fullwidth">
             <a class="navbar-brand" href="#inicio">
                 <i class="fas fa-cube"></i> Sólidos Platónicos
@@ -39,8 +39,8 @@
     <section id="inicio" class="hero-section">
         <div class="container hero-mobile-fullwidth">
             <div class="hero-content">
-                <h1 class="hero-title">Geometría XR</h1>
-                <p class="hero-subtitle">Explora los sólidos platónicos en 3D y realidad aumentada para comprender su simetría, estructura y belleza matemática.</p>
+                <h1 class="hero-title">Sólidos platónicos</h1>
+                <p class="hero-subtitle">Explora su geometría, historia, arte y visualización en 3D y realidad extendida.</p>
                 
                 <div class="interactive-model" style="padding: 0;">
                     <model-viewer 
@@ -48,6 +48,7 @@
                         alt="Los 5 sólidos platónicos"
                         camera-controls
                         shadow-intensity="3"
+                        shadow-softness="1"
                         ar
                         ar-modes="webxr scene-viewer quick-look"
                         camera-orbit="70deg 75deg 2m"
@@ -65,7 +66,7 @@
                                     
 
                 <div class="mt-4">
-                    <p style="font-size: 1.1rem;">Los sólidos platónicos son cinco poliedros regulares convexos cuyas caras son polígonos congruentes y y en cuyos vértices concurre el mismo número de caras. Estos modelos permiten conectar historia, simbolismo, arte y geometría en una experiencia interactiva e inmersiva.</p>
+                    <p style="font-size: 1.1rem;">Los sólidos platónicos son cinco poliedros regulares convexos cuyas caras son polígonos congruentes y en cuyos vértices concurre el mismo número de caras. Estos modelos permiten conectar historia, simbolismo, arte y geometría en una experiencia interactiva e inmersiva.</p>
                 </div>
             </div>
         </div>

@@ -7,6 +7,22 @@ document.querySelectorAll('.custom-tab').forEach(tab => {
     });
 });
 
+const navbar = document.getElementById('main-navbar');
+const stopSection = document.querySelector('#inicio + section'); // la sección después del hero
+// O por ID directo: document.querySelector('#segunda-seccion')
+
+window.addEventListener('scroll', () => {
+    const stopPoint = stopSection.offsetTop - navbar.offsetHeight;
+
+    if (window.scrollY >= stopPoint) {
+        navbar.classList.add('anchored');
+        navbar.style.top = stopPoint + 'px';
+    } else {
+        navbar.classList.remove('anchored');
+        navbar.style.top = '0';
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // Obtener elementos
