@@ -9,6 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="Estilos.css">
 </head>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <body>
 
     <!-- Navegación Principal -->
@@ -69,13 +70,20 @@
             <p>La palabra <strong>poliedro</strong> proviene del griego <em>polý</em>, que significa "muchos", y <em>hédra</em>, que significa "cara" o "base" (Oliván, 2014). En términos geométricos, Oliván (2014) define el concepto de la siguiente manera:</p>
             <p style="padding-left: 25px;"> Un poliedro es un cuerpo goemétrico en tres dimensiones cuyas caras son planas y que encierra un volumen finito. Los segmentos que unen dos <strong>caras</strong> se denominan <strong>aristas</strong> y los puntos en los que se cortan varias aristas se llaman <strong>vértices</strong> (p. 106).</p>
 
-            <div class="mt-4 container_img">
-                <!--Imagen-->
-                <img src="imagenes/ImgPoliedro_TFG.png" alt="Ejemplo de poliedro y sus componentes" title="Ejemplo de poliedro y sus componentes" style="min-width: 250px;width: 30%;">
-                <p class="etiqueta_table mt-2">
-                    Ejemplo de poliedro y sus componentes
-                </p>
-            </div>
+            <model-viewer
+                    src="Modelos_blender/Representaciones/def_poliedro.glb" 
+                    alt="Tetraedro"
+                    camera-controls
+
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-orbit="90deg 90deg 7.5m"
+                    field-of-view="50deg"
+                    min-camera-orbit="auto auto 5m"
+                    max-camera-orbit="auto auto 10m"
+                    class="mv mt-2"
+            ></model-viewer>
+            <p class="etiqueta_table mt-2 mb-5">Ejemplo de poliedro y sus componentes</p>
 
             <p>Los <strong>sólidos platónicos</strong> representan un caso particular de poliedros, específicamente, de poliedros <strong>regulares</strong>, es decir, todas sus caras, aristas y vértices son congruentes; en ellos, las caras se encuentran bajo los mismos ángulos y con igual número de aristas en cada vértice, lo que implica que todas las caras correspondan a un mismo polígono regular (Bellamy, 2016). Y, a la vez, <strong>convexos</strong> en donde para cualquier par de puntos pertenecientes al sólido, el segmento que los une queda completamente contenido dentro de él; en otras palabras, el sólido no presenta concavidades ni intersecciones hacia su interior.</p>
 
@@ -89,6 +97,8 @@
                             Ejemplo de poliedro no convexo
                         </p>
                     </div>
+                </div>
+                <div class="col-xl-4 col-12">
                     <div class="container_img">
                         <!--Imagen-->
                         <img src="imagenes/ImgPoliedrosNoRegulares_Cuadrados.png" alt="Ejemplos de poliedros no regulares" title="Ejemplos de poliedros no regulares" style="width: 350px;">
@@ -97,17 +107,22 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-12">
-                    <div class="container_img">
-                        <!--Imagen-->
-                        <img src="imagenes/ImgEjPoliedroRegularConvexo_Cuadrado.png" alt="Ejemplo de poliedro regular y convexo (Dodecaedro)" title="Ejemplo de poliedro regular y convexo (Dodecaedro)" style="width: 90%;min-width: 300px;">
-                        <p class="etiqueta_table mt-2">
-                            Ejemplo de poliedro regular y convexo (Dodecaedro)
-                        </p>
-                    </div>
-                </div>
                 <div class="col-xl-2 col-0"></div>
             </div>
+            <model-viewer
+                src="Modelos_blender/Representaciones/def_convexo_regular.glb" 
+                alt="Ejemplo de poliedro regular y convexo (Dodecaedro)"
+                camera-controls
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-orbit="90deg 85deg 4m"
+                field-of-view="50deg"
+                min-camera-orbit="auto auto 4m"
+                max-camera-orbit="auto auto 6m"
+                style="max-height: 300px;"
+                class="mv mt-2"
+            ></model-viewer>
+            <p class="etiqueta_table mt-2 mb-5">Ejemplo de poliedro regular y convexo (Dodecaedro)</p>
         </section>
         
         <!-- Notación de Schlafli -->
@@ -131,11 +146,20 @@
             <div class="row">
                 <div class="col-xl-2 col-0"></div>
                 <div class="col-xl-4 col-12 mt-4 container_img">
-                    <!--Imagen-->
-                    <img src="imagenes/ImgEjSchlafli_TFG.png" alt="Notación de Schläfli para el hexaedro: {4,3}" title="Notación de Schläfli para el hexaedro: {4,3}" style="min-width: 300px;width: 50%;">
-                    <p class="etiqueta_table mt-2">
-                        Notación de Schläfli para el hexaedro: \(\{4,3\}\)
-                    </p>
+                    <model-viewer
+                        src="Modelos_blender/Representaciones/def_schafli.glb" 
+                        alt="Ejemplo de poliedro regular y convexo (Dodecaedro)"
+                        camera-controls
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-orbit="40deg 70deg 5m"
+                        field-of-view="50deg"
+                        min-camera-orbit="auto auto 5m"
+                        max-camera-orbit="auto auto 10m"
+                        style="max-height: 240px;"
+                        class="mv mt-2"
+                    ></model-viewer>
+                    <p class="etiqueta_table mt-2 mb-5">Notación de Schläfli para el hexaedro: \(\{4,3\}\)</p>
                 </div>
                 <div class="col-xl-4 col-12">
                     <div class="containerTable">
@@ -203,7 +227,7 @@
                     </div>
 
                     <p>Simplificando y eliminando el factor común \(\pi\), se obtiene la desigualdad fundamental que caracteriza la convexidad de los poliedros regulares: </p>
-
+                    
                     <div class="text-center my-3">
                         <div class="property-box d-inline-block my-3">
                             <p class="property-label">Desigualdad fundamental</p>
