@@ -9,6 +9,26 @@
     --fondo_inicio2: #a3332bcb;
 }
 
+/* Responsive: en pantallas pequeñas se apila */
+@media screen and (max-width: 900px){
+  .artist-hero{
+    grid-template-columns: 1fr;
+  }
+  .artist-hero__media{
+    justify-self: center;           /* o center si preferís */
+  }
+  .artist-hero__img{
+    max-width: 420px;
+  }
+
+  #neolitico_model{display: none;}
+
+  .btnDiv .btn_model{
+    font-size: 10pt;
+    padding: 8px;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1090,6 +1110,18 @@ body {
 }
 
 /* Contenedor de modelo 3D/AR */
+.btnDiv div:first-child{
+    margin-left: auto;
+}
+.btnDiv div:last-child{
+    margin-right: auto;
+}
+
+.btnDiv>div{
+    padding: 0 5px 0 5px;
+    width: max-content;
+}
+
 .btnDiv .btn_model{
     border: solid 2px gray;
     padding: 15px 25px 15px 25px;
@@ -1448,19 +1480,4 @@ footer {
 /* Si querés que no sea demasiado alta (opcional) */
 .artist-hero__img{
   max-height: 460px;
-}
-
-/* Responsive: en pantallas pequeñas se apila */
-@media screen and (max-width: 900px){
-  .artist-hero{
-    grid-template-columns: 1fr;
-  }
-  .artist-hero__media{
-    justify-self: center;           /* o center si preferís */
-  }
-  .artist-hero__img{
-    max-width: 420px;
-  }
-
-  #neolitico_model{display: none;}
 }

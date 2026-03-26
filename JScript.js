@@ -220,15 +220,15 @@ function changeModel(btn,fig_str){
         
         btn.className="btn_model btn_active";
 
-        if(btn.getAttribute('data-modelMode')=='solid'){
+        if(btn.getAttribute('data-modelMode')==='solid'){
             document.getElementById('model_wireframe_'+fig_str).style.display="none";
             document.getElementById('model_dual_'+fig_str).style.display="none";
             document.getElementById('model_solid_'+fig_str).style.display="";
-        }else if(btn.getAttribute('data-modelMode')=='wireframe'){
+        }else if(btn.getAttribute('data-modelMode')==='wireframe'){
             document.getElementById('model_solid_'+fig_str).style.display="none";
             document.getElementById('model_dual_'+fig_str).style.display="none";
             document.getElementById('model_wireframe_'+fig_str).style.display="";
-        }else if(btn.getAttribute('data-modelMode')=='dual'){
+        }else if(btn.getAttribute('data-modelMode')==='dual'){
             document.getElementById('model_solid_'+fig_str).style.display="none";
             document.getElementById('model_wireframe_'+fig_str).style.display="none";
             document.getElementById('model_dual_'+fig_str).style.display="";
