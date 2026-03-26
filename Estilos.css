@@ -1181,8 +1181,13 @@ model-viewer,
     justify-content: center;
 }
 
+.properties-grid>.property-box{
+    color: white;
+    border: none;
+}
+
 .property-box {
-    color: var(--primary-color);
+        color: var(--primary-color);
     border: 1px solid var(--primary-color);
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 15px;
