@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometría XR: Sólidos Platónicos</title>
+    <title>Sólidos Platónicos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -143,10 +143,22 @@
                                 <p class="etiqueta_table mt-2">Retrato de Platón</p>
                             </div>
                         </div>
-                        <div class="container_img my-4 mt-lg-0">
-                            <img src="imagenes/Los-5-solidos-platonicos.png" alt="Los 5 sólidos platónicos" title="Los 5 sólidos platónicos" style="min-width:300px;width:40%;">
-                            <p class="etiqueta_table mt-2">Los 5 sólidos platónicos</p>
-                        </div>
+
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/solidos_platonicos_historia.glb" 
+                            alt="Los 5 sólidos platónicos"
+                            camera-controls
+                            shadow-intensity="0"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="90deg 90deg 13m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 13m"
+                            max-camera-orbit="auto auto 15m"
+                            style="max-width: 500px;max-height: 400px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                        <p class="etiqueta_table mb-5">Los 5 sólidos platónicos</p>
 
                         <div class="col-lg-7">
                             <h5>Euclides y la demostración de unicidad (300 a.C.)</h5>

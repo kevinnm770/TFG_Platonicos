@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometría XR: Sólidos Platónicos</title>
+    <title>Sólidos Platónicos</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="Estilos.css">
 </head>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <body>
 
     <!-- Navegación Principal -->
@@ -66,13 +67,19 @@
 
             <p>Los sólidos arquimedianos constituyen una categoría intermedia entre los sólidos platónicos y los sólidos irregulares, extendiendo el concepto de regularidad al permitir la combinación de distintas figuras poligonales bajo una misma estructura simétrica. De esta forma, “los sólidos arquimedianos, o sólidos de Arquímedes, o poliedros semirregulares, son poliedros convexos cuyas caras son polígonos regulares de más de un tipo, mientras que en los sólidos platónicos, todas las caras son polígonos regulares de un solo tipo” (Sousa, 2014, p. 13). En este sentido, Anderson (2008) menciona que un poliedro es arquimediano “si todas sus caras son polígonos regulares y sus esquinas son iguales” (p. 4).</p>
 
-            <div class="container_img mb-3">
-                <!--Imagen-->
-                <img src="imagenes/13arquimedeanos.png" alt="Los 13 sólidos arquimedeanos" title="Los 13 sólidos arquimedeanos" style="max-width:90%;">
-                <p class="etiqueta_table mt-2">
-                    Los 13 sólidos arquimedeanos
-                </p>
-            </div>
+            <model-viewer
+                    src="Modelos_blender/Representaciones/Arquimedeanos.glb" 
+                    alt="Los 13 sólidos arquimedeanos"
+                    camera-controls
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-orbit="90deg 90deg 12m"
+                    field-of-view="50deg"
+                    min-camera-orbit="auto auto 12m"
+                    max-camera-orbit="auto auto 16m"
+                    class="mv mt-2 mx-auto"
+            ></model-viewer>
+            <p class="etiqueta_table mt-2 mb-5">Los 13 sólidos arquimedeanos</p>
 
             <h5 id="Historia_Arquimedeanos">Historia</h5>
 
@@ -249,15 +256,78 @@
 
             <p>Los sólidos de Kepler-Poinsot representan una extensión del concepto clásico de regularidad geométrica que, a diferencia de los sólidos platónicos, permiten la intersección de sus superficies, es decir, no son convexos pero conservan la regularidad en sus caras y vértices. En este sentido, Arguedas (2014) señala que “un sólido de Kepler (también llamado sólido de Kepler-Poinsot) es un poliedro regular no convexo, cuyas caras son todas polígonos regulares y que tiene en todos sus vértices el mismo número de caras que se encuentran” (p. 6).</p>
             
-            <div class="container_img mb-3 mt-4">
-                <!--Imagen-->
-                <img src="imagenes/imgSolidosKeplerPoinsot_Extensiones_TFG.jpg" alt="Sólidos de Kepler-Poinsot" title="Sólidos de Kepler-Poinsot" style="max-width: 90%;">
+
+            <div class="row">
+                <div class="col-12 row">
+                    <div class="col-0 col-md-2"></div>
+                    <div class="col-6 col-md-4">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/gran_dodecaedro.glb" 
+                            alt="Gran dodecaedro"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="0deg 100deg 10m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 10m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-width: 350px;max-height: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/pequeño_dodecaedro_estrellado.glb" 
+                            alt="Pequeño dodecaedro estrellado"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="0deg 100deg 10m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 10m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-width: 350px;max-height: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                    </div>
+                    <div class="col-0 col-md-2"></div>
+                </div>
+                <div class="col-12 row">
+                    <div class="col-0 col-md-2"></div>
+                    <div class="col-6 col-md-4">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/gran_icosaedro.glb" 
+                            alt="Gran icosaedro"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="0deg 100deg 10m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 10m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-width: 350px;max-height: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/gran_dodecaedro_estrellado.glb" 
+                            alt="Gran dodecaedro estrellado"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="0deg 100deg 10m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 10m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-width: 350px;max-height: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                    </div>
+                    <div class="col-0 col-md-2"></div>
+                </div>
             </div>
-            <p class="etiqueta_table">
-                Sólidos de Kepler-Poinsot
-                <br>
-                Tomada de <a href="https://www.math.harvard.edu/media/AllenLiuTheStarsAboveUsThesis.pdf" target="_blank">Liu, A. (2020). The Stars Above Us [Tesis]. Harvard University.</a>
-            </p>
+            <p class="etiqueta_table mt-2 mb-5">Sólidos de Kepler-Poinsot</p>
 
             <h5 id="Historia_KeplerPoinsot">Historia</h5>
 
@@ -295,10 +365,20 @@
 
             <p>La <strong>estelación</strong> es el proceso geométrico mediante el cual se extienden las caras o aristas de un poliedro más allá de sus límites hasta que vuelven a intersectarse, formando nuevas regiones que configuran un sólido más complejo (Mosquera, 2005). En términos formales, si se toma un poliedro convexo (como los platónicos), se prolongan sus planos hasta que delimitan nuevas poligonales cerradas; el sólido estrellado será el conjunto de esas regiones.</p>
 
-            <div class="container_img mb-3 mt-4">
-                <!--Imagen-->
-                <img src="imagenes/imgEstelacionDodecaedro_Extensiones_TFG.jpg" alt="Estelación de un dodecaedro" title="Estelación de un dodecaedro" style="min-width: 350px;width: 40%;">
-            </div>
+            <model-viewer
+                src="Modelos_blender/Representaciones/estelacion_dodecaedro.glb" 
+                alt="Estelación de un dodecaedro"
+                camera-controls
+                shadow-intensity="1"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-orbit="90deg 70deg 5m"
+                field-of-view="50deg"
+                min-camera-orbit="auto auto 5m"
+                max-camera-orbit="auto auto 10m"
+                style="max-width: 400px;max-height: 350px;"
+                class="mv mt-2 mx-auto"
+            ></model-viewer>
             <p class="etiqueta_table">
                 Estelación de un dodecaedro
             </p>
@@ -315,20 +395,85 @@
 
             <p>Un aspecto muy interesante es su <strong>dualidad</strong> ya que, al igual que los sólidos platónicos, los sólidos de Kepler-Poinsot, sus duales también son otros sólidos de Kepler-Poinsot. Esta relación nos permite generalizar de modo que el dual de un sólido regular es siempre otro sólido regular independientemente si es convexo o no.</p>
             
-            <div class="container_img mb-3 mt-4">
-                <!--Imagen-->
-                <img src="imagenes/DualidadPeqDodecaedroEst_GranDodecaedro.png" alt="Dualidad entre el Pequeño dodecaedro estrellado (rojo) y el Gran dodecaedro (verde)" title="Dualidad entre el Pequeño dodecaedro estrellado (rojo) y el Gran dodecaedro (verde)" style="min-width: 50%;max-width: 300px;">
-                <p class="etiqueta_table">
-                    Dualidad entre el Pequeño dodecaedro estrellado (rojo) y el Gran dodecaedro (verde)
-                </p>
+            <div class="row">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-6 col-xl-4">
+                    <model-viewer
+                        src="Modelos_blender/Representaciones/dualidad1.glb" 
+                        alt="Dualidad entre el Pequeño dodecaedro estrellado (rojo) y el Gran dodecaedro (verde)"
+                        camera-controls
+                        shadow-intensity="1"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-orbit="180deg 90deg 8m"
+                        field-of-view="50deg"
+                        min-camera-orbit="auto auto 8m"
+                        max-camera-orbit="auto auto 8m"
+                        style="max-width: 400px;max-height: 400px;"
+                        class="mv mt-2 mx-auto"
+                    ></model-viewer>
+                </div>
+                <div class="col-6 col-xl-4">
+                    <model-viewer
+                        src="Modelos_blender/Representaciones/dualidad2.glb" 
+                        alt="Dualidad entre el Pequeño dodecaedro estrellado (rojo) y el Gran dodecaedro (verde)"
+                        camera-controls
+                        shadow-intensity="1"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-orbit="180deg 90deg 13m"
+                        field-of-view="50deg"
+                        min-camera-orbit="auto auto 13m"
+                        max-camera-orbit="auto auto 13m"
+                        style="max-width: 400px;max-height: 400px;"
+                        class="mv mt-2 mx-auto"
+                    ></model-viewer>
+                </div>
+                <div class="col-0 col-xl-2"></div>
             </div>
-            <div class="container_img mb-3 mt-4">
-                <!--Imagen-->
-                <img src="imagenes/DualidadGranDodecaedroEstrellado_GranIcosaedro.png" alt="Dualidad entre el Gran dodecaedro estrellado (azul) y el Gran icosaedro (amarillo)" title="Dualidad entre el Gran dodecaedro estrellado (azul) y el Gran icosaedro (amarillo)" style="min-width: 50%;max-width: 300px;">
-                <p class="etiqueta_table">
-                    Dualidad entre el Gran dodecaedro estrellado (azul) y el Gran icosaedro (amarillo)
-                </p>
+            <p class="etiqueta_table">
+                Dualidad entre el Pequeño dodecaedro estrellado (rojo) y el Gran dodecaedro (verde)
+            </p>
+
+            <div class="row">
+                <div class="col-0 col-xl-2"></div>
+                <div class="col-6 col-xl-4">
+                    <model-viewer
+                        src="Modelos_blender/Representaciones/dualidad3.glb" 
+                        alt="Dualidad entre el Gran dodecaedro estrellado (azul) y el Gran icosaedro (amarillo)"
+                        camera-controls
+                        shadow-intensity="1"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-orbit="180deg 90deg 15m"
+                        field-of-view="50deg"
+                        min-camera-orbit="auto auto 15m"
+                        max-camera-orbit="auto auto 15m"
+                        style="max-width: 400px;max-height: 400px;"
+                        class="mv mt-2 mx-auto"
+                    ></model-viewer>
+                </div>
+                <div class="col-6 col-xl-4">
+                    <model-viewer
+                        src="Modelos_blender/Representaciones/dualidad4.glb" 
+                        alt="Dualidad entre el Gran dodecaedro estrellado (azul) y el Gran icosaedro (amarillo)"
+                        camera-controls
+                        shadow-intensity="1"
+                        ar
+                        ar-modes="webxr scene-viewer quick-look"
+                        camera-orbit="180deg 90deg 15m"
+                        field-of-view="50deg"
+                        min-camera-orbit="auto auto 15m"
+                        max-camera-orbit="auto auto 15m"
+                        style="max-width: 400px;max-height: 400px;"
+                        class="mv mt-2 mx-auto"
+                    ></model-viewer>
+                </div>
+                <div class="col-0 col-xl-2"></div>
             </div>
+            <p class="etiqueta_table">
+                Dualidad entre el Gran dodecaedro estrellado (azul) y el Gran icosaedro (amarillo)
+            </p>
 
             <p>De este modo, se observa que el dual del Pequeño dodecaedro estrellado es el Gran dodecaedro, y el dual del Gran dodecaedro estrellado es el Gran icosaedro.</p>
         </section>
