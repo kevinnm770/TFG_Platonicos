@@ -54,7 +54,7 @@
         </p>
         
         <!-- Tetraedro -->
-            <div class="Solido_container" id="Tetraedro">             
+        <div class="Solido_container" id="Tetraedro">             
             <div class="row">
                 <h3 class="mb-4">TETRAEDRO <i class="fa-solid fa-fire"></i></h3>
 
@@ -136,12 +136,27 @@
                             class="model-3d">
                         </model-viewer>
                     </div>
+                    <div class="interactive-model" style="display: none;" id="model_dual_tetraedro">
+                        <model-viewer 
+                            src="Modelos_blender/Tetraedro_wireframe.glb"
+                            alt="Tetraedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
                     <div class="row btnDiv">
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'tetraedro');">Sólido</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 text-center">
                             <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'tetraedro');">Wireframe</button>
+                        </div>
+                        <div class="col-4 text-start">
+                            <button class="btn_model" data-modelMode="dual" onclick="changeModel(this,'tetraedro');">Dualidad</button>
                         </div>
                     </div>
                 </div>
@@ -255,12 +270,27 @@
                             class="model-3d">
                         </model-viewer>
                     </div>
+                    <div class="interactive-model" style="display: none;" id="model_dual_hexaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Hexaedro_wireframe.glb"
+                            alt="Hexaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
                     <div class="row btnDiv">
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'hexaedro');">Sólido</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 text-center">
                             <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'hexaedro');">Wireframe</button>
+                        </div>
+                        <div class="col-4 text-start">
+                            <button class="btn_model" data-modelMode="dual" onclick="changeModel(this,'hexaedro');">Dualidad</button>
                         </div>
                     </div>
                 </div>
@@ -374,12 +404,27 @@
                             class="model-3d">
                         </model-viewer>
                     </div>
+                    <div class="interactive-model" style="display: none;" id="model_dual_octaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Octaedro_wireframe.glb"
+                            alt="Octaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
                     <div class="row btnDiv">
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'octaedro');">Sólido</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 text-center">
                             <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'octaedro');">Wireframe</button>
+                        </div>
+                        <div class="col-4 text-start">
+                            <button class="btn_model" data-modelMode="dual" onclick="changeModel(this,'octaedro');">Dualidad</button>
                         </div>
                     </div>
                 </div>
@@ -492,12 +537,27 @@
                             class="model-3d">
                         </model-viewer>
                     </div>
+                    <div class="interactive-model" style="display: none;" id="model_dual_dodecaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Dodecaedro_wireframe.glb"
+                            alt="Dodecaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
                     <div class="row btnDiv">
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'dodecaedro');">Sólido</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 text-center">
                             <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'dodecaedro');">Wireframe</button>
+                        </div>
+                        <div class="col-4 text-start">
+                            <button class="btn_model" data-modelMode="dual" onclick="changeModel(this,'dodecaedro');">Dualidad</button>
                         </div>
                     </div>
                 </div>
@@ -611,12 +671,27 @@
                             class="model-3d">
                         </model-viewer>
                     </div>
+                    <div class="interactive-model" style="display: none;" id="model_dual_icosaedro">
+                        <model-viewer 
+                            src="Modelos_blender/Icosaedro_wireframe.glb"
+                            alt="Icosaedro"
+                            camera-controls
+                            auto-rotate
+                            shadow-intensity="1"
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            class="model-3d">
+                        </model-viewer>
+                    </div>
                     <div class="row btnDiv">
-                        <div class="col-6 text-end">
+                        <div class="col-4 text-end">
                             <button class="btn_model btn_active" data-modelMode="solid" onclick="changeModel(this,'icosaedro');">Sólido</button>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4 text-center">
                             <button class="btn_model" data-modelMode="wireframe" onclick="changeModel(this,'icosaedro');">Wireframe</button>
+                        </div>
+                        <div class="col-4 text-start">
+                            <button class="btn_model" data-modelMode="dual" onclick="changeModel(this,'icosaedro');">Dualidad</button>
                         </div>
                     </div>
                 </div>
