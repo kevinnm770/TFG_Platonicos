@@ -47,7 +47,7 @@
     </nav>
 
     <!-- Sección: Los 5 Sólidos (Detallados) -->
-    <main id="solidos" class="content-section container py-5">
+    <main id="solidos" class="container py-5">
         <h2 class="section-title">LOS CINCO SÓLIDOS PLATÓNICOS</h2>
         <p class="section-subtitle">
             En esta sección te adentrarás en el análisis de los <strong>cinco sólidos platónicos</strong> de forma visual e interactiva: conocerás sus rasgos más importantes, su relación con ideas clásicas de la naturaleza y la simetría, y podrás observarlos desde distintos ángulos para apreciar cómo están construidos. Así, comprenderás mejor por qué, desde la Antigüedad hasta hoy, siguen siendo tan relevantes en la geometría, el arte y el diseño.
@@ -57,61 +57,10 @@
         <div class="Solido_container" id="Tetraedro">             
             <div class="row">
                 <h3 class="mb-4">TETRAEDRO <i class="fa-solid fa-fire"></i></h3>
+                <h4 class="m-0">Elemento asociado: <strong>FUEGO</strong></h4>
 
-                <!-- Propiedades -->
-                <div class="col-lg-6">                        
-                    <h4>Elemento asociado: <strong>FUEGO</strong></h4>
-                    <div class="properties-grid">
-                        <div class="property-box">
-                            <p class="property-label">Caras</p>
-                            <p class="property-value">4</p>
-                        </div>
-                        <div class="property-box">
-                            <p class="property-label">Vértices</p>
-                            <p class="property-value">4</p>
-                        </div>
-                        <div class="property-box">
-                            <p class="property-label">Aristas</p>
-                            <p class="property-value">6</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="properties-grid col-12">
-                            <div class="property-box" style="position: relative;">
-                                <p class="property-label">Notación Schläfli</p>
-                                <p class="property-value">{3,3}</p>
-                                <p class="extra" style="color: white;"><em>"3 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
-                            </div>
-                        </div>
-                        <div class="properties-grid col-md-6">
-                            <div class="property-box">
-                                <p class="property-label">Ángulo diedro</p>
-                                <p class="property-value">\(70.53^\circ\)</p>
-                            </div>
-                        </div>
-                        <div class="properties-grid col-md-6">
-                            <div class="property-box">
-                                <p class="property-label">Ángulo central</p>
-                                <p class="property-value">\(109.47^\circ\)</p>
-                            </div>
-                        </div>
-                        <div class="properties-grid col-md-6">
-                            <div class="property-box">
-                                <p class="property-label">Dual</p>
-                                <p class="property-value">TETRAEDRO</p>
-                            </div>
-                        </div>
-                        <div class="properties-grid col-md-6">
-                            <div class="property-box">
-                                <p class="property-label">Grupo simétrico</p>
-                                <p class="property-value">TETRAÉDRICA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Modelo 3D Principal -->
-                <div class="col-lg-6 col-12 mb-4">
+                 <!-- Modelo 3D Principal -->
+                <div class="col-12 mb-4">
                     <div class="interactive-model" id="model_solid_tetraedro">
                         <model-viewer 
                             src="Modelos_blender/tetraedro.glb"
@@ -157,6 +106,57 @@
                         </div>
                         <div class="col-4 text-start">
                             <button class="btn_model" data-modelMode="dual" onclick="changeModel(this,'tetraedro');">Dualidad</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Propiedades -->
+                <div class="col-12">                        
+                    <div class="properties-grid">
+                        <div class="property-box">
+                            <p class="property-label">Caras</p>
+                            <p class="property-value">4</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Vértices</p>
+                            <p class="property-value">4</p>
+                        </div>
+                        <div class="property-box">
+                            <p class="property-label">Aristas</p>
+                            <p class="property-value">6</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="properties-grid col-12">
+                            <div class="property-box" style="position: relative;">
+                                <p class="property-label">Notación Schläfli</p>
+                                <p class="property-value">{3,3}</p>
+                                <p class="extra" style="color: white;"><em>"3 caras por vértice, de 3 lados (triángulo equilátero)"</em></p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo diedro</p>
+                                <p class="property-value">\(70.53^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Ángulo central</p>
+                                <p class="property-value">\(109.47^\circ\)</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Dual</p>
+                                <p class="property-value">TETRAEDRO</p>
+                            </div>
+                        </div>
+                        <div class="properties-grid col-md-6">
+                            <div class="property-box">
+                                <p class="property-label">Grupo simétrico</p>
+                                <p class="property-value">TETRAÉDRICA</p>
+                            </div>
                         </div>
                     </div>
                 </div>

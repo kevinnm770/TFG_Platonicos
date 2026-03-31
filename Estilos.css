@@ -48,19 +48,20 @@ body {
 
 /* Fondo del scrollbar (la pista) */
 ::-webkit-scrollbar-track {
-    background: #f1f1f100;
+    background: var(--primary-color);
     border-radius: 10px;
 }
 
 /* La barra deslizable (thumb) */
 ::-webkit-scrollbar-thumb {
-    background: var(--fondo_inicio1);
+    background: var(--light-bg);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* La barra deslizable al pasar el mouse (hover) */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgb(131, 131, 131);
 }
 
 /* Navegación */

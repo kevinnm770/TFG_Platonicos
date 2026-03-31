@@ -8,23 +8,24 @@ document.querySelectorAll('.custom-tab').forEach(tab => {
 });
 
 const navbar = document.getElementById('main-navbar');
-const stopSection = document.querySelector('#inicio + section'); // la sección después del hero
-// O por ID directo: document.querySelector('#segunda-seccion')
+const stopSection = document.querySelector('#inicio + section');
 
-window.addEventListener('scroll', () => {
-    const stopPoint = stopSection.offsetTop - navbar.offsetHeight;
+if(stopSection){
+    window.addEventListener('scroll', () => {
+        const stopPoint = stopSection.offsetTop - navbar.offsetHeight;
 
-    if (window.scrollY >= stopPoint) {
-        navbar.classList.add('anchored');
-        navbar.style.top = stopPoint + 'px';
-    } else {
-        navbar.classList.remove('anchored');
-        navbar.style.top = '0';
-    }
-});
+        if (window.scrollY >= stopPoint) {
+            navbar.classList.add('anchored');
+            navbar.style.top = stopPoint + 'px';
+        } else {
+            navbar.classList.remove('anchored');
+            navbar.style.top = '0';
+        }
+    });
+}
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    
     // Obtener elementos
     const navLinks = document.querySelectorAll('#navContenido a[href^="#"]');
     const sections = document.querySelectorAll('section[id]');
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const el = typeof elemento === 'string' ? document.querySelector(elemento) : elemento;
         
         if (!el) {
-            console.error('Elemento no encontrado');
+            console.log('Elemento no encontrado');
             return;
         }
         
