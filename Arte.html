@@ -228,6 +228,40 @@
               <div class="galeria-3d">
                 <!-- Obra 1 -->
                 <article class="card-3d">
+                  <img id="img-obra-5" src="imagenes/Jamnitzer_EstrellaOctangula2.png" alt="Obra de Jamnitzer" height="100%" style="display:none;">
+                  <div class="mv-stage">
+                      <model-viewer
+                      src="Modelos_blender/EstrellaOctagula_Jamnitzer1.glb" 
+                      alt="Tetraedro"
+                      camera-controls
+                      auto-rotate
+                      shadow-intensity="1"
+                      exposure="1"
+                      ar
+                      ar-modes="webxr scene-viewer quick-look"
+                      class="mv"
+                    ></model-viewer>
+
+                    <div >
+                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
+                      </svg>
+                      <span class="mv-label">OBRA----</span>
+                    </div>
+                  </div>
+                  <div class="card-3d-body">
+                    <!--  <div class="artist">Wenzel Jamnitzer</div>-->
+                    <button id="btn-obra-5" data-image-id="img-obra-5" aria-pressed="false" class="btn btn-outline-secondary" style="border-radius: 50%;padding: 0 5px 0 5px;float: right;"><i class="bi bi-image"></i></button>
+                    <div class="tag-row"><span class="tag-pill">Variacion del Tetraedro</span></div>
+                    <div class="desc">
+                      <p>En esta obra, el tetraedro se complejiza mediante una estructura estrellada y un cuerpo central inscrito. La composición resalta el papel
+                      de las caras triángulares y la capacidad del tetraedro para generar configuraciones más densas y visualmente sofisticadas.</p>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Obra 2 -->
+                <article class="card-3d">
                   <img id="img-obra-4" src="imagenes/Octaedro_Jamnitzer.jpg" alt="Obra de Jamnitzer" height="100%" style="display:none;">
                   <div class="mv-stage">
                     <model-viewer
@@ -257,40 +291,6 @@
                       <span class="tag-pill">Variacion del Octaedro</span>
                     </div>
                     <div class="desc">Partiendo del octaedro regular, Jamnitzer abre sus caras en un esqueleto lineal y estrellado, transformando el sólido platónico en una estructura ornamental de creciente complejidad. El conjunto se eleva sobre un pedestal de arcos, equilibrando rigor geométrico y fantasía decorativa.
-                    </div>
-                  </div>
-                </article>
-
-                <!-- Obra 2 -->
-                <article class="card-3d">
-                  <img id="img-obra-5" src="imagenes/Jamnitzer_EstrellaOctangula2.png" alt="Obra de Jamnitzer" height="100%" style="display:none;">
-                  <div class="mv-stage">
-                      <model-viewer
-                      src="Modelos_blender/EstrellaOctagula_Jamnitzer1.glb" 
-                      alt="Tetraedro"
-                      camera-controls
-                      auto-rotate
-                      shadow-intensity="1"
-                      exposure="1"
-                      ar
-                      ar-modes="webxr scene-viewer quick-look"
-                      class="mv"
-                    ></model-viewer>
-
-                    <div >
-                      <svg class="mv-icon" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 3c-3.9 0-7 3.1-7 7 0 4.7 4.6 11 7 11s7-6.3 7-11c0-3.9-3.1-7-7-7z"/>
-                      </svg>
-                      <span class="mv-label">OBRA----</span>
-                    </div>
-                  </div>
-                  <div class="card-3d-body">
-                    <!--  <div class="artist">Wenzel Jamnitzer</div>-->
-                    <button id="btn-obra-5" data-image-id="img-obra-5" aria-pressed="false" class="btn btn-outline-secondary" style="border-radius: 50%;padding: 0 5px 0 5px;float: right;"><i class="bi bi-image"></i></button>
-                    <div class="tag-row"><span class="tag-pill">Variacion del Tetraedro</span></div>
-                    <div class="desc">
-                      <p>En esta obra, el tetraedro se complejiza mediante una estructura estrellada y un cuerpo central inscrito. La composición resalta el papel
-                      de las caras triángulares y la capacidad del tetraedro para generar configuraciones más densas y visualmente sofisticadas.</p>
                     </div>
                   </div>
                 </article>
