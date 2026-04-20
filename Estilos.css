@@ -1114,10 +1114,17 @@ body {
 .btnDiv div:first-child{
     margin-left: auto;
 }
+.btnDiv div:first-child>.btn_model{
+    border-radius: 20px 0 0 20px;
+    border-right: 0;
+}
 .btnDiv div:last-child{
     margin-right: auto;
 }
-
+.btnDiv div:last-child>.btn_model{
+    border-radius: 0 20px 20px 0;
+    border-left: 0;
+}
 .btnDiv>div{
     padding: 0 5px 0 5px;
     width: max-content;
@@ -1126,9 +1133,8 @@ body {
 .btnDiv .btn_model{
     border: solid 2px gray;
     padding: 15px 25px 15px 25px;
-    border-radius: 15px;
     background-color: #00000000;
-    transition: all ease 0.5s;
+    transition: all ease 0.7s;
 }
 
 .btnDiv .btn_model:hover{
