@@ -668,13 +668,57 @@
                     <p class="etiqueta_table">Grupos de simetría de los 5 sólidos platónicos.</p>
                 </div>
 
-                <div class="container_img mb-3">
-                    <!--Imagen-->
-                    <img src="imagenes/ImgRotacionesSimetriaOctaedrica_TFG.png" alt="Simetría rotacional octaédrica" title="Simetría rotacional octaédrica" style="min-width: 300px; width: 50%;">
-                    <p class="etiqueta_table mt-2">
-                        Simetría rotacional octaédrica
-                    </p>
+                <div class="row">
+                    <div class="col-xl-1 col-0"></div>
+                    <div class="col-xl-5 col-12">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/hexa_tetra_1.glb" 
+                            alt="Simetría rotacional octaédrica Orden 4 (Cara-Cara)"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="100deg 80deg 6m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 6m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-height: 550px;max-width: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                        <p class="etiqueta_table mt-2 mb-xl-0 mb-5">Simetría rotacional octaédrica Orden 4 (Cara-Cara)</p>
+                    </div>
+                    <div class="col-xl-5 col-12">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/Hexa_tetra_2.glb" 
+                            alt="Simetría rotacional octaédrica Orden 3 (Vértice-Vértice)"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="100deg 80deg 5.6m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 5.6m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-height: 550px;max-width: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                        <p class="etiqueta_table mt-2 mb-xl-0 mb-5">Simetría rotacional octaédrica Orden 3 (Vértice-Vértice)</p>
+                    </div>
+                    <div class="col-xl-1 col-0"></div>
                 </div>
+
+                <model-viewer
+                    src="Modelos_blender/Representaciones/Plano_int_tetra.glb" 
+                    alt="Simetría rotacional octaédrica Orden 2 (Arista-Arista)"
+                    camera-controls
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-orbit="100deg 80deg 6m"
+                    field-of-view="50deg"
+                    min-camera-orbit="auto auto 6m"
+                    max-camera-orbit="auto auto 10m"
+                    style="max-height: 550px;max-width: 350px;"
+                    class="mv mt-2 mx-auto"
+                ></model-viewer>
+                <p class="etiqueta_table mt-2 mb-5">Simetría rotacional octaédrica Orden 2 (Arista-Arista)</p>
 
                 <p>Estas correspondencias refuerzan la estrecha relación entre los pares de <strong>sólidos duales</strong>, los cuales conservan el mismo grupo de simetría rotacional. Esta misma idea la refuerza Montoya (2020) al mencionar que “las simetrías de cada sólido afectan de la misma manera a su sólido dual” (p. 16), mostrando así la conexión entre dualidad y simetría.</p>
             </section>
