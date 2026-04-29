@@ -38,77 +38,109 @@
     <section id="recursos" class="content-section">
         <div class="container">
             <h2 class="section-title">RECURSOS DE REALIDAD EXTENDIDA</h2>
-            <p class="section-subtitle">Explora los sólidos en AR/VR con EON-XR</p>
+            <p class="section-subtitle">Explora las dualidades de los sólidos platónicos en realidad extendida con EON-XR</p>
 
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="solid-card">
-                        <div class="card-content text-center">
-                            <i class="fas fa-vr-cardboard fa-4x mb-3" style="color: var(--secondary-color);"></i>
-                            <h4>[Realidad Aumentada]</h4>
-                            <p>[Instrucciones para usar AR]</p>
-                            <button class="control-btn mt-3">[Acceder a Galería AR]</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="solid-card">
-                        <div class="card-content text-center">
-                            <i class="fas fa-cube fa-4x mb-3" style="color: var(--secondary-color);"></i>
-                            <h4>[Modelos 3D Interactivos]</h4>
-                            <p>[Explorar en Blender]</p>
-                            <button class="control-btn mt-3">[Ver Colección 3D]</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="row justify-content-center">
 
-            <!-- Códigos QR de todos los sólidos -->
-            <h3 class="text-center mt-5 mb-4">[Acceso Rápido - Códigos QR]</h3>
-            <div class="row">
-                <div class="col-md col-6 mb-3">
-                    <div class="qr-container">
-                        <div class="qr-placeholder" style="min-height: 150px;">
-                            <i class="fas fa-qrcode fa-2x" style="opacity: 0.3;"></i>
+                <!-- Dualidad Hexaedro-Octaedro -->
+                <div class="col-md-4 mb-4">
+                    <div class="solid-card h-100">
+                        <div class="card-content text-center p-4">
+                            <i class="fas fa-vr-cardboard fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                            <h4 class="mb-2">Dualidad Hexaedro-Octaedro</h4>
+                            <p class="small mb-4">El hexaedro (cubo) y el octaedro son duales entre sí: los vértices de uno se corresponden con las caras del otro.</p>
+                            <a href="https://share.eon-xr.com/lesson/641/1142256" target="_blank" rel="noopener"
+                               class="control-btn d-inline-block text-decoration-none mb-4">
+                                <i class="fas fa-external-link-alt me-1"></i> Abrir en EON-XR
+                            </a>
+                            <hr>
+                            <p class="small fw-bold mt-3 mb-2">Código QR de acceso:</p>
+                            <!-- QR: pon la ruta de tu imagen en src="" y elimina style="display:none" del img -->
+                            <img id="qr-hexaedro" src="imagenes/QR/QR_Hexaedro-Octaedro.jpg" alt="QR Dualidad Hexaedro-Octaedro"
+                                 class="img-fluid rounded mx-auto" style="max-width:200px; cursor:pointer; display:none;"
+                                 onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+                                 onclick="abrirModalQR(this.src, 'Dualidad Hexaedro-Octaedro')">
+                            <div class="qr-placeholder" style="min-height:150px; flex-direction:column;">
+                                <i class="fas fa-qrcode fa-3x mb-2" style="opacity:0.25;"></i>
+                                <span class="small" style="opacity:0.5;">QR pendiente</span>
+                            </div>
                         </div>
-                        <p><strong>[Tetraedro]</strong></p>
                     </div>
                 </div>
-                <div class="col-md col-6 mb-3">
-                    <div class="qr-container">
-                        <div class="qr-placeholder" style="min-height: 150px;">
-                            <i class="fas fa-qrcode fa-2x" style="opacity: 0.3;"></i>
+
+                <!-- Dualidad Dodecaedro-Icosaedro -->
+                <div class="col-md-4 mb-4">
+                    <div class="solid-card h-100">
+                        <div class="card-content text-center p-4">
+                            <i class="fas fa-vr-cardboard fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                            <h4 class="mb-2">Dualidad Dodecaedro-Icosaedro</h4>
+                            <p class="small mb-4">El dodecaedro y el icosaedro son duales entre sí: los vértices de uno se corresponden con las caras del otro.</p>
+                            <a href="https://share.eon-xr.com/lesson/641/1142543" target="_blank" rel="noopener"
+                               class="control-btn d-inline-block text-decoration-none mb-4">
+                                <i class="fas fa-external-link-alt me-1"></i> Abrir en EON-XR
+                            </a>
+                            <hr>
+                            <p class="small fw-bold mt-3 mb-2">Código QR de acceso:</p>
+                            <!-- QR: pon la ruta de tu imagen en src="" y elimina style="display:none" del img -->
+                            <img id="qr-dodecaedro" src="imagenes/QR/QR_Icosaedro-Dodecaedro.jpg" alt="QR Dualidad Dodecaedro-Icosaedro"
+                                 class="img-fluid rounded mx-auto" style="max-width:200px; cursor:pointer; display:none;"
+                                 onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+                                 onclick="abrirModalQR(this.src, 'Dualidad Dodecaedro-Icosaedro')">
+                            <div class="qr-placeholder" style="min-height:150px; flex-direction:column;">
+                                <i class="fas fa-qrcode fa-3x mb-2" style="opacity:0.25;"></i>
+                                <span class="small" style="opacity:0.5;">QR pendiente</span>
+                            </div>
                         </div>
-                        <p><strong>[Hexaedro]</strong></p>
                     </div>
                 </div>
-                <div class="col-md col-6 mb-3">
-                    <div class="qr-container">
-                        <div class="qr-placeholder" style="min-height: 150px;">
-                            <i class="fas fa-qrcode fa-2x" style="opacity: 0.3;"></i>
+
+                <!-- Dualidad Tetraedro -->
+                <div class="col-md-4 mb-4">
+                    <div class="solid-card h-100">
+                        <div class="card-content text-center p-4">
+                            <i class="fas fa-vr-cardboard fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                            <h4 class="mb-2">Dualidad Tetraedro</h4>
+                            <p class="small mb-4">El tetraedro es auto-dual: su sólido dual es otro tetraedro. Es el único sólido platónico con esta propiedad.</p>
+                            <a href="https://share.eon-xr.com/lesson/641/1142278" target="_blank" rel="noopener"
+                               class="control-btn d-inline-block text-decoration-none mb-4">
+                                <i class="fas fa-external-link-alt me-1"></i> Abrir en EON-XR
+                            </a>
+                            <hr>
+                            <p class="small fw-bold mt-3 mb-2">Código QR de acceso:</p>
+                            <!-- QR: pon la ruta de tu imagen en src="" y elimina style="display:none" del img -->
+                            <img id="qr-tetraedro" src="imagenes/QR/QR_Tetraedro.jpg" alt="QR Dualidad Tetraedro"
+                                 class="img-fluid rounded mx-auto" style="max-width:200px; cursor:pointer; display:none;"
+                                 onload="this.style.display='block'; this.nextElementSibling.style.display='none';"
+                                 onclick="abrirModalQR(this.src, 'Dualidad Tetraedro')">
+                            <div class="qr-placeholder" style="min-height:150px; flex-direction:column;">
+                                <i class="fas fa-qrcode fa-3x mb-2" style="opacity:0.25;"></i>
+                                <span class="small" style="opacity:0.5;">QR pendiente</span>
+                            </div>
                         </div>
-                        <p><strong>[Octaedro]</strong></p>
                     </div>
                 </div>
-                <div class="col-md col-6 mb-3">
-                    <div class="qr-container">
-                        <div class="qr-placeholder" style="min-height: 150px;">
-                            <i class="fas fa-qrcode fa-2x" style="opacity: 0.3;"></i>
-                        </div>
-                        <p><strong>[Dodecaedro]</strong></p>
-                    </div>
-                </div>
-                <div class="col-md col-6 mb-3">
-                    <div class="qr-container">
-                        <div class="qr-placeholder" style="min-height: 150px;">
-                            <i class="fas fa-qrcode fa-2x" style="opacity: 0.3;"></i>
-                        </div>
-                        <p><strong>[Icosaedro]</strong></p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
+
+    <!-- Modal ampliación QR -->
+    <div class="modal fade" id="qrModal" tabindex="-1" aria-labelledby="qrModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-3">
+                <div class="modal-header border-0 pb-1">
+                    <h5 class="modal-title w-100" id="qrModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="qrModalImg" src="" alt="Código QR" class="img-fluid" style="max-width:350px;">
+                </div>
+                <div class="modal-footer border-0 pt-0 justify-content-center">
+                    <p class="small text-muted mb-0">Escanea este código con tu dispositivo móvil</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="m-0">
@@ -126,5 +158,12 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <script src="JScript.js"></script>
+    <script>
+        function abrirModalQR(src, titulo) {
+            document.getElementById('qrModalImg').src = src;
+            document.getElementById('qrModalLabel').textContent = titulo;
+            new bootstrap.Modal(document.getElementById('qrModal')).show();
+        }
+    </script>
 </body>
 </html>
