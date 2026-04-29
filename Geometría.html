@@ -391,24 +391,39 @@
 
                 <p>Del mismo modo, el <strong>ángulo diédrico</strong> constituye otro elemento esencial en la estructura geométrica de los sólidos platónicos. Este ángulo se forma entre dos caras adyacentes que comparten una arista común, midiendo la inclinación entre los planos que las contienen (Bertol, 2016).</p>
 
-                <div class="container_img my-5">
-                    <!--Imagen-->
-                    <img src="imagenes/ang_diedro_dodecaedro.png" alt="Ángulo diedro de un dodecaedro" title="Ángulo diedro de un dodecaedro" style="min-width: 300px;width:30%;">
-                    <p class="etiqueta_table mt-2">
-                        Ángulo diedro de un dodecaedro
-                    </p>
-                </div>
+                <model-viewer
+                    src="Modelos_blender/Representaciones/Ang_diedro.glb" 
+                    alt="Ángulo diedro de un dodecaedro"
+                    camera-controls
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-orbit="0deg 80deg 4m"
+                    field-of-view="50deg"
+                    min-camera-orbit="auto auto 4m"
+                    max-camera-orbit="auto auto 8m"
+                    style="max-height: 400px;max-width: 30%;min-width: 300px;"
+                    class="mv mt-2 mx-auto"
+                ></model-viewer>
+                <p class="etiqueta_table mt-2 mb-5">Ángulo diedro de un dodecaedro</p>
 
                 <p>Ya que todas las caras son polígonos regulares iguales y el mismo número de caras se encuentra en cada vértice, garantiza que todos los <strong>ángulos diedros sean congruentes entre sí</strong> (Romañach y Toboso, 2016, citados en Herrera et al., 2023). Esta condición implica que cada arista presenta la misma apertura espacial, asegurando la simetría tridimensional de la figura.</p>
                 <p>Por su parte, el <strong>ángulo central</strong> se define a partir de la relación entre el centro goemétrico del poliedro y los vértices del mismo. Este ángulo se forma al trazar líneas que unen el centro del sólido con los extremos de una arista, representando la proporción entre la distancia radial de los vértices y la apertura espacial de las caras. En los sólidos platónicos, este ángulo es constante, debido a que "Todas las aristas tiene la misma longitud" (Romañach y Toboso, 2016, citado en Herrera et al., 2023, p. 175).</p>
                 
-                <div class="container_img my-5">
-                    <!--Imagen-->
-                    <img src="imagenes/ang_central_dodecaedro.png" alt="Ángulo central de un dodecaedro" title="Ángulo central de un dodecaedro" style="min-width: 300px;width:30%;">
-                    <p class="etiqueta_table mt-2">
-                        Ángulo central de un dodecaedro
-                    </p>
-                </div>
+
+                <model-viewer
+                    src="Modelos_blender/Representaciones/Ang_central.glb" 
+                    alt="Ángulo central de un dodecaedro"
+                    camera-controls
+                    ar
+                    ar-modes="webxr scene-viewer quick-look"
+                    camera-orbit="120deg 80deg 4m"
+                    field-of-view="50deg"
+                    min-camera-orbit="auto auto 4m"
+                    max-camera-orbit="auto auto 8m"
+                    style="max-height: 400px;max-width: 30%;min-width: 300px;"
+                    class="mv mt-2 mx-auto"
+                ></model-viewer>
+                <p class="etiqueta_table mt-2 mb-5">Ángulo central de un dodecaedro</p>
 
                 <p>Las mididas de los ángulos diedros y centrales de los sólidos platónicos se resumen en la siguiente tabla:</p>
 
@@ -560,22 +575,54 @@
                 <p>En el contexto tridimensional de los sólidos platónicos, las <strong>rotaciones</strong> son giros alrededor de ejes que atraviesan el sólido (por ejemplo, ejes que pasan por vértices, por el punto medio de aristas o por el centro de las caras), mientras que las <strong>reflexiones</strong> se realizan respecto a planos que dividen el sólido en dos partes congruentes (Montoya, 2020). En conjunto, estas transformaciones constituyen <strong>grupos de simetría</strong>: colecciones de movimientos que pueden aplicarse al sólido sin alterar su estructura geométrica.</p>
 
                 <div class="row">
-                    <div class="container_img mb-3 col-xl-7 col-12">
-                        <!--Imagen-->
-                        <img src="imagenes/ImgRotacionesTetraedro_TFG.png" alt="Representación de las rotaciones del Tetraedro" title="Representación de las rotaciones del Tetraedro" style="min-width: 300px; width: 85%;">
-                        <p class="etiqueta_table mt-2">
-                            Representación de las rotaciones del Tetraedro
-                        </p>
+                    <div class="col-xl-4 col-12">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/ptm_caras.glb" 
+                            alt="Rotaciones de Orden 3 (Vértice-Cara) del Tetraedro"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="120deg 70deg 5m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 5m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-height: 550px;max-width: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                        <p class="etiqueta_table mt-2 mb-5">Rotaciones de Orden 3 (Vértice-Cara) del Tetraedro</p>
                     </div>
-
-                    <div class="container_img mb-3 col-xl-4 col-12">
-                        <!--Imagen-->
-                        <img src="imagenes/ImgEjReflexionTetraedro_TFG.png" alt="Representación de reflexión del Tetraedro" title="Representación de reflexión del Tetraedro" style="min-width: 300px; width: 15%;">
-                        <p class="etiqueta_table mt-2">
-                            Representación de reflexión del Tetraedro
-                        </p>
+                    <div class="col-xl-4 col-12">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/ptm_aristas.glb" 
+                            alt="Rotaciones de Orden 2 (Arista-Arista) del Tetraedro"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="120deg 70deg 5m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 5m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-height: 550px;max-width: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                        <p class="etiqueta_table mt-2 mb-5">Rotaciones de Orden 2 (Arista-Arista) del Tetraedro</p>
                     </div>
-                    <div class="col-xl-1 col-0"></div>
+                    <div class="col-xl-4 col-12">
+                        <model-viewer
+                            src="Modelos_blender/Representaciones/Plano_int_tetra.glb" 
+                            alt="Representación de reflexión del Tetraedro"
+                            camera-controls
+                            ar
+                            ar-modes="webxr scene-viewer quick-look"
+                            camera-orbit="100deg 80deg 5m"
+                            field-of-view="50deg"
+                            min-camera-orbit="auto auto 5m"
+                            max-camera-orbit="auto auto 10m"
+                            style="max-height: 550px;max-width: 350px;"
+                            class="mv mt-2 mx-auto"
+                        ></model-viewer>
+                        <p class="etiqueta_table mt-2 mb-5">Representación de reflexión del Tetraedro</p>
+                    </div>
                 </div>
 
                 <p>Además, todo sólido regular admite un número finito de transformaciones rígidas que preservan longitudes y ángulos. Esto implica que, desde el punto de vista geométrico, todos sus vértices (y análogamente sus aristas y caras) son indistinguibles, es decir, la simetría se distribuye de manera uniforme en toda la figura. Por ello, se afirma que “sólo hay tres grupos de rotación irreducibles finitos: <strong>tetraédrica</strong>, <strong>octaédrica</strong> e <strong>icosaédrica</strong>” (Levin, 2015, p. 115). Estos grupos tienen, respectivamente, <strong>12</strong>, <strong>24</strong> y <strong>60</strong> rotaciones; en consecuencia, el <strong>tetraedro</strong> posee 12 simetrías rotacionales: 8 rotaciones de 120\(^\circ\) y 240\(^\circ\), 3 de 180\(^\circ\), y la rotación identidad de 360\(^\circ\), tal como se observó en la imagen anterior; el <strong>hexaedro</strong> y el <strong>octaedro</strong> comparten las 24 rotaciones del grupo octaédrico: 9 rotaciones de 90\(^\circ\), 180\(^\circ\) y 270\(^\circ\), 8 rotaciones de 120\(^\circ\) y 240\(^\circ\), 6 rotaciones de 180\(^\circ\), y la rotación identidad de 360\(^\circ\), tal como se observa en la siguiente imagen; y el <strong>dodecaedro</strong> y el <strong>icosaedro</strong> comparten las 60 rotaciones del grupo icosaédrico.</p>
