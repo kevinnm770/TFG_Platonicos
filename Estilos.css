@@ -23,9 +23,26 @@
 
   #neolitico_model{display: none;}
 
+  .btnDiv{
+    max-width: 100% !important;
+    margin-left: 0px !important;
+  }
+
   .btnDiv .btn_model{
-    font-size: 10pt;
-    padding: 8px;
+    font-size: 12pt;
+    padding: 8px !important;
+    width: 100% !important;
+  }
+
+  .btnDiv>div{
+    width:33% !important;
+  }
+
+  .btnDiv>div:first-child{
+    margin-left: 0 !important;
+  }
+  .btnDiv>div:last-child{
+    margin-right: 0 !important;
   }
 }
 
